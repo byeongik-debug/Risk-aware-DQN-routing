@@ -1,6 +1,6 @@
-# Risk-Aware DQN for SDN Routing
+# Risk-Aware DQN Routing
 
-> 시간에 따라 변하는 링크 위험도를 관찰하고, 혼잡·불안정 링크를 우회하는 경로를 학습하는 DQN 기반 SDN 라우팅 시뮬레이션
+> 시간에 따라 변하는 링크 위험도를 관찰하고, 혼잡·불안정 링크를 우회하는 경로를 학습하는 DQN 기반 네트워크 라우팅 시뮬레이션
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-DQN-EE4C2C?logo=pytorch&logoColor=white)
@@ -61,9 +61,9 @@ DQN은 `512 → 256 → 128` 완전연결 네트워크를 사용하며, replay b
 | Dynamic | OSPF | 100% | 577.72 | 0.2800 | 0.5878 | 79.55% |
 | Dynamic | Risk-Only DQN | 100% | **348.68** | **0.0835** | **0.1700** | **21.46%** |
 
-> 위 수치는 [`multi_scenario_summary.csv`](SDN_DQN_models_runner/results/multi_scenario_summary.csv)에 저장된 시뮬레이션 결과입니다. 확률적 실험이므로 재실행 시 값이 달라질 수 있습니다.
+> 위 수치는 다중 시나리오 평가에서 산출된 시뮬레이션 결과입니다. 확률적 실험이므로 재실행 시 값이 달라질 수 있습니다.
 
-![Average risk by scenario](SDN_DQN_models_runner/results/avg_risk_by_scenario.png)
+![Average risk by scenario](DQN_models_runner/results/avg_risk_by_scenario.png)
 
 ## 빠른 시작
 
@@ -71,7 +71,7 @@ DQN은 `512 → 256 → 128` 완전연결 네트워크를 사용하며, replay b
 
 ```bash
 git clone <YOUR_REPOSITORY_URL>
-cd <YOUR_REPOSITORY_NAME>/SDN_DQN_models_runner
+cd <YOUR_REPOSITORY_NAME>/DQN_models_runner
 ```
 
 ### 2. 가상환경과 의존성 설치
@@ -100,7 +100,7 @@ python run_policy.py
 
 ## 실험 재현
 
-모든 명령은 `SDN_DQN_models_runner/` 디렉터리에서 실행합니다.
+모든 명령은 `DQN_models_runner/` 디렉터리에서 실행합니다.
 
 ```bash
 # 4개 시나리오에서 DQN 재학습
@@ -132,7 +132,7 @@ python test_ospf.py
 .
 ├── README.md
 ├── results/                         # README 데모 이미지
-└── SDN_DQN_models_runner/
+└── DQN_models_runner/
     ├── risk_dqn_every_scenario.py   # DQN 학습 진입점
     ├── run_policy.py                # OSPF/DQN 다중 시나리오 평가
     ├── network_env.py               # 25-node 네트워크 환경
@@ -157,11 +157,13 @@ python test_ospf.py
 
 ## 참고 사항
 
-- 본 프로젝트는 실제 SDN 컨트롤러가 아닌 **NetworkX 기반 시뮬레이션 연구 코드**입니다.
+- 본 프로젝트는 **NetworkX 기반 네트워크 라우팅 시뮬레이션 연구 코드**입니다.
 - 저장된 모델은 현재 상태 표현과 25-node 토폴로지에 맞춰져 있습니다. 환경이나 상태 차원을 바꾸면 재학습이 필요합니다.
 - 일부 실험은 난수 시드를 고정하지만, 하드웨어와 라이브러리 버전에 따라 결과가 조금 달라질 수 있습니다.
 - 프로젝트 루트의 ZIP 파일과 `.venv/`, `__pycache__/`는 GitHub 업로드에서 제외하는 것을 권장합니다.
 
 ## License
 
-라이선스는 아직 지정되지 않았습니다. 공개 배포 또는 재사용을 허용하려면 저장소에 `LICENSE` 파일을 추가하세요.
+Copyright © 2026 한성대학교 학부연구생 연구실. All rights reserved.
+
+자세한 내용은 [`LICENSE`](LICENSE) 파일을 참고하세요.
