@@ -1,0 +1,14 @@
+.venv/
+.vscode/
+__pycache__/
+*.pyc
+*.zip
+
+# Large raw experiment logs
+SDN_DQN_models_runner/results/*_samples.csv
+SDN_DQN_models_runner/results/dynamic_link_log.csv
+SDN_DQN_models_runner/results/risk_validation_log_*.csv
+SDN_DQN_models_runner/results/risk_identification_validation_log.csv
+*.zip
+*.csv
+*.pth
