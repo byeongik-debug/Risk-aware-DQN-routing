@@ -1,0 +1,2 @@
+weight_config,run_id,delay,loss,hop,success_rate
+W-Temporal,4,365.6540804238479,0.08025430647082843,8.065,100.0

@@ -8,7 +8,11 @@
   명시한다.
 - 진행 상황과 남은 할 일의 **정본은 `RESUME_HERE.md`** 다. 이 문서와 어긋나면
   `RESUME_HERE.md` 가 맞다.
-- 모든 숫자는 `review_results/` 의 CSV 로 대조할 수 있다.
+- 모든 숫자는 `review_results/` 의 CSV 로 대조할 수 있다. 산출물이 245개라 색인이
+  필요하다 — **`DATA_INDEX.md`** 가 주제별로 정리해 뒀고, 열 이름까지 찾으려면
+  `review_results/_data_index.csv` 를 grep 하면 된다.
+- **데이터와 원본 코드 사본까지 저장소에 다 들어 있다.** 배치 한 줄만 해 주면 된다
+  (`README.md` 1절).
 
 ---
 

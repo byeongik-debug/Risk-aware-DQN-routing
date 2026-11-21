@@ -1,0 +1,2 @@
+window,run_id,scenario,success_rate,delay,loss,risk,hop,unstable_usage,congested_usage
+5,4,dynamic,100.0,397.9928845940101,0.07538186661356334,0.16053665221471555,8.93,19.185064935064936,19.185064935064936

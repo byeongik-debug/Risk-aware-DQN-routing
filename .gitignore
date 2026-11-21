@@ -2,10 +2,6 @@
 __pycache__/
 *.pyc
 
-# GitHub 파일 경고선(50MB) 초과 — 원시 링크 로그 61MB.
-# analyze_risk_identification.py / run_policy.py 가 읽는다. 필요하면 따로 전달.
-results/dynamic_link_log.csv
-
 # 임시
 *.tmp
 .DS_Store

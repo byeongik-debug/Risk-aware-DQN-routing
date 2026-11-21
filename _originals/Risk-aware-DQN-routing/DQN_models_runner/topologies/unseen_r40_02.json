@@ -1,0 +1,313 @@
+{
+  "name": "unseen_r40_02",
+  "num_nodes": 25,
+  "source": 0,
+  "destination": 24,
+  "num_edges": 50,
+  "rewire_ratio_requested": 0.4,
+  "seed": 2030,
+  "shortest_path_hops": 4,
+  "average_degree": 4.0,
+  "edges": [
+    {
+      "slot": 0,
+      "u": 0,
+      "v": 1,
+      "type": "backbone"
+    },
+    {
+      "slot": 1,
+      "u": 1,
+      "v": 20,
+      "type": "backbone"
+    },
+    {
+      "slot": 2,
+      "u": 2,
+      "v": 9,
+      "type": "backbone"
+    },
+    {
+      "slot": 3,
+      "u": 0,
+      "v": 4,
+      "type": "backbone"
+    },
+    {
+      "slot": 4,
+      "u": 1,
+      "v": 5,
+      "type": "backbone"
+    },
+    {
+      "slot": 5,
+      "u": 2,
+      "v": 6,
+      "type": "backbone"
+    },
+    {
+      "slot": 6,
+      "u": 2,
+      "v": 15,
+      "type": "backbone"
+    },
+    {
+      "slot": 7,
+      "u": 4,
+      "v": 5,
+      "type": "normal"
+    },
+    {
+      "slot": 8,
+      "u": 5,
+      "v": 6,
+      "type": "normal"
+    },
+    {
+      "slot": 9,
+      "u": 6,
+      "v": 7,
+      "type": "normal"
+    },
+    {
+      "slot": 10,
+      "u": 4,
+      "v": 8,
+      "type": "normal"
+    },
+    {
+      "slot": 11,
+      "u": 4,
+      "v": 9,
+      "type": "normal"
+    },
+    {
+      "slot": 12,
+      "u": 5,
+      "v": 10,
+      "type": "normal"
+    },
+    {
+      "slot": 13,
+      "u": 6,
+      "v": 11,
+      "type": "normal"
+    },
+    {
+      "slot": 14,
+      "u": 3,
+      "v": 10,
+      "type": "normal"
+    },
+    {
+      "slot": 15,
+      "u": 8,
+      "v": 9,
+      "type": "normal"
+    },
+    {
+      "slot": 16,
+      "u": 3,
+      "v": 20,
+      "type": "normal"
+    },
+    {
+      "slot": 17,
+      "u": 7,
+      "v": 14,
+      "type": "normal"
+    },
+    {
+      "slot": 18,
+      "u": 7,
+      "v": 15,
+      "type": "normal"
+    },
+    {
+      "slot": 19,
+      "u": 8,
+      "v": 13,
+      "type": "normal"
+    },
+    {
+      "slot": 20,
+      "u": 9,
+      "v": 14,
+      "type": "normal"
+    },
+    {
+      "slot": 21,
+      "u": 10,
+      "v": 15,
+      "type": "normal"
+    },
+    {
+      "slot": 22,
+      "u": 11,
+      "v": 16,
+      "type": "normal"
+    },
+    {
+      "slot": 23,
+      "u": 12,
+      "v": 17,
+      "type": "normal"
+    },
+    {
+      "slot": 24,
+      "u": 13,
+      "v": 14,
+      "type": "normal"
+    },
+    {
+      "slot": 25,
+      "u": 7,
+      "v": 21,
+      "type": "normal"
+    },
+    {
+      "slot": 26,
+      "u": 8,
+      "v": 11,
+      "type": "normal"
+    },
+    {
+      "slot": 27,
+      "u": 16,
+      "v": 17,
+      "type": "normal"
+    },
+    {
+      "slot": 28,
+      "u": 17,
+      "v": 18,
+      "type": "normal"
+    },
+    {
+      "slot": 29,
+      "u": 13,
+      "v": 19,
+      "type": "normal"
+    },
+    {
+      "slot": 30,
+      "u": 14,
+      "v": 20,
+      "type": "normal"
+    },
+    {
+      "slot": 31,
+      "u": 10,
+      "v": 14,
+      "type": "normal"
+    },
+    {
+      "slot": 32,
+      "u": 16,
+      "v": 21,
+      "type": "normal"
+    },
+    {
+      "slot": 33,
+      "u": 17,
+      "v": 22,
+      "type": "normal"
+    },
+    {
+      "slot": 34,
+      "u": 18,
+      "v": 22,
+      "type": "normal"
+    },
+    {
+      "slot": 35,
+      "u": 11,
+      "v": 21,
+      "type": "normal"
+    },
+    {
+      "slot": 36,
+      "u": 11,
+      "v": 23,
+      "type": "normal"
+    },
+    {
+      "slot": 37,
+      "u": 12,
+      "v": 21,
+      "type": "normal"
+    },
+    {
+      "slot": 38,
+      "u": 12,
+      "v": 23,
+      "type": "normal"
+    },
+    {
+      "slot": 39,
+      "u": 22,
+      "v": 23,
+      "type": "normal"
+    },
+    {
+      "slot": 40,
+      "u": 15,
+      "v": 24,
+      "type": "normal"
+    },
+    {
+      "slot": 41,
+      "u": 2,
+      "v": 5,
+      "type": "backup"
+    },
+    {
+      "slot": 42,
+      "u": 5,
+      "v": 11,
+      "type": "backup"
+    },
+    {
+      "slot": 43,
+      "u": 16,
+      "v": 19,
+      "type": "backup"
+    },
+    {
+      "slot": 44,
+      "u": 20,
+      "v": 22,
+      "type": "backup"
+    },
+    {
+      "slot": 45,
+      "u": 11,
+      "v": 17,
+      "type": "backup"
+    },
+    {
+      "slot": 46,
+      "u": 14,
+      "v": 19,
+      "type": "backup"
+    },
+    {
+      "slot": 47,
+      "u": 15,
+      "v": 21,
+      "type": "backup"
+    },
+    {
+      "slot": 48,
+      "u": 20,
+      "v": 23,
+      "type": "backup"
+    },
+    {
+      "slot": 49,
+      "u": 22,
+      "v": 24,
+      "type": "backup"
+    }
+  ]
+}
