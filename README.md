@@ -41,8 +41,9 @@ import 할 때 파이썬이 자동 생성), 소스 파일은 바뀌지 않는다
 
 | 경로 | 내용 |
 |---|---|
-| `FINDINGS_*.md` | 주제별 측정 기록 21개. 각 항목에 **무엇을 쟀고 무엇을 안 쟀는지** 명시. |
-| `RESUME_HERE.md` | 전체 진행 상황과 남은 할 일. **여기서부터 읽으면 된다.** |
+| `HANDOVER.md` | **처음부터 어디까지 했고 결과가 무엇인지.** 처음 보면 여기부터. |
+| `FINDINGS_*.md` | 주제별 측정 기록 **10개**. 각 항목에 **무엇을 쟀고 무엇을 안 쟀는지** 명시. |
+| `RESUME_HERE.md` | 진행 상황과 남은 할 일의 **정본**. 다른 문서와 어긋나면 이게 맞다. |
 | `DRAFT_*.md` | 수정 원고 초안 조각. |
 | `measure_*.py`, `reeval_*.py`, `diagnose_*.py` | 측정 스크립트. |
 | `verify_table_cells.py`, `audit_draft_numbers.py` | 초안 숫자 검증 도구 (아래 순서 주의). |
@@ -86,9 +87,10 @@ KMP_DUPLICATE_LIB_OK=TRUE OMP_NUM_THREADS=1 PYTHONIOENCODING=utf-8 \
 
 ## 7. 읽는 순서 추천
 
-1. `RESUME_HERE.md` 헤더 — 지금까지 닫은 항목과 남은 공저자 결정.
-2. 관심 주제의 `FINDINGS_*.md`.
-3. 거기 적힌 산출 CSV 를 `review_results/` 에서 대조.
+1. **`HANDOVER.md`** — 전체 진행과 결과 요약, 함정 모음, 이어받는 순서.
+2. `RESUME_HERE.md` 헤더 — 지금까지 닫은 항목과 남은 공저자 결정.
+3. 관심 주제의 `FINDINGS_*.md`.
+4. 거기 적힌 산출 CSV 를 `review_results/` 에서 대조.
 
 각 FINDINGS 문서는 결론만 적지 않고 **기각된 가설도 같이** 적어 뒀다. "내가 이렇게
 예상했는데 측정해 보니 아니었다" 는 단락이 있으면 그게 본문이다.
