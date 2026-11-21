@@ -33,6 +33,10 @@ cd review_response && cp -r _originals/* ..        # 형제 위치로 복원
 `_originals/` 는 `__pycache__` 와 `.git` 을 뺀 **읽기 전용 사본**이다. 이 작업 중
 원본은 수정하지 않았다(2절).
 
+단, **미공개 논문 원고(`.hwp`/`.pdf`)와 발표 스크립트 4개는 일부러 뺐다.** 이
+저장소가 공개라서 원고를 올릴 수 없다. 실행에는 필요 없다 — 어느 스크립트도
+읽지 않는다. 원고가 필요하면 따로 받아야 한다.
+
 ## 2. 절대 규칙 — 원본은 읽기만 했다
 
 모든 작업은 `review_response/` 안에서만 하고, 산출물은 `review_results/` 로만
@@ -98,13 +102,13 @@ KMP_DUPLICATE_LIB_OK=TRUE OMP_NUM_THREADS=1 PYTHONIOENCODING=utf-8 \
 
 | 파일 | 크기 | 왜 들어 있나 |
 |---|---|---|
-| `_originals/SDN_DQN_new_env/` | 73MB | 스크립트 68개가 import. 없으면 아무것도 안 돌아간다 |
+| `_originals/SDN_DQN_new_env/` | 71MB | 스크립트 68개가 import. 없으면 아무것도 안 돌아간다 |
 | `results/dynamic_link_log.csv` | 61MB | `analyze_risk_identification.py`, `run_policy.py` 가 읽는다 |
 | `review_results/_table10_rawlog.pkl` | 22.5MB | `build_table10_f1.py`, `measure_ic_redundancy.py` 가 읽는다 |
 | `_originals/Risk-aware-DQN-routing/` | 23MB | 참고용 원본(스크립트는 참조하지 않음) |
 
 GitHub 는 개별 파일 100MB 에서 **차단**하고 50MB 에서 경고만 한다. 위 넷 다 차단선
-아래이므로 푸시된다(61MB·73MB 폴더에서 경고가 뜰 수 있으나 정상이다).
+아래이므로 푸시된다(61MB·71MB 폴더에서 경고가 뜰 수 있으나 정상이다).
 
 ## 7. 읽는 순서 추천
 
