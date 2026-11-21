@@ -1,0 +1,94 @@
+block,arm,model,metric,stat,value,note
+A_reach,,,reach_pct,blocks_below_100,0,전체 30블록
+A_reproduce,Proposed,,delay,mean,350.1249717731,시드 5개
+A_reproduce,Proposed,,delay,sd,1.4618063478,시드 5개
+A_reproduce,Proposed,,delay,dev_pct_vs_published,-0.000000,발표 350.12497200
+A_reproduce,Proposed,,published,mean,0.0835504881,시드 5개
+A_reproduce,Proposed,,published,sd,0.0005676493,시드 5개
+A_reproduce,Proposed,,published,dev_pct_vs_published,0.000584,발표 0.08355000
+A_reproduce,Proposed,,hop,mean,7.6770000000,시드 5개
+A_reproduce,Proposed,,hop,sd,0.0115108644,시드 5개
+A_reproduce,Proposed,,hop,dev_pct_vs_published,0.000000,발표 7.67700000
+A_reproduce,NoRisk,,delay,mean,332.0888059677,모델 5개
+A_reproduce,NoRisk,,delay,sd,1.8901598086,모델 5개
+A_reproduce,NoRisk,,delay,dev_pct_vs_published,-0.230358,발표 332.85556683
+A_reproduce,NoRisk,,published,mean,0.0905264947,모델 5개
+A_reproduce,NoRisk,,published,sd,0.0004368951,모델 5개
+A_reproduce,NoRisk,,published,dev_pct_vs_published,-0.118441,발표 0.09063384
+A_reproduce,NoRisk,,hop,mean,7.0016000000,모델 5개
+A_reproduce,NoRisk,,hop,sd,0.0035777088,모델 5개
+A_reproduce,NoRisk,,hop,dev_pct_vs_published,0.022857,발표 7.00000000
+D_model_identity,,norisk_run01.pth|norisk_run02.pth,,identical_seeds,3/5,max_delay_diff=6.813268
+D_model_identity,,norisk_run01.pth|norisk_run03.pth,,identical_seeds,0/5,max_delay_diff=5.003865
+D_model_identity,,norisk_run01.pth|norisk_run04.pth,,identical_seeds,5/5,max_delay_diff=0.000000
+D_model_identity,,norisk_run01.pth|norisk_run05.pth,,identical_seeds,5/5,max_delay_diff=0.000000
+D_model_identity,,norisk_run02.pth|norisk_run03.pth,,identical_seeds,0/5,max_delay_diff=4.618432
+D_model_identity,,norisk_run02.pth|norisk_run04.pth,,identical_seeds,3/5,max_delay_diff=6.813268
+D_model_identity,,norisk_run02.pth|norisk_run05.pth,,identical_seeds,3/5,max_delay_diff=6.813268
+D_model_identity,,norisk_run03.pth|norisk_run04.pth,,identical_seeds,0/5,max_delay_diff=5.003865
+D_model_identity,,norisk_run03.pth|norisk_run05.pth,,identical_seeds,0/5,max_delay_diff=5.003865
+D_model_identity,,norisk_run04.pth|norisk_run05.pth,,identical_seeds,5/5,max_delay_diff=0.000000
+D_model_identity,,,,identical_pairs,3/10,
+D_model_identity,,,,distinct_value_vectors,3/5,
+D_model_identity,,,hop,distinct_block_means,7.000000;7.020000,
+B_table11_def,,,published,prop_mean,0.0835504881,
+B_table11_def,,,published,prop_sd,0.0005676493,
+B_table11_def,,,published,norisk_mean,0.0905264947,
+B_table11_def,,,published,norisk_sd,0.0004368951,
+B_table11_def,,,published,adv_pct,7.706039,
+B_table11_def,,,published,p,0.00000005,
+B_table11_def,,,published,p_holm,0.00000014,
+B_table11_def,,,path_sum,prop_mean,0.6493069662,
+B_table11_def,,,path_sum,prop_sd,0.0051269058,
+B_table11_def,,,path_sum,norisk_mean,0.6338217922,
+B_table11_def,,,path_sum,norisk_sd,0.0033303739,
+B_table11_def,,,path_sum,adv_pct,-2.443143,
+B_table11_def,,,path_sum,p,0.00081746,
+B_table11_def,,,path_sum,p_holm,0.00163491,
+B_table11_def,,,compounded,prop_mean,0.5342576903,
+B_table11_def,,,compounded,prop_sd,0.0029376648,
+B_table11_def,,,compounded,norisk_mean,0.5265879864,
+B_table11_def,,,compounded,norisk_sd,0.0018708581,
+B_table11_def,,,compounded,adv_pct,-1.456490,
+B_table11_def,,,compounded,p,0.00186442,
+B_table11_def,,,compounded,p_holm,0.00186442,
+B_table11_def,,,delay,prop_mean,350.1249717731,
+B_table11_def,,,delay,norisk_mean,332.0888059677,
+B_table11_def,,,delay,p,0.00000030,
+B_table11_def,,,hop,prop_mean,7.6770000000,
+B_table11_def,,,hop,norisk_mean,7.0016000000,
+B_table11_def,,,hop,p,0.00000000,
+C_paired_seed,,,published,mean_diff,-0.0069760066,
+C_paired_seed,,,published,sd_diff,0.0020968614,
+C_paired_seed,,,published,adv_pct,7.706039,
+C_paired_seed,,,published,p,0.00174372,
+C_paired_seed,,,published,p_holm,0.00523115,
+C_paired_seed,,,path_sum,mean_diff,0.0154851740,
+C_paired_seed,,,path_sum,sd_diff,0.0156547100,
+C_paired_seed,,,path_sum,adv_pct,-2.443143,
+C_paired_seed,,,path_sum,p,0.09143740,
+C_paired_seed,,,path_sum,p_holm,0.18287479,
+C_paired_seed,,,compounded,mean_diff,0.0076697039,
+C_paired_seed,,,compounded,sd_diff,0.0094275880,
+C_paired_seed,,,compounded,adv_pct,-1.456490,
+C_paired_seed,,,compounded,p,0.14302209,
+C_paired_seed,,,compounded,p_holm,0.18287479,
+C_paired_seed,,,delay,mean_diff,18.0361658054,
+C_paired_seed,,,delay,sd_diff,4.5211616151,
+C_paired_seed,,,delay,adv_pct,-5.431127,
+C_paired_seed,,,delay,p,0.00087317,
+C_paired_seed,,,hop,mean_diff,0.6754000000,
+C_paired_seed,,,hop,sd_diff,0.0102615788,
+C_paired_seed,,,hop,adv_pct,-9.646367,
+C_paired_seed,,,hop,p,0.00000001,
+E_dilution,,,,hop_prop,7.6770000000,
+E_dilution,,,,hop_norisk,7.0016000000,
+E_dilution,,,,hop_ratio,0.9120229256,
+E_dilution,,,,ratio_published,0.9229396142,
+E_dilution,,,,ratio_path_sum,1.0244314319,
+E_dilution,,,,predicted_ratio_published,0.9343049517,
+E_dilution,,,,residual,-0.0113653374,
+E_dilution,,,,free_gift_pct,8.7977074378,
+F_backsolve,,,,norisk_published_x7,0.6344368975,
+F_backsolve,,,,prop_path_sum_committed,0.6493070000,
+F_backsolve,,,,prop_disadvantage_pct,2.343827,

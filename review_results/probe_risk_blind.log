@@ -1,0 +1,21 @@
+===== Risk-Blind DQN  variant=scalar  run=1  seed=43 =====
+Episodes=100  StateSize=125  Device=cpu  Threads=1
+상수 블록: 평균 0.249421  sd 0.000000 (sd 0 이면 정보 전무)
+Ep  100 | Suc  37.0% | Rew -295.03 | Eps 0.9417 |   79.0s (0.790s/ep)
+모델 저장: C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\review_results\models_risk_blind\scalar_run01_ep100.pth
+결과 저장: C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\review_results\risk_blind_scalar_run01_ep100.csv
+  variant      scalar
+  run_id       1
+  seed         43
+  episodes     100
+  state_size   125
+  const_mean   0.2494207025
+  const_sd     0.0000000149
+  reach_rate   1.000000
+  delay_mean   464.300789
+  loss_mean    0.154572
+  hop_mean     7.000000
+  risk_mean    0.363275
+  train_sec    116.9
+  threads      1
+  model        scalar_run01_ep100.pth

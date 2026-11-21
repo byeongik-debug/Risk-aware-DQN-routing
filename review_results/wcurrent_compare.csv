@@ -1,0 +1,3 @@
+run,episodes,md5_wcurrent,md5_full,file_same,tensor_maxdiff,path_agree_pct,n_paths_wcurrent,n_paths_full,delay_wcurrent,delay_full,loss_wcurrent,loss_full,hop_wcurrent,hop_full,risky_wcurrent,risky_full,selfcheck_full,risk_probe_same
+1,200,ad4f1c2febb4de8a3c695a1f375d935f,616ec4e75ed6ed53b738d3f77e01665a,0,0,100.0000,3,3,354.294012,354.294012,0.084779,0.084779,7.7100,7.7100,21.8929,21.8929,일치(5e-07),1
+2,200,97752efca58cf39528588a19f0bf1989,db98fdb2cfdd9ca2e8952f033a5619af,0,0,100.0000,3,3,354.294012,354.294012,0.084779,0.084779,7.7100,7.7100,21.8929,21.8929,일치(5e-07),1

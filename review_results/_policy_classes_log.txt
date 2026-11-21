@@ -1,0 +1,150 @@
+묶음 random  상태 250개 (서로 다른 상태 250개)
+묶음 greedy  상태 250개 (서로 다른 상태 250개)
+체크포인트 79개
+  제외 norisk             5개 (상태 175차원 != 125)
+비교 대상 74개
+저장: C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\review_results\policy_classes.csv
+
+=== 묶음 greedy (상태 250개) ===
+체크포인트 74개 -> 서로 다른 정책 21개
+  부류 1 (30개): factor_cong_r02, factor_delay_inst_r01, factor_full_r01, factor_full_r02, factor_full_r03, factor_full_r04, factor_link_type_r02, factor_link_type_r03, factor_loss_inst_r02, factor_loss_inst_r03, factor_temporal_r01, factor_temporal_r02, factor_temporal_r03, weight_equal_r01, weight_equal_r02, weight_temporal_r02, window1_r01, window1_r02, window1_r03, window1_r04, window10_r01, window3_r01, window3_r04, window3_r06, window5_r01, window5_r02, window7_r02, window7_r05, window7_r06, window7_r07
+  부류 2 (19개): factor_cong_r01, factor_cong_r04, factor_delay_inst_r02, factor_delay_inst_r03, factor_delay_inst_r05, factor_full_r05, factor_link_type_r01, factor_link_type_r04, factor_loss_inst_r05, weight_temporal_r04, window3_r03, window3_r05, window3_r07, window3_r09, window3_r10, window5_r03, window5_r05, window7_r01, window7_r03
+  부류 3 (4개): factor_temporal_r05, weight_equal_r03, weight_equal_r04, weight_equal_r05
+  부류 4 (3개): weight_temporal_r05, window3_r02, window5_r04
+  부류 5 (2개): factor_loss_inst_r04, window7_r04
+  단독 부류: 16개
+  -- 엄격 비교군 (window5, factor_full) --
+  모델 10개 -> 서로 다른 정책 3개
+    6개: factor_full_r01, factor_full_r02, factor_full_r03, factor_full_r04, window5_r01, window5_r02
+    3개: factor_full_r05, window5_r03, window5_r05
+    1개: window5_r04
+  -- 팔 안쪽 일치율 (같은 팔 런끼리 평균 행동일치) --
+    factor_cong         93.2% (최소  85.6%, 쌍 10개)
+    factor_delay_inst   97.0% (최소  94.8%, 쌍 10개)
+    factor_full         97.9% (최소  94.8%, 쌍 10개)
+    factor_link_type    96.9% (최소  94.8%, 쌍 10개)
+    factor_loss_inst    97.4% (최소  94.0%, 쌍 10개)
+    factor_temporal     96.3% (최소  90.8%, 쌍 10개)
+    factor_util         73.2% (최소  65.2%, 쌍 10개)
+    weight_equal        97.6% (최소  96.0%, 쌍 10개)
+    weight_temporal     91.9% (최소  87.2%, 쌍 10개)
+    window1             98.7% (최소  96.8%, 쌍 10개)
+    window3             95.7% (최소  89.6%, 쌍 45개)
+    window5             95.3% (최소  90.8%, 쌍 10개)
+    window7             96.6% (최소  92.4%, 쌍 28개)
+  -- window5 대 다른 팔 (팔간 평균 행동일치) --
+    factor_cong         94.7% (최대 100.0%)
+    factor_delay_inst   96.7% (최대 100.0%)
+    factor_full         96.3% (최대 100.0%)
+    factor_link_type    96.6% (최대 100.0%)
+    factor_loss_inst    96.2% (최대 100.0%)
+    factor_temporal     94.2% (최대 100.0%)
+    factor_util         56.6% (최대  64.8%)
+    weight_equal        93.7% (최대 100.0%)
+    weight_temporal     94.1% (최대 100.0%)
+    window1             96.2% (최대 100.0%)
+    window10            96.1% (최대 100.0%)
+    window3             96.0% (최대 100.0%)
+    window7             96.3% (최대 100.0%)
+
+=== 묶음 random (상태 250개) ===
+체크포인트 74개 -> 서로 다른 정책 74개
+  단독 부류: 74개
+  -- 엄격 비교군 (window5, factor_full) --
+  모델 10개 -> 서로 다른 정책 10개
+    1개: window5_r01
+    1개: window5_r02
+    1개: window5_r03
+    1개: window5_r04
+    1개: window5_r05
+    1개: factor_full_r01
+    1개: factor_full_r02
+    1개: factor_full_r03
+    1개: factor_full_r04
+    1개: factor_full_r05
+  -- 팔 안쪽 일치율 (같은 팔 런끼리 평균 행동일치) --
+    factor_cong         87.0% (최소  84.4%, 쌍 10개)
+    factor_delay_inst   89.0% (최소  87.6%, 쌍 10개)
+    factor_full         86.9% (최소  81.6%, 쌍 10개)
+    factor_link_type    86.7% (최소  82.8%, 쌍 10개)
+    factor_loss_inst    87.6% (최소  83.2%, 쌍 10개)
+    factor_temporal     87.4% (최소  83.6%, 쌍 10개)
+    factor_util         75.4% (최소  73.2%, 쌍 10개)
+    weight_equal        87.2% (최소  85.6%, 쌍 10개)
+    weight_temporal     90.5% (최소  88.4%, 쌍 10개)
+    window1             90.5% (최소  88.4%, 쌍 10개)
+    window3             87.5% (최소  83.2%, 쌍 45개)
+    window5             89.6% (최소  86.4%, 쌍 10개)
+    window7             88.3% (최소  85.2%, 쌍 28개)
+  -- window5 대 다른 팔 (팔간 평균 행동일치) --
+    factor_cong         86.0% (최대  90.0%)
+    factor_delay_inst   88.8% (최대  94.0%)
+    factor_full         88.7% (최대  93.2%)
+    factor_link_type    88.5% (최대  93.2%)
+    factor_loss_inst    88.2% (최대  93.2%)
+    factor_temporal     88.4% (최대  92.0%)
+    factor_util         69.2% (최대  75.2%)
+    weight_equal        86.6% (최대  92.8%)
+    weight_temporal     90.4% (최대  94.8%)
+    window1             89.2% (최대  93.2%)
+    window10            91.0% (최대  92.0%)
+    window3             88.4% (최대  93.2%)
+    window7             88.8% (최대  95.2%)
+
+[8] 팔 라벨이 정책을 가리는가 — 순열검정 (B=2000)
+    묶음 greedy  같은팔 - 다른팔 = +4.447%p, p = 0.0005
+      factor_cong        n= 5  내부우위  +1.047%p  p=0.6292  p_holm=1.0000 
+      factor_delay_inst  n= 5  내부우위  +3.537%p  p=0.1649  p_holm=1.0000 
+      factor_full        n= 5  내부우위  +4.058%p  p=0.0945  p_holm=0.9445 
+      factor_link_type   n= 5  내부우위  +3.303%p  p=0.2179  p_holm=1.0000 
+      factor_loss_inst   n= 5  내부우위  +3.729%p  p=0.1434  p_holm=1.0000 
+      factor_temporal    n= 5  내부우위  +3.773%p  p=0.1414  p_holm=1.0000 
+      factor_util        n= 5  내부우위 +15.824%p  p=0.0005  p_holm=0.0065 유의
+      weight_equal       n= 5  내부우위  +5.350%p  p=0.0255  p_holm=0.3058 
+      weight_temporal    n= 5  내부우위  +1.156%p  p=0.6232  p_holm=1.0000 
+      window1            n= 5  내부우위  +4.795%p  p=0.0435  p_holm=0.4783 
+      window3            n=10  내부우위  +3.428%p  p=0.1259  p_holm=1.0000 
+      window5            n= 5  내부우위  +2.480%p  p=0.3998  p_holm=1.0000 
+      window7            n= 8  내부우위  +3.299%p  p=0.1959  p_holm=1.0000 
+      -- 검출 한계: 보정 없이 단독 검정했을 때의 95% 문턱 --
+      factor_cong        n= 5  관측  +1.047%p  문턱 +4.781%p  문턱 미만
+      factor_delay_inst  n= 5  관측  +3.537%p  문턱 +4.781%p  문턱 미만
+      factor_full        n= 5  관측  +4.058%p  문턱 +4.781%p  문턱 미만
+      factor_link_type   n= 5  관측  +3.303%p  문턱 +4.781%p  문턱 미만
+      factor_loss_inst   n= 5  관측  +3.729%p  문턱 +4.781%p  문턱 미만
+      factor_temporal    n= 5  관측  +3.773%p  문턱 +4.781%p  문턱 미만
+      factor_util        n= 5  관측 +15.824%p  문턱 +4.781%p  검출 가능
+      weight_equal       n= 5  관측  +5.350%p  문턱 +4.781%p  검출 가능
+      weight_temporal    n= 5  관측  +1.156%p  문턱 +4.781%p  문턱 미만
+      window1            n= 5  관측  +4.795%p  문턱 +4.781%p  검출 가능
+      window3            n=10  관측  +3.428%p  문턱 +3.971%p  문턱 미만
+      window5            n= 5  관측  +2.480%p  문턱 +4.781%p  문턱 미만
+      window7            n= 8  관측  +3.299%p  문턱 +4.068%p  문턱 미만
+    묶음 random  같은팔 - 다른팔 = +2.246%p, p = 0.0005
+      factor_cong        n= 5  내부우위  +2.122%p  p=0.1169  p_holm=0.8186 
+      factor_delay_inst  n= 5  내부우위  +2.219%p  p=0.0990  p_holm=0.7916 
+      factor_full        n= 5  내부우위  +0.925%p  p=0.4728  p_holm=1.0000 
+      factor_link_type   n= 5  내부우위  +0.874%p  p=0.4853  p_holm=1.0000 
+      factor_loss_inst   n= 5  내부우위  +0.984%p  p=0.4528  p_holm=1.0000 
+      factor_temporal    n= 5  내부우위  +0.999%p  p=0.4518  p_holm=1.0000 
+      factor_util        n= 5  내부우위  +6.540%p  p=0.0005  p_holm=0.0065 유의
+      weight_equal       n= 5  내부우위  +1.489%p  p=0.2874  p_holm=1.0000 
+      weight_temporal    n= 5  내부우위  +3.478%p  p=0.0095  p_holm=0.1139 
+      window1            n= 5  내부우위  +3.430%p  p=0.0105  p_holm=0.1154 
+      window3            n=10  내부우위  +1.273%p  p=0.2979  p_holm=1.0000 
+      window5            n= 5  내부우위  +2.544%p  p=0.0540  p_holm=0.5397 
+      window7            n= 8  내부우위  +2.138%p  p=0.0620  p_holm=0.5577 
+      -- 검출 한계: 보정 없이 단독 검정했을 때의 95% 문턱 --
+      factor_cong        n= 5  관측  +2.122%p  문턱 +2.584%p  문턱 미만
+      factor_delay_inst  n= 5  관측  +2.219%p  문턱 +2.584%p  문턱 미만
+      factor_full        n= 5  관측  +0.925%p  문턱 +2.584%p  문턱 미만
+      factor_link_type   n= 5  관측  +0.874%p  문턱 +2.584%p  문턱 미만
+      factor_loss_inst   n= 5  관측  +0.984%p  문턱 +2.584%p  문턱 미만
+      factor_temporal    n= 5  관측  +0.999%p  문턱 +2.584%p  문턱 미만
+      factor_util        n= 5  관측  +6.540%p  문턱 +2.584%p  검출 가능
+      weight_equal       n= 5  관측  +1.489%p  문턱 +2.584%p  문턱 미만
+      weight_temporal    n= 5  관측  +3.478%p  문턱 +2.584%p  검출 가능
+      window1            n= 5  관측  +3.430%p  문턱 +2.584%p  검출 가능
+      window3            n=10  관측  +1.273%p  문턱 +2.096%p  문턱 미만
+      window5            n= 5  관측  +2.544%p  문턱 +2.584%p  문턱 미만
+      window7            n= 8  관측  +2.138%p  문턱 +2.224%p  문턱 미만

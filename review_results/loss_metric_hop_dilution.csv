@@ -1,0 +1,45 @@
+section,metric,source,method,scenario,n,hop,loss_published,loss_path_sum,loss_compounded,delay_published,improvement_published_pct,improvement_path_sum_pct,improvement_compounded_pct,r,r_squared,t,df,p
+correlation_with_hop,loss_per_hop_as_published,,,dynamic,69,,,,,,,,,-0.939349,0.882377,-22.4191,67,7.50041e-33
+correlation_with_hop,loss_path_sum,,,dynamic,69,,,,,,,,,0.669844,0.448691,7.3844,67,3.09479e-10
+correlation_with_hop,loss_compounded,,,dynamic,69,,,,,,,,,0.584032,0.341093,5.8893,67,1.38047e-07
+correlation_with_hop,delay_path_sum_as_published,,,dynamic,69,,,,,,,,,0.978394,0.957256,38.7358,67,1.35184e-47
+correlation_with_hop,loss_per_hop_as_published,,,normal,10,,,,,,,,,-0.204375,0.041769,-0.5905,8,0.57114
+correlation_with_hop,loss_path_sum,,,normal,10,,,,,,,,,-0.057528,0.003310,-0.1630,8,0.874573
+correlation_with_hop,loss_compounded,,,normal,10,,,,,,,,,-0.057241,0.003277,-0.1622,8,0.875194
+correlation_with_hop,delay_path_sum_as_published,,,normal,10,,,,,,,,,0.935965,0.876030,7.5188,8,6.80588e-05
+correlation_with_hop,loss_per_hop_as_published,,,unstable,10,,,,,,,,,0.016433,0.000270,0.0465,8,0.964062
+correlation_with_hop,loss_path_sum,,,unstable,10,,,,,,,,,0.139999,0.019600,0.3999,8,0.699684
+correlation_with_hop,loss_compounded,,,unstable,10,,,,,,,,,0.137334,0.018861,0.3922,8,0.705183
+correlation_with_hop,delay_path_sum_as_published,,,unstable,10,,,,,,,,,0.488673,0.238801,1.5842,8,0.151804
+correlation_with_hop,loss_per_hop_as_published,,,POOLED (confounded),99,,,,,,,,,0.639293,0.408695,8.1880,97,1.06773e-12
+correlation_with_hop,loss_path_sum,,,POOLED (confounded),99,,,,,,,,,0.802709,0.644341,13.2564,97,1.68122e-23
+correlation_with_hop,loss_compounded,,,POOLED (confounded),99,,,,,,,,,0.785880,0.617608,12.5166,97,5.76892e-22
+correlation_with_hop,delay_path_sum_as_published,,,POOLED (confounded),99,,,,,,,,,0.890059,0.792204,19.2303,97,7.28194e-35
+reference_table,,exp1_reference.csv,OSPF,normal,,6.0290,0.008932,0.053854,0.052658,125.5555466276339,,,,,,,,
+reference_table,,exp1_reference.csv,QoS-DQN,normal,,6.4730,0.009012,0.058333,0.056914,151.13947449984644,,,,,,,,
+reference_table,,exp1_reference.csv,OSPF,congestion,,6.0040,0.300050,1.801499,0.882569,594.2123579166839,,,,,,,,
+reference_table,,exp1_reference.csv,QoS-DQN,congestion,,7.5050,0.126776,0.951456,0.638468,412.5284901778853,,,,,,,,
+reference_table,,exp1_reference.csv,OSPF,unstable,,6.0040,0.196435,1.179393,0.731003,300.9573072327006,,,,,,,,
+reference_table,,exp1_reference.csv,QoS-DQN,unstable,,6.8500,0.162266,1.111523,0.702644,341.19037334903976,,,,,,,,
+reference_table,,exp1_reference.csv,OSPF,dynamic,,6.0330,0.278352,1.679297,0.860274,572.4538478315951,,,,,,,,
+reference_table,,exp1_reference.csv,QoS-DQN,dynamic,,7.1790,0.128958,0.925791,0.628858,403.74256796251785,,,,,,,,
+reference_table,,ospf_reference.csv,OSPF,normal,,6.0400,0.008983,0.054258,0.053045,126.40058784552951,,,,,,,,
+reference_table,,ospf_reference.csv,OSPF,congestion,,6.0100,0.300618,1.806712,0.883390,596.6382916415299,,,,,,,,
+reference_table,,ospf_reference.csv,OSPF,unstable,,6.0100,0.195144,1.172815,0.728752,304.2672957423048,,,,,,,,
+reference_table,,ospf_reference.csv,OSPF,dynamic,,6.0300,0.280553,1.691737,0.862690,576.0145673080791,,,,,,,,
+reference_table,,qos_reference.csv,QOS,normal,,6.0000,0.010860,0.065159,0.063416,145.09330075650718,,,,,,,,
+reference_table,,qos_reference.csv,QOS,congestion,,7.0000,0.057857,0.405002,0.341105,281.9081969910468,,,,,,,,
+reference_table,,qos_reference.csv,QOS,unstable,,7.0000,0.046942,0.328594,0.285774,222.59704342262114,,,,,,,,
+reference_table,,qos_reference.csv,QOS,dynamic,,7.0000,0.095906,0.671340,0.506263,342.28143058343545,,,,,,,,
+reference_table,,norisk_reference.csv,NORISK,normal,,6.0000,0.007954,0.047726,0.046787,142.2035162244325,,,,,,,,
+reference_table,,norisk_reference.csv,NORISK,congestion,,7.0000,0.057870,0.405090,0.341166,281.56950639018453,,,,,,,,
+reference_table,,norisk_reference.csv,NORISK,unstable,,7.0000,0.048438,0.339063,0.293584,224.8458444612837,,,,,,,,
+reference_table,,norisk_reference.csv,NORISK,dynamic,,7.0000,0.090634,0.634437,0.485753,332.85556682983463,,,,,,,,
+reference_table,,baseline_reference.csv,BASELINE,normal,,6.0000,0.008758,0.052546,0.051409,145.1586258946116,,,,,,,,
+reference_table,,baseline_reference.csv,BASELINE,congestion,,7.0000,0.057870,0.405090,0.341166,281.56950639018453,,,,,,,,
+reference_table,,baseline_reference.csv,BASELINE,unstable,,7.0000,0.048438,0.339063,0.293584,224.8458444612837,,,,,,,,
+reference_table,,baseline_reference.csv,BASELINE,dynamic,,7.6770,0.083550,0.641417,0.488192,350.1249717730735,,,,,,,,
+headline_improvement,,,,normal,,,,,,,-0.888,-8.318,-8.081,,,,,
+headline_improvement,,,,congestion,,,,,,,57.748,47.185,27.658,,,,,
+headline_improvement,,,,unstable,,,,,,,17.394,5.755,3.879,,,,,
+headline_improvement,,,,dynamic,,,,,,,53.671,44.870,26.900,,,,,

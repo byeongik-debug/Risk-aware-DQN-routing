@@ -1,0 +1,53 @@
+C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\occlude_state_blocks.py:83: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state = torch.load(path, map_location=device)
+모델 10 · 공여 250 · 에피소드 200 · 시드 20261114
+
+  window5_run01 | intact 350.8 | rankpow05 416.2 | rankpow400 349.8
+  window5_run02 | intact 350.8 | rankpow05 351.0 | rankpow400 350.8
+  window5_run03 | intact 373.9 | rankpow05 395.5 | rankpow400 377.0
+  window5_run04 | intact 381.8 | rankpow05 431.1 | rankpow400 361.5
+  window5_run05 | intact 369.5 | rankpow05 399.5 | rankpow400 388.9
+  factor_full_run01 | intact 350.8 | rankpow05 475.2 | rankpow400 349.2
+  factor_full_run02 | intact 350.8 | rankpow05 405.9 | rankpow400 350.8
+  factor_full_run03 | intact 350.8 | rankpow05 404.1 | rankpow400 348.5
+  factor_full_run04 | intact 350.8 | rankpow05 367.4 | rankpow400 374.3
+  factor_full_run05 | intact 381.0 | rankpow05 482.6 | rankpow400 385.5
+
+==============================================================================
+[0] 예측 (숫자 보기 전에 정해 둔 것)
+------------------------------------------------------------------------------
+  순위가 값이면   rankonly ~= intact,  dimshuffle ~= frozen
+  크기가 값이면   dimshuffle ~= intact, rankonly ~= frozen
+  값 다중집합은 rankonly=공여와 동일, dimshuffle=참과 동일이고
+  순위는 rankonly=참과 rho 1, dimshuffle=무관이다 (아래 실측 rho).
+
+[1] 조건별 (모델 10개, 200 에피소드)
+------------------------------------------------------------------------------
+조건                            지연          손실         홉      rho     ms/홉
+intact             361.10±13.73      0.08079     8.002   1.0000    45.13
+risk_rankpow05     412.84±41.62      0.11534     7.553   1.0000    54.66
+risk_rankpow400    363.64±16.24      0.07979     8.093   0.9999    44.93
+
+[2] intact 대비 짝지은 검정 (Holm)
+------------------------------------------------------------------------------
+조건                지표              차이         t          p     p_holm
+risk_rankpow05    delay      51.7421     4.265     0.0021     0.0105
+risk_rankpow05    loss        0.0345     5.645     0.0003     0.0019
+risk_rankpow05    hop        -0.4490    -1.939     0.0845     0.3379
+risk_rankpow400   delay       2.5410     0.665     0.5226     0.7774
+risk_rankpow400   loss       -0.0010    -1.343     0.2122     0.6367
+risk_rankpow400   hop         0.0915     0.906     0.3887     0.7774
+
+[3] 판정 — 순위 몫 대 크기 몫
+------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\measure_rank_vs_value.py", line 285, in <module>
+    donor_pool = [s for s, _ in battery]
+    ^^^^^^
+  File "C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\measure_rank_vs_value.py", line 280, in main
+    if len(models) != 10:
+    ^^^^^^^^^^^^
+  File "C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\measure_rank_vs_value.py", line 217, in report
+    print("  값 다중집합은 rankonly=공여와 동일, dimshuffle=참과 동일이고")
+             ^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: ('risk_rankonly', 'delay')

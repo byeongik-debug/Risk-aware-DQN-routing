@@ -1,0 +1,67 @@
+C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\occlude_state_blocks.py:83: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state = torch.load(path, map_location=device)
+모델 10 · 공여 250 · 에피소드 200 · 시드 20261114
+
+  window5_run01 | intact 350.8 | rankonly 350.8 | rankpow50 350.8 | rankpow33 352.3 | dimshuffle 567.5 | frozen 472.2
+  window5_run02 | intact 350.8 | rankonly 350.8 | rankpow50 350.9 | rankpow33 341.9 | dimshuffle 528.5 | frozen 472.2
+  window5_run03 | intact 373.9 | rankonly 369.5 | rankpow50 372.6 | rankpow33 360.5 | dimshuffle 492.4 | frozen 598.4
+  window5_run04 | intact 381.8 | rankonly 389.3 | rankpow50 372.1 | rankpow33 355.8 | dimshuffle 486.3 | frozen 578.2
+  window5_run05 | intact 369.5 | rankonly 378.2 | rankpow50 354.9 | rankpow33 361.4 | dimshuffle 530.3 | frozen 569.6
+  factor_full_run01 | intact 350.8 | rankonly 348.1 | rankpow50 360.9 | rankpow33 389.6 | dimshuffle 528.2 | frozen 472.2
+  factor_full_run02 | intact 350.8 | rankonly 350.8 | rankpow50 357.5 | rankpow33 349.8 | dimshuffle 528.2 | frozen 472.2
+  factor_full_run03 | intact 350.8 | rankonly 350.5 | rankpow50 352.1 | rankpow33 341.5 | dimshuffle 504.7 | frozen 474.2
+  factor_full_run04 | intact 350.8 | rankonly 346.9 | rankpow50 355.3 | rankpow33 355.2 | dimshuffle 553.3 | frozen 481.9
+  factor_full_run05 | intact 381.0 | rankonly 379.9 | rankpow50 353.5 | rankpow33 360.3 | dimshuffle 506.6 | frozen 674.9
+
+==============================================================================
+[0] 예측 (숫자 보기 전에 정해 둔 것)
+------------------------------------------------------------------------------
+  순위가 값이면   rankonly ~= intact,  dimshuffle ~= frozen
+  크기가 값이면   dimshuffle ~= intact, rankonly ~= frozen
+  값 다중집합은 rankonly=공여와 동일, dimshuffle=참과 동일이고
+  순위는 rankonly=참과 rho 1, dimshuffle=무관이다 (아래 실측 rho).
+
+[1] 조건별 (모델 10개, 200 에피소드)
+------------------------------------------------------------------------------
+조건                            지연          손실         홉      rho     ms/홉
+intact             361.10±13.73      0.08079     8.002   1.0000    45.13
+risk_rankonly      361.48±16.03      0.08087     8.011   0.9970    45.13
+risk_rankpow50     358.05±8.13       0.08190     7.912   1.0000    45.25
+risk_rankpow33     356.84±13.56      0.08158     7.873   1.0000    45.32
+risk_dimshuffle    522.60±25.67      0.18895     7.036   0.0043    74.27
+risk_frozen        526.61±73.23      0.14801     8.203   0.2235    64.19
+
+[2] intact 대비 짝지은 검정 (Holm)
+------------------------------------------------------------------------------
+조건                지표              차이         t          p     p_holm
+risk_rankonly     delay       0.3853     0.278     0.7873     1.0000
+risk_rankonly     loss        0.0001     0.227     0.8253     1.0000
+risk_rankonly     hop         0.0090     0.399     0.6989     1.0000
+risk_rankpow50    delay      -3.0469    -0.856     0.4140     1.0000
+risk_rankpow50    loss        0.0011     0.970     0.3573     1.0000
+risk_rankpow50    hop        -0.0895    -0.793     0.4483     1.0000
+risk_rankpow33    delay      -4.2610    -0.755     0.4695     1.0000
+risk_rankpow33    loss        0.0008     0.438     0.6719     1.0000
+risk_rankpow33    hop        -0.1280    -0.670     0.5199     1.0000
+risk_dimshuffle   delay     161.4990    14.011     0.0000     0.0000
+risk_dimshuffle   loss        0.1082    29.291     0.0000     0.0000
+risk_dimshuffle   hop        -0.9655    -4.377     0.0018     0.0178
+risk_frozen       delay     165.5079     8.661     0.0000     0.0001
+risk_frozen       loss        0.0672    11.955     0.0000     0.0000
+risk_frozen       hop         0.2020     4.966     0.0008     0.0085
+
+[3] 판정 — 순위 몫 대 크기 몫
+------------------------------------------------------------------------------
+  delay: D_rankonly   +0.3853 · D_dimshuffle +161.4990 · D_frozen +165.5079
+        순서만 살리면 피해의 0.2% 가 남는다 (rankonly/frozen)
+        크기만 살리면 피해의 97.6% 가 남는다 (dimshuffle/frozen)
+  loss: D_rankonly   +0.0001 · D_dimshuffle   +0.1082 · D_frozen   +0.0672
+        순서만 살리면 피해의 0.1% 가 남는다 (rankonly/frozen)
+        크기만 살리면 피해의 160.9% 가 남는다 (dimshuffle/frozen)
+
+  읽는 법: rankonly 가 intact 에 가깝고 dimshuffle 이 frozen 에
+  가까우면 **순위가 값**이다. 반대면 크기가 값이다. 둘 다 frozen
+  근처면 순위와 크기가 **함께** 있어야 하는 것이고, 그때는
+  23.8.2절의 '값은 순위에 있다'를 **약화**해서 써야 한다.
+==============================================================================
+저장: C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\review_results\rank_vs_value.csv

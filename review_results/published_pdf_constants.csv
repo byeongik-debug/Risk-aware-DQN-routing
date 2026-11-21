@@ -1,0 +1,24 @@
+name,page,table,row,col,value,x0,top,kind
+t5_colx_delay,6,표 5,(열 머리말),Delay,330.48,330.48,145.25,col_x0
+t5_colx_loss,6,표 5,(열 머리말),Loss,368.04,368.04,145.25,col_x0
+t5_colx_hop,6,표 5,(열 머리말),Hop,416.89,416.89,145.25,col_x0
+t5_norisk_delay,6,표 5,NoRisk-DQN,Delay,427.2,330.48,162.53,cell
+t5_norisk_loss,6,표 5,NoRisk-DQN,Loss,0.13822,368.05,162.53,cell
+t5_norisk_hop,6,표 5,NoRisk-DQN,Hop,7.00,416.87,162.53,cell
+t5_prop_delay,6,표 5,Proposed,Delay,345.3,330.48,186.17,cell
+t5_prop_loss,6,표 5,Proposed,Loss,0.08256,368.05,186.17,cell
+t5_prop_hop,6,표 5,Proposed,Hop,7.65,416.87,186.17,cell
+t6_prop_delay,6,표 6,Risk-DQN,Delay,350.1,402.84,629.09,cell
+t6_prop_delay_sd,6,표 6,Risk-DQN,Delay (sd),1.5,419.77,641.81,cell_sd
+t6_prop_loss,6,표 6,Risk-DQN,Loss,0.08355,441.12,629.09,cell
+t6_prop_loss_sd,6,표 6,Risk-DQN,Loss (sd),0.00057,450.24,641.81,cell_sd
+t6_qos_delay,7,표 6,QoS-Model,Delay,403.7,173.16,97.01,cell
+t6_qos_delay_sd,7,표 6,QoS-Model,Delay (sd),2.4,190.08,109.85,cell_sd
+t6_qos_loss,7,표 6,QoS-Model,Loss,0.12896,211.44,97.01,cell
+t6_qos_loss_sd,7,표 6,QoS-Model,Loss (sd),0.00177,220.68,109.85,cell_sd
+t6_qos_delay_pct,7,표 6,QoS-Model,(증감률),15.3,171.96,122.69,cell_pct
+t6_qos_loss_pct,7,표 6,QoS-Model,(증감률),54.3,218.04,122.69,cell_pct
+body_t5_delay_pct,6,본문,평균Delay와PacketLoss가각각23.7%와47.4%감소,,23.7,,,body_pct
+body_t5_loss_pct,6,본문,평균Delay와PacketLoss가각각23.7%와47.4%감소,,47.4,,,body_pct
+body_t6_delay_pct,7,본문,"평균Delay를15.3%,PacketLoss를54.3%감소",,15.3,,,body_pct
+body_t6_loss_pct,7,본문,"평균Delay를15.3%,PacketLoss를54.3%감소",,54.3,,,body_pct

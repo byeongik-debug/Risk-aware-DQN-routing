@@ -1,0 +1,71 @@
+============================================================================================
+표 10/12 의 '못 채운 행' 재측정 - eval_ablation_risky 와 같은 하네스
+============================================================================================
+EVAL_SEED=20261114, 에피소드/모델=200, 지표 추출 동일
+
+[사전 탐침] 몽키패치 둘이 살아 있는지 먼저 확인한다
+--------------------------------------------------------------------------------------------
+  가중치 None      위험값 0.868769 -> 0.868769  변함없음(정상)
+  가중치 equal     위험값 0.868769 -> 0.896709  바뀜(정상)
+  가중치 temporal  위험값 0.868769 -> 0.887124  바뀜(정상)
+  risk_window=1  이력 maxlen=1 (정상)
+  risk_window=3  이력 maxlen=3 (정상)
+  risk_window=5  이력 maxlen=5 (정상)
+  risk_window=7  이력 maxlen=7 (정상)
+  risk_window=10 이력 maxlen=10 (정상)
+
+[W-Equal] 모델 5개, risk_window=5, 가중치=equal
+   run01  delay  355.785  loss 0.08470  hop 7.710  risky% 21.893  도달 100.0%
+   run02  delay  355.839  loss 0.08378  hop 7.840  risky% 21.532  도달 100.0%
+   run03  delay  362.559  loss 0.08136  hop 8.100  risky% 20.810  도달 100.0%
+   run04  delay  350.023  loss 0.08532  hop 7.710  risky% 21.893  도달 100.0%
+   run05  delay  365.678  loss 0.08177  hop 8.110  risky% 20.850  도달 100.0%
+   -> 평균 delay 357.977 +- 6.183  loss 0.08339  hop 7.894  risky% 21.395
+
+[W-Temporal] 모델 5개, risk_window=5, 가중치=temporal
+   run01  delay  368.094  loss 0.07926  hop 8.325  risky% 20.278  도달 100.0%
+   run02  delay  359.273  loss 0.08340  hop 7.855  risky% 21.490  도달 100.0%
+   run03  delay  383.931  loss 0.07807  hop 8.670  risky% 19.711  도달 100.0%
+   run04  delay  368.088  loss 0.08146  hop 8.065  risky% 20.937  도달 100.0%
+   run05  delay  390.627  loss 0.07695  hop 8.700  risky% 19.672  도달 100.0%
+   -> 평균 delay 374.003 +- 12.862  loss 0.07983  hop 8.323  risky% 20.417
+
+[K=3] 모델 10개, risk_window=3, 가중치=기본(0.35/0.30/0.15/0.10/0.10)
+   run01  delay  354.294  loss 0.08478  hop 7.710  risky% 21.893  도달 100.0%
+   run02  delay  389.693  loss 0.07744  hop 8.670  risky% 19.711  도달 100.0%
+   run03  delay  388.202  loss 0.07752  hop 8.670  risky% 19.711  도달 100.0%
+   run04  delay  354.294  loss 0.08478  hop 7.710  risky% 21.893  도달 100.0%
+   run05  delay  388.202  loss 0.07752  hop 8.670  risky% 19.711  도달 100.0%
+   run06  delay  354.294  loss 0.08478  hop 7.710  risky% 21.893  도달 100.0%
+   run07  delay  388.202  loss 0.07752  hop 8.670  risky% 19.711  도달 100.0%
+   run08  delay  388.202  loss 0.07752  hop 8.670  risky% 19.711  도달 100.0%
+   run09  delay  388.202  loss 0.07752  hop 8.670  risky% 19.711  도달 100.0%
+   run10  delay  387.585  loss 0.07761  hop 8.650  risky% 19.747  도달 100.0%
+   -> 평균 delay 378.117 +- 16.448  loss 0.07970  hop 8.380  risky% 20.369
+
+[K=5] 모델 5개, risk_window=5, 가중치=기본(0.35/0.30/0.15/0.10/0.10)
+   run01  delay  354.294  loss 0.08478  hop 7.710  risky% 21.893  도달 100.0%
+   run02  delay  354.294  loss 0.08478  hop 7.710  risky% 21.893  도달 100.0%
+   run03  delay  378.475  loss 0.07889  hop 8.360  risky% 20.275  도달 100.0%
+   run04  delay  389.577  loss 0.07722  hop 8.670  risky% 19.711  도달 100.0%
+   run05  delay  378.111  loss 0.07895  hop 8.350  risky% 20.293  도달 100.0%
+   -> 평균 delay 370.950 +- 15.888  loss 0.08092  hop 8.160  risky% 20.813
+
+[K=7] 모델 8개, risk_window=7, 가중치=기본(0.35/0.30/0.15/0.10/0.10)
+   run01  delay  379.369  loss 0.07876  hop 8.395  risky% 20.211  도달 100.0%
+   run02  delay  354.825  loss 0.08466  hop 7.725  risky% 21.859  도달 100.0%
+   run03  delay  367.489  loss 0.08164  hop 8.040  risky% 20.984  도달 100.0%
+   run04  delay  354.294  loss 0.08478  hop 7.710  risky% 21.893  도달 100.0%
+   run05  delay  354.294  loss 0.08478  hop 7.710  risky% 21.893  도달 100.0%
+   run06  delay  354.294  loss 0.08478  hop 7.710  risky% 21.893  도달 100.0%
+   run07  delay  354.294  loss 0.08478  hop 7.710  risky% 21.893  도달 100.0%
+   run08  delay  367.258  loss 0.08144  hop 8.070  risky% 20.990  도달 100.0%
+   -> 평균 delay 360.765 +- 9.534  loss 0.08320  hop 7.884  risky% 21.452
+
+[K=10] 모델 1개, risk_window=10, 가중치=기본(0.35/0.30/0.15/0.10/0.10)
+   run01  delay  354.294  loss 0.08478  hop 7.710  risky% 21.893  도달 100.0%
+   -> 평균 delay 354.294  loss 0.08478  hop 7.710  risky% 21.893
+   ** n=1 - 표준편차 없음. 표에 n 을 반드시 병기할 것. **
+
+wrote C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\review_results\table10_extra.csv
+wrote C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\review_results\table10_extra_runs.csv  (모델별 - Welch 검정용)

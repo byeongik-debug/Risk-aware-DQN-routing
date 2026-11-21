@@ -1,0 +1,34 @@
+C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\occlude_state_blocks.py:83: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state = torch.load(path, map_location=device)
+============================================================================================
+결정 전환율 — 배터리를 **모든 조건이 공유**한다
+  배터리 250 상태 · 모델 10 · 조건 4
+  조건 간 환경 차이가 **구조적으로 0** 이다(23.9.6.14 무관)
+============================================================================================
+  window5_run01        완료 (결정칸>=2 인 상태 250)
+  window5_run02        완료 (결정칸>=2 인 상태 250)
+  window5_run03        완료 (결정칸>=2 인 상태 250)
+  window5_run04        완료 (결정칸>=2 인 상태 250)
+  window5_run05        완료 (결정칸>=2 인 상태 250)
+  factor_full_run01    완료 (결정칸>=2 인 상태 250)
+  factor_full_run02    완료 (결정칸>=2 인 상태 250)
+  factor_full_run03    완료 (결정칸>=2 인 상태 250)
+  factor_full_run04    완료 (결정칸>=2 인 상태 250)
+  factor_full_run05    완료 (결정칸>=2 인 상태 250)
+
+[1] 조건별 — 모델 10개 평균
+--------------------------------------------------------------------------------------------
+조건                       flip  loc_argmin   loc_inv   loc_cos  glob_cos     피해(ms)    p_holm
+intact                  0.00%       0.00%   0.0000    1.0000    1.0000          -         -
+risk_shuf16             9.64%      28.80%   0.1844    0.8990    0.8509      +0.99    1.0000
+risk_shuf20            12.68%      35.20%   0.2351    0.8683    0.8155          -         -
+risk_shuf25            16.40%      42.80%   0.2689    0.8556    0.7679     +21.60    0.0033
+
+  [주의] `DF_CONDS` 로 조건을 **바꿔서** 돌렸다. [2]~[5]
+  는 기본 11조건(단조 4개·배율 2개·frozen·pow05n)을 이름
+  으로 찾으므로 **건너뛴다**. 이 실행은 [1] 의 기술 통계와
+  per_model CSV 만 낸다 — 23.9.6.16 이 인용하는 검정값은
+  **기본 실행에서만** 나온다(족 크기가 조건 수에 걸린다).
+
+저장: C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\review_results\decision_flip_thr.csv
+============================================================================================

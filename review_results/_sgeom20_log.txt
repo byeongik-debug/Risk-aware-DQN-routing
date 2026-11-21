@@ -1,0 +1,69 @@
+C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\occlude_state_blocks.py:83: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state = torch.load(path, map_location=device)
+============================================================================================
+부분 섞기 기하 — 롤아웃 없이 k 를 고른다
+  배터리 상태 250 · 추출 2000 · 블록 칸 50
+============================================================================================
+
+[1] 족 전체 — 노름비가 1.0000 인지가 설계의 전제다
+--------------------------------------------------------------------------------------------
+조건                       k       cos   cos_dev       rho   rho_dev       노름비     움직임%
+risk_shuf04              4    0.9716    0.0284    0.9409    0.0591    1.0000     5.8%
+risk_shuf08              8    0.9326    0.0674    0.8580    0.1420    1.0000    13.7%
+risk_shuf12             12    0.8926    0.1074    0.7760    0.2240    1.0000    21.6%
+risk_shuf16             16    0.8543    0.1457    0.6929    0.3071    1.0000    29.2%
+risk_shuf20             20    0.8160    0.1840    0.6122    0.3878    1.0000    37.1%
+risk_shuf24             24    0.7783    0.2217    0.5326    0.4674    1.0000    44.8%
+risk_shuf25             25    0.7694    0.2306    0.5133    0.4867    1.0000    46.8%
+risk_shuf26             26    0.7589    0.2411    0.4930    0.5070    1.0000    48.7%
+risk_shuf27             27    0.7497    0.2503    0.4755    0.5245    1.0000    50.7%
+risk_shuf32             32    0.7002    0.2998    0.3631    0.6369    1.0000    60.5%
+risk_dimshuffle         50    0.5252    0.4748    0.0035    0.9965    1.0000    95.7%
+risk_rankpow05n               0.7662    0.2338    1.0000    0.0000    1.0000   100.0%
+risk_rankpow05                0.7662    0.2338    1.0000    0.0000    1.8409    93.7%
+risk_frozen                   0.7636    0.2364    0.2495    0.7505    1.0005    92.8%
+
+  섞기 족 전부 노름비 1.000000 (값 다중집합 정확히 보존)
+  → `norm_dev` 가 **정확히 0** 이라 노름 축이 고정된다.
+
+[2] k 고르기 — 목표는 risk_rankpow05n 의 cos_dev 와 같아지는 k
+--------------------------------------------------------------------------------------------
+  목표 cos_dev = 0.2338 (risk_rankpow05n, rho_dev 0.0000)
+    risk_shuf04      k= 4 cos_dev 0.0284 (차 0.2054) · rho_dev 0.0591
+    risk_shuf08      k= 8 cos_dev 0.0674 (차 0.1664) · rho_dev 0.1420
+    risk_shuf12      k=12 cos_dev 0.1074 (차 0.1265) · rho_dev 0.2240
+    risk_shuf16      k=16 cos_dev 0.1457 (차 0.0881) · rho_dev 0.3071
+    risk_shuf20      k=20 cos_dev 0.1840 (차 0.0498) · rho_dev 0.3878
+    risk_shuf24      k=24 cos_dev 0.2217 (차 0.0121) · rho_dev 0.4674
+    risk_shuf25      k=25 cos_dev 0.2306 (차 0.0033) · rho_dev 0.4867
+    risk_shuf26      k=26 cos_dev 0.2411 (차 0.0073) · rho_dev 0.5070
+    risk_shuf27      k=27 cos_dev 0.2503 (차 0.0165) · rho_dev 0.5245
+    risk_shuf32      k=32 cos_dev 0.2998 (차 0.0660) · rho_dev 0.6369
+
+  → 가장 가까운 조건 **risk_shuf25** (k=25, cos_dev 차 0.0033)
+    그 조건의 rho_dev 0.4867 대 risk_rankpow05n 의 0.0000
+    l1 0.135761 대 0.268481 · 노름비 1.0000 대 1.0000
+
+[3] 이 족이 기존 조건과 **다른 궤적**인지
+--------------------------------------------------------------------------------------------
+  pow 족은 단조변환이라 rho_dev=0 이고 코사인만 움직인다.
+  섞기 족은 둘이 **같이** 움직인다. 그래서 둘을 겹쳐 놓으면
+  같은 코사인에서 rho_dev 만 다른 쌍이 생긴다.
+조건                     cos_dev   rho_dev rho_dev/cos_dev
+risk_shuf04             0.0284    0.0591        2.077
+risk_shuf08             0.0674    0.1420        2.106
+risk_shuf12             0.1074    0.2240        2.087
+risk_shuf16             0.1457    0.3071        2.108
+risk_shuf20             0.1840    0.3878        2.107
+risk_shuf24             0.2217    0.4674        2.108
+risk_shuf25             0.2306    0.4867        2.111
+risk_shuf26             0.2411    0.5070        2.103
+risk_shuf27             0.2503    0.5245        2.095
+risk_shuf32             0.2998    0.6369        2.124
+risk_dimshuffle         0.4748    0.9965        2.099
+risk_rankpow05n         0.2338    0.0000        0.000
+risk_rankpow05          0.2338    0.0000        0.000
+risk_frozen             0.2364    0.7505        3.174
+
+저장: C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\review_results\shuffle_geometry.csv
+============================================================================================

@@ -1,0 +1,11 @@
+label,arm,run,selfcheck_at_runtime,selfcheck_posthoc,max_abs_diff,compared_against,note
+Full-run01,Full,1,어긋남,일치(사후),0,table10_factor_runs.csv,실행 시점 비교 대상이 3에피소드 스모크였다
+Full-run02,Full,2,어긋남,일치(사후),0,table10_factor_runs.csv,실행 시점 비교 대상이 3에피소드 스모크였다
+Full-run03,Full,3,어긋남,일치(사후),0,table10_factor_runs.csv,실행 시점 비교 대상이 3에피소드 스모크였다
+Full-run04,Full,4,어긋남,일치(사후),0,table10_factor_runs.csv,실행 시점 비교 대상이 3에피소드 스모크였다
+Full-run05,Full,5,어긋남,일치(사후),0,table10_factor_runs.csv,실행 시점 비교 대상이 3에피소드 스모크였다
+-Cong-run03,-Cong,3,기록없음,일치(사후),0,table10_factor_runs.csv,실행 시점에 이미 200에피소드 최종본이었다
+K5-run01,K=5,1,일치,일치(사후),0,table10_extra_runs.csv,실행 시점에 이미 200에피소드 최종본이었다
+K10-run01,K=10,1,일치,일치(사후),0,table10_extra_runs.csv,실행 시점에 이미 200에피소드 최종본이었다
+-Util-run01*,-Util,1,기록없음,일치(사후),0,table10_factor_runs.csv,실행 시점에 이미 200에피소드 최종본이었다
+Full-run05*,Full,5,어긋남,일치(사후),0,table10_factor_runs.csv,실행 시점 비교 대상이 3에피소드 스모크였다

@@ -1,0 +1,109 @@
+C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\occlude_state_blocks.py:83: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state = torch.load(path, map_location=device)
+모델 10 · 에피소드 200 · 조건 intact,risk_rankpow05,risk_rankpow05n,risk_scale184,risk_scale054,risk_frozen,risk_dimshuffle · 시드 20261114
+
+모델 (intact)              홉     고리뺀길이     재방문스텝      재방문%     최단경로%       도달
+window5_run01        7.685     7.685     0.000      0.0%      0.0%   200/200
+window5_run02        7.685     7.685     0.000      0.0%      0.0%   200/200
+window5_run03        8.375     8.375     0.000      0.0%      0.0%   200/200
+window5_run04        8.660     8.660     0.000      0.0%      0.0%   200/200
+window5_run05        8.210     8.210     0.000      0.0%      0.0%   200/200
+factor_full_run01    7.685     7.685     0.000      0.0%      0.0%   200/200
+factor_full_run02    7.685     7.685     0.000      0.0%      0.0%   200/200
+factor_full_run03    7.685     7.685     0.000      0.0%      0.0%   200/200
+factor_full_run04    7.685     7.685     0.000      0.0%      0.0%   200/200
+factor_full_run05    8.660     8.660     0.000      0.0%      0.0%   200/200
+  평균                 8.002     8.002     0.000      0.0%      0.0%
+
+모델 (risk_rankpow05)       홉     고리뺀길이     재방문스텝      재방문%     최단경로%       도달
+window5_run01        8.200     8.200     0.000      0.0%      0.0%   200/200
+window5_run02        7.040     7.040     0.000      0.0%      3.5%   200/200
+window5_run03        7.385     7.385     0.000      0.0%      0.0%   200/200
+window5_run04        7.000     7.000     0.000      0.0%      0.0%   200/200
+window5_run05        7.030     7.030     0.000      0.0%      0.0%   200/200
+factor_full_run01    7.790     7.790     0.000      0.0%      0.0%   200/200
+factor_full_run02    7.000     7.000     0.000      0.0%      0.0%   200/200
+factor_full_run03    7.095     7.095     0.000      0.0%      0.0%   200/200
+factor_full_run04    7.985     7.985     0.000      0.0%      0.0%   200/200
+factor_full_run05    9.000     8.725     0.275     27.5%      0.0%   200/200
+  평균                 7.553     7.525     0.028      2.8%      0.4%
+
+모델 (risk_rankpow05n)       홉     고리뺀길이     재방문스텝      재방문%     최단경로%       도달
+window5_run01        7.790     7.790     0.000      0.0%      0.0%   200/200
+window5_run02        7.035     7.035     0.000      0.0%      7.0%   200/200
+window5_run03        6.600     6.600     0.000      0.0%     40.0%   200/200
+window5_run04        6.400     6.400     0.000      0.0%     80.0%   200/200
+window5_run05        7.000     7.000     0.000      0.0%      0.0%   200/200
+factor_full_run01    7.545     7.545     0.000      0.0%      0.0%   200/200
+factor_full_run02    6.155     6.155     0.000      0.0%     84.5%   200/200
+factor_full_run03    7.005     7.005     0.000      0.0%      0.0%   200/200
+factor_full_run04    7.380     7.380     0.000      0.0%      0.0%   200/200
+factor_full_run05    6.610     6.610     0.000      0.0%     39.0%   200/200
+  평균                 6.952     6.952     0.000      0.0%     25.1%
+
+모델 (risk_scale184)       홉     고리뺀길이     재방문스텝      재방문%     최단경로%       도달
+window5_run01        7.685     7.685     0.000      0.0%      0.0%   200/200
+window5_run02        7.685     7.685     0.000      0.0%      0.0%   200/200
+window5_run03        7.825     7.825     0.000      0.0%      0.0%   200/200
+window5_run04        7.685     7.685     0.000      0.0%      0.0%   200/200
+window5_run05        7.685     7.685     0.000      0.0%      0.0%   200/200
+factor_full_run01    7.725     7.725     0.000      0.0%      0.0%   200/200
+factor_full_run02    7.685     7.685     0.000      0.0%      0.0%   200/200
+factor_full_run03    7.685     7.685     0.000      0.0%      0.0%   200/200
+factor_full_run04    7.685     7.685     0.000      0.0%      0.0%   200/200
+factor_full_run05    7.685     7.685     0.000      0.0%      0.0%   200/200
+  평균                 7.703     7.703     0.000      0.0%      0.0%
+
+모델 (risk_scale054)       홉     고리뺀길이     재방문스텝      재방문%     최단경로%       도달
+window5_run01        7.835     7.835     0.000      0.0%      0.0%   200/200
+window5_run02        7.030     7.030     0.000      0.0%     32.0%   200/200
+window5_run03        7.685     7.685     0.000      0.0%      0.0%   200/200
+window5_run04        7.280     7.280     0.000      0.0%     36.0%   200/200
+window5_run05        7.300     7.300     0.000      0.0%      0.0%   200/200
+factor_full_run01    7.360     7.360     0.000      0.0%      0.0%   200/200
+factor_full_run02    7.000     7.000     0.000      0.0%      0.0%   200/200
+factor_full_run03    7.320     7.320     0.000      0.0%      0.0%   200/200
+factor_full_run04    7.345     7.345     0.000      0.0%      0.0%   200/200
+factor_full_run05    7.140     7.140     0.000      0.0%      0.0%   200/200
+  평균                 7.330     7.330     0.000      0.0%      6.8%
+
+모델 (risk_frozen)         홉     고리뺀길이     재방문스텝      재방문%     최단경로%       도달
+window5_run01        7.785     7.785     0.000      0.0%      0.0%   200/200
+window5_run02        7.785     7.785     0.000      0.0%      0.0%   200/200
+window5_run03        8.735     8.735     0.000      0.0%      0.0%   200/200
+window5_run04        9.015     9.015     0.000      0.0%      0.0%   200/200
+window5_run05        8.605     8.605     0.000      0.0%      0.0%   200/200
+factor_full_run01    7.785     7.785     0.000      0.0%      0.0%   200/200
+factor_full_run02    7.785     7.785     0.000      0.0%      0.0%   200/200
+factor_full_run03    7.785     7.785     0.000      0.0%      0.0%   200/200
+factor_full_run04    7.815     7.815     0.000      0.0%      0.0%   200/200
+factor_full_run05    8.940     8.940     0.000      0.0%      0.0%   200/200
+  평균                 8.203     8.203     0.000      0.0%      0.0%
+
+모델 (risk_dimshuffle)       홉     고리뺀길이     재방문스텝      재방문%     최단경로%       도달
+window5_run01        7.530     7.530     0.000      0.0%     23.5%   200/200
+window5_run02        6.920     6.910     0.010      1.0%     40.5%   200/200
+window5_run03        6.920     6.920     0.000      0.0%     42.0%   200/200
+window5_run04        6.615     6.610     0.005      0.5%     54.5%   200/200
+window5_run05        6.850     6.850     0.000      0.0%     38.0%   200/200
+factor_full_run01    7.765     7.760     0.005      0.5%     12.0%   200/200
+factor_full_run02    6.680     6.675     0.005      0.5%     60.5%   200/200
+factor_full_run03    6.890     6.890     0.000      0.0%     28.5%   200/200
+factor_full_run04    7.305     7.305     0.000      0.0%     32.0%   200/200
+factor_full_run05    6.885     6.885     0.000      0.0%     44.0%   200/200
+  평균                 7.036     7.033     0.003      0.2%     37.5%
+
+======================================================================================
+읽는 법
+--------------------------------------------------------------------------------------
+  위상 최단경로 길이 평균 = 6.000 홉 (에피소드마다 다시 계산)
+  · '재방문%' 가 0 이면 hop_count 는 순수한 경로 길이다 —
+    23.9 의 '짧고 나쁜 경로' 서술을 그대로 써도 된다.
+  · 0 이 아니면 홉 차이의 일부는 **고리**다. 그때는 '고리 뺀
+    길이' 쪽으로 다시 말해야 하고, 홉 비교는 두 숫자를 같이
+    인용해야 한다.
+  · '최단경로%' 는 품질이 아니라 **탐색 폭** 지표다. 100%면
+    위험 정보를 안 쓰고 최단경로만 따라간 것이다
+    (path_diversity 의 risk_zero 가 그랬다).
+======================================================================================
+저장: C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\review_results\revisit_rate.csv

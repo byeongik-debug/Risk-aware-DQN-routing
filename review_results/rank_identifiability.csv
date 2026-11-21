@@ -1,0 +1,38 @@
+block,condition,v1,v2,v3,v4,v5,v6,v7,note
+m2_exhaustive,,2007,2007,2007,0,0,20,30,
+l1_range_per_state,risk_shuf16,0.068082,0.123858,0.185579,0,19,160000,147501,일부밖
+l1_range_per_state,risk_shuf25,0.114509,0.168960,0.241850,0,8,160000,159100,일부밖
+l1_range_per_state,risk_shuf32,0.138832,0.185423,0.207992,0,4,160000,159763,일부밖
+norm_room_ub,risk_shuf16,2.448806,0.118937,0,20,40.0,,,같은지지로는 코사인 불가
+norm_room_ub,risk_shuf25,3.497066,0.294445,0,20,40.0,,,같은지지로는 코사인 불가
+norm_room_ub,risk_shuf32,4.514624,0.384092,0,20,40.0,,,같은지지로는 코사인 불가
+mid_support,risk_shuf16_m33,0.081328,,,12,0,0,20,없음
+mid_support,risk_shuf16_m36,0.081517,,,12,0,0,20,없음
+mid_support,risk_shuf16_m40,0.080949,,,19,0,0,20,없음
+mid_support,risk_shuf16_m44,0.082257,,,20,0,0,20,없음
+mid_support,risk_shuf16_m49,0.085364,0.172874,0.181264,20,0,0,20,없음
+mid_support,risk_shuf25_m33,0.119273,,,4,0,0,20,없음
+mid_support,risk_shuf25_m36,0.136372,,,7,0,0,20,없음
+mid_support,risk_shuf25_m40,0.134552,,,12,0,0,20,없음
+mid_support,risk_shuf25_m44,0.145308,,,20,0,0,20,없음
+mid_support,risk_shuf25_m49,0.133808,0.236160,0.236160,20,0,0,20,없음
+mid_support,risk_shuf32_m33,0.167578,,,1,0,0,20,없음
+mid_support,risk_shuf32_m36,0.172383,,,4,1,0,20,없음
+mid_support,risk_shuf32_m40,0.184640,,,9,0,0,20,없음
+mid_support,risk_shuf32_m44,0.166801,,,20,1,0,20,없음
+mid_support,risk_shuf32_m49,0.179551,0.223549,0.225632,20,0,0,20,없음
+contig_support,risk_shuf16_m33,0.096108,0.150449,0.151295,20,0,0,20,없음(해 77개)
+contig_support,risk_shuf16_m36,0.089304,0.152869,0.155761,20,0,0,20,없음(해 170개)
+contig_support,risk_shuf16_m40,0.088373,0.173646,0.178403,20,0,0,20,없음(해 163개)
+contig_support,risk_shuf16_m44,0.071560,0.174567,0.183986,20,0,0,20,없음(해 130개)
+contig_support,risk_shuf16_m49,0.085298,0.171201,0.178902,20,0,0,20,없음(해 39개)
+contig_support,risk_shuf25_m33,0.137716,,,20,0,0,20,없음(해 0개)
+contig_support,risk_shuf25_m36,0.137915,0.187893,0.188650,20,0,0,20,없음(해 8개)
+contig_support,risk_shuf25_m40,0.148162,0.182337,0.185300,20,0,0,20,없음(해 22개)
+contig_support,risk_shuf25_m44,0.154322,0.194307,0.199407,20,0,0,20,없음(해 12개)
+contig_support,risk_shuf25_m49,0.137242,0.213535,0.213535,20,0,0,20,없음(해 4개)
+contig_support,risk_shuf32_m33,0.168688,,,20,0,0,20,없음(해 0개)
+contig_support,risk_shuf32_m36,0.171767,,,20,0,0,20,없음(해 0개)
+contig_support,risk_shuf32_m40,0.162926,,,20,0,0,20,없음(해 0개)
+contig_support,risk_shuf32_m44,0.184294,0.233891,0.233891,20,0,0,20,없음(해 1개)
+contig_support,risk_shuf32_m49,0.177426,0.241441,0.241605,20,0,0,20,없음(해 2개)

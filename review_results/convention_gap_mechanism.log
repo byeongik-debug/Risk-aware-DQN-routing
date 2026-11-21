@@ -1,0 +1,106 @@
+  normal      ospf_bw      완료
+  normal      ospf_delay   완료
+  normal      qos          완료
+  congestion  ospf_bw      완료
+  congestion  ospf_delay   완료
+  congestion  qos          완료
+  unstable    ospf_bw      완료
+  unstable    ospf_delay   완료
+  unstable    qos          완료
+  dynamic     ospf_bw      완료
+  dynamic     ospf_delay   완료
+  dynamic     qos          완료
+  normal      risk_dqn     완료
+  congestion  risk_dqn     완료
+  unstable    risk_dqn     완료
+  dynamic     risk_dqn     완료
+
+저장: C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\review_results\convention_gap_mechanism.csv (80행)
+저장: C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\review_results\convention_gap_links.csv (38행)
+
+==============================================================================
+V1 - 링크 기록을 다시 더한 값 대 하네스 채점값 (에피소드별 최대 절대차)
+  walk_realized 0.000e+00 · walk_final 0.000e+00  -> 같은 간선·같은 값을 봤다
+
+V2 - 커밋된 scoring_convention.csv 재현 (compounded, 편차 %)
+  최대 편차 0.0000%  (허용 0.05%)  -> 재현
+
+==============================================================================
+[H_den] 상대 이동폭 = -(생존율 상대증가 D) x (압축계수 S/C) -- 항등식
+scenario   policy         rel %      D % compress  -D*comp      hop
+normal     ospf_bw        -0.18    +0.01  17.7033    -0.19    6.027
+normal     ospf_delay     -0.52    +0.03  17.2550    -0.53    6.057
+normal     qos            -0.36    +0.02  16.9829    -0.36    6.385
+normal     risk_dqn       -0.41    +0.02  18.4563    -0.41    6.000
+
+congestion ospf_bw        -0.16    +1.44   0.1089    -0.16    6.006
+congestion ospf_delay     -0.16    +0.10   1.5544    -0.16    7.568
+congestion qos            -0.17    +0.11   1.5200    -0.17    8.205
+congestion risk_dqn       -0.11    +0.07   1.5973    -0.11    7.000
+
+unstable   ospf_bw        -5.10   +26.45   0.1928    -5.10    6.010
+unstable   ospf_delay    -26.11   +13.80   1.8918   -26.11    7.576
+unstable   qos           -28.58   +14.87   1.9222   -28.58    8.127
+unstable   risk_dqn      -26.33   +12.53   2.1006   -26.33    7.000
+
+dynamic    ospf_bw        -0.00    +0.01   0.1855    -0.00    6.044
+dynamic    ospf_delay     -0.03    +0.04   0.8779    -0.03    7.236
+dynamic    qos            +0.00    -0.00   0.8845    +0.00    7.493
+dynamic    risk_dqn       +0.00    -0.00   0.8718    +0.00    7.677
+
+==============================================================================
+[H_ceil] 링크 단위 - 지날 때 천장이면 두 규약이 같은 값을 주는가
+scenario   policy          천장%   gap(천장)   gap(열림)  0gap(천장)%    경과step
+normal     ospf_bw        0.00      +nan  +0.00002        nan     2.516
+normal     ospf_delay     0.00      +nan  +0.00005        nan     2.533
+normal     qos            0.00      +nan  +0.00003        nan     2.725
+normal     risk_dqn       0.00      +nan  +0.00004        nan     2.500
+
+congestion ospf_bw       83.95  +0.00000  +0.00835     100.00     2.503
+congestion ospf_delay    12.69  +0.00000  +0.00011     100.00     3.306
+congestion qos           11.69  +0.00000  +0.00012     100.00     3.625
+congestion risk_dqn      13.87  +0.00000  +0.00009     100.00     3.000
+
+unstable   ospf_bw       24.46  -0.00039  +0.03764      91.22     2.506
+unstable   ospf_delay     0.49  -0.00028  +0.01306      91.89     3.310
+unstable   qos            0.09  -0.00071  +0.01305      71.43     3.588
+unstable   risk_dqn       0.00      +nan  +0.01283        nan     3.000
+
+dynamic    ospf_bw       79.43  +0.00000  +0.00005     100.00     2.525
+dynamic    ospf_delay    23.15  +0.00000  +0.00006     100.00     3.131
+dynamic    qos           22.18  +0.00000  -0.00000     100.00     3.273
+dynamic    risk_dqn      21.84  +0.00000  +0.00000     100.00     3.353
+
+==============================================================================
+[H_len] 경과 스텝·혼잡이 링크 gap 을 얼마나 가르는가 (unstable)
+policy       ceil  cong      링크%  loss(지남)   loss(끝)       gap    경과step
+ospf_bw         0     0    54.06    0.1803    0.2124  +0.03207     2.463
+ospf_bw         0     1    21.48    0.2408    0.2925  +0.05167     3.620
+ospf_bw         1     0    10.87    0.3500    0.3496  -0.00040     1.672
+ospf_bw         1     1    13.59    0.3500    0.3496  -0.00039     1.584
+ospf_delay      0     0    93.23    0.0239    0.0313  +0.00741     3.104
+ospf_delay      0     1     6.28    0.1931    0.2901  +0.09700     6.536
+ospf_delay      1     0     0.22    0.3500    0.3494  -0.00063     1.118
+ospf_delay      1     1     0.26    0.3500    0.3499  -0.00006     1.200
+qos             0     0    94.28    0.0227    0.0301  +0.00745     3.378
+qos             0     1     5.64    0.1845    0.2912  +0.10670     7.142
+qos             1     0     0.05    0.3500    0.3495  -0.00050     1.000
+qos             1     1     0.04    0.3500    0.3485  -0.00145     1.000
+risk_dqn        0     0    93.33    0.0240    0.0314  +0.00744     2.786
+risk_dqn        0     1     6.67    0.1981    0.2863  +0.08823     6.000
+
+==============================================================================
+[검정] ospf_bw 의 D 가 나머지 셋과 다른가 (Welch, Holm 족 6 = 2시나리오 x 3대조)
+  unstable: ospf_bw vs ospf_delay  26.451±0.886 대  13.802±0.142  p=0.0000 p_holm=0.0000 유의
+  unstable: ospf_bw vs qos        26.451±0.886 대  14.869±0.377  p=0.0000 p_holm=0.0000 유의
+  unstable: ospf_bw vs risk_dqn   26.451±0.886 대  12.535±0.201  p=0.0000 p_holm=0.0000 유의
+  congestion: ospf_bw vs ospf_delay   1.444±0.186 대   0.103±0.044  p=0.0000 p_holm=0.0001 유의
+  congestion: ospf_bw vs qos       1.444±0.186 대   0.111±0.053  p=0.0000 p_holm=0.0001 유의
+  congestion: ospf_bw vs risk_dqn   1.444±0.186 대   0.068±0.027  p=0.0001 p_holm=0.0001 유의
+
+[검정] 천장 링크의 gap 이 열린 링크보다 작은가 (Welch, Holm 족 4)
+  normal       천장 +nan±nan 대 열림 +0.00003±0.00004  p=n/a p_holm=1.0000
+  congestion   천장 +0.00000±0.00000 대 열림 +0.00217±0.00369  p=0.0164 p_holm=0.0491
+  unstable     천장 -0.00042±0.00057 대 열림 +0.01915±0.01096  p=0.0000 p_holm=0.0000
+  dynamic      천장 +0.00000±0.00000 대 열림 +0.00003±0.00006  p=0.0518 p_holm=0.1036
+exit=0

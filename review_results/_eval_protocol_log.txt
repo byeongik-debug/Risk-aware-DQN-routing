@@ -1,0 +1,95 @@
+C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\compare_eval_protocols.py:77: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state = torch.load(path, map_location=device)
+체크포인트 입출력 차원: 125 -> 25
+정책 동일성 확인: 23 스텝 중 불일치 0
+  window5      run01 select seed=20261114 delay= 345.228 loss=0.08243 hop=7.635 succ=100.0% (40s)
+  window5      run01 select seed=20261115 delay= 348.126 loss=0.08331 hop=7.665 succ=100.0% (81s)
+  window5      run01 inline seed=20261114 delay= 350.791 loss=0.08409 hop=7.685 succ=100.0% (122s)
+  window5      run01 inline seed=20261115 delay= 353.708 loss=0.08476 hop=7.710 succ=100.0% (162s)
+  window5      run02 select seed=20261114 delay= 345.228 loss=0.08243 hop=7.635 succ=100.0% (203s)
+  window5      run02 select seed=20261115 delay= 348.126 loss=0.08331 hop=7.665 succ=100.0% (244s)
+  window5      run02 inline seed=20261114 delay= 350.791 loss=0.08409 hop=7.685 succ=100.0% (284s)
+  window5      run02 inline seed=20261115 delay= 353.708 loss=0.08476 hop=7.710 succ=100.0% (326s)
+  window5      run03 select seed=20261114 delay= 382.871 loss=0.07884 hop=8.455 succ=100.0% (368s)
+  window5      run03 select seed=20261115 delay= 366.320 loss=0.07712 hop=8.200 succ=100.0% (409s)
+  window5      run03 inline seed=20261114 delay= 373.922 loss=0.07647 hop=8.375 succ=100.0% (451s)
+  window5      run03 inline seed=20261115 delay= 371.408 loss=0.07534 hop=8.370 succ=100.0% (493s)
+  window5      run04 select seed=20261114 delay= 381.361 loss=0.07575 hop=8.560 succ=100.0% (535s)
+  window5      run04 select seed=20261115 delay= 390.571 loss=0.07446 hop=8.820 succ=100.0% (578s)
+  window5      run04 inline seed=20261114 delay= 381.812 loss=0.07419 hop=8.660 succ=100.0% (619s)
+  window5      run04 inline seed=20261115 delay= 394.802 loss=0.07506 hop=8.885 succ=100.0% (660s)
+  window5      run05 select seed=20261114 delay= 373.817 loss=0.07793 hop=8.295 succ=100.0% (700s)
+  window5      run05 select seed=20261115 delay= 363.552 loss=0.07564 hop=8.210 succ=100.0% (740s)
+  window5      run05 inline seed=20261114 delay= 369.510 loss=0.07815 hop=8.210 succ=100.0% (781s)
+  window5      run05 inline seed=20261115 delay= 374.470 loss=0.07695 hop=8.375 succ=100.0% (826s)
+  factor_full  run01 select seed=20261114 delay= 345.228 loss=0.08243 hop=7.635 succ=100.0% (868s)
+  factor_full  run01 select seed=20261115 delay= 348.126 loss=0.08331 hop=7.665 succ=100.0% (908s)
+  factor_full  run01 inline seed=20261114 delay= 350.791 loss=0.08409 hop=7.685 succ=100.0% (948s)
+  factor_full  run01 inline seed=20261115 delay= 353.708 loss=0.08476 hop=7.710 succ=100.0% (989s)
+  factor_full  run02 select seed=20261114 delay= 345.228 loss=0.08243 hop=7.635 succ=100.0% (1030s)
+  factor_full  run02 select seed=20261115 delay= 348.126 loss=0.08331 hop=7.665 succ=100.0% (1072s)
+  factor_full  run02 inline seed=20261114 delay= 350.791 loss=0.08409 hop=7.685 succ=100.0% (1114s)
+  factor_full  run02 inline seed=20261115 delay= 353.708 loss=0.08476 hop=7.710 succ=100.0% (1160s)
+  factor_full  run03 select seed=20261114 delay= 345.228 loss=0.08243 hop=7.635 succ=100.0% (1205s)
+  factor_full  run03 select seed=20261115 delay= 348.126 loss=0.08331 hop=7.665 succ=100.0% (1248s)
+  factor_full  run03 inline seed=20261114 delay= 350.791 loss=0.08409 hop=7.685 succ=100.0% (1289s)
+  factor_full  run03 inline seed=20261115 delay= 353.708 loss=0.08476 hop=7.710 succ=100.0% (1331s)
+  factor_full  run04 select seed=20261114 delay= 345.228 loss=0.08243 hop=7.635 succ=100.0% (1371s)
+  factor_full  run04 select seed=20261115 delay= 348.126 loss=0.08331 hop=7.665 succ=100.0% (1412s)
+  factor_full  run04 inline seed=20261114 delay= 350.791 loss=0.08409 hop=7.685 succ=100.0% (1452s)
+  factor_full  run04 inline seed=20261115 delay= 353.708 loss=0.08476 hop=7.710 succ=100.0% (1496s)
+  factor_full  run05 select seed=20261114 delay= 380.498 loss=0.07625 hop=8.560 succ=100.0% (1541s)
+  factor_full  run05 select seed=20261115 delay= 389.262 loss=0.07490 hop=8.820 succ=100.0% (1584s)
+  factor_full  run05 inline seed=20261114 delay= 380.987 loss=0.07454 hop=8.660 succ=100.0% (1631s)
+  factor_full  run05 inline seed=20261115 delay= 393.277 loss=0.07559 hop=8.885 succ=100.0% (1674s)
+저장: C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\review_results\eval_protocol_compare.csv
+
+[1] 평가 에피소드 열이 실제로 갈리는가 (워밍업 직후 환경 지문)
+    1화 동일? True  (스텝 전에는 RNG 소비가 같으므로 동일해야 한다)
+    200개 에피소드 중 지문이 다른 것: 199개
+    처음 갈리는 에피소드: 2
+
+[2] 평가기 효과 — 같은 모델을 두 평가기로 (대응, n=10)
+    metric        select       inline   paired d
+    delay      358.99134    361.09755   -2.10620  (t=-1.289, p=0.2296)
+    loss         0.08034      0.08079   -0.00045  (t=-0.852, p=0.4162)
+    hop          7.96800      8.00150   -0.03350  (t=-1.643, p=0.1347)
+
+[3] 학습 효과 — 평가기를 고정하고 두 팔을 (Welch, n=5 대 5)
+    평가기 select
+      delay   window5= 365.7010±19.0016  factor_full= 352.2817±15.7733  diff=+13.4193  p=0.2601   MDE=25.6187
+      loss    window5=   0.0795±0.0029  factor_full=   0.0812±0.0028  diff= -0.0017  p=0.3676   MDE=0.0041
+      hop     window5=   8.1160±0.4491  factor_full=   7.8200±0.4137  diff= +0.2960  p=0.3102   MDE=0.6304
+    평가기 inline
+      delay   window5= 365.3650±14.0153  factor_full= 356.8301±13.5043  diff= +8.5350  p=0.3556   MDE=20.0762
+      loss    window5=   0.0794±0.0045  factor_full=   0.0822±0.0043  diff= -0.0028  p=0.3461   MDE=0.0064
+      hop     window5=   8.1230±0.4310  factor_full=   7.8800±0.4360  diff= +0.2430  p=0.4013   MDE=0.6323
+
+[4] 발표된 값과의 대조 (dynamic delay)
+    발표/재학습 격차: 368.7961 - 359.1636 = +9.6325 ms
+    평가기 select 고정시 팔 격차: +13.4193 ms (발표 격차의 139%)
+    평가기 inline 고정시 팔 격차:  +8.5350 ms (발표 격차의 89%)
+    팔 window5      고정시 평가기 격차:  +0.3360 ms (발표 격차의 3%)
+    팔 factor_full  고정시 평가기 격차:  -4.5484 ms (발표 격차의 -47%)
+
+[5] 재학습 Full 의 run05 단독 영향 (leave-one-out)
+    select 전체 352.282 -> run05 제외 345.228 (-7.054 ms)
+    inline 전체 356.830 -> run05 제외 350.791 (-6.039 ms)
+
+[6] 평가 시드 효과 — 같은 모델, 같은 평가기, 시드만 다르게
+    select delay   모델별 시드간 범위 평균 6.21829 (최대 16.55128)
+    select loss    모델별 시드간 범위 평균 0.00120 (최대 0.00229)
+    select hop     모델별 시드간 범위 평균 0.10400 (최대 0.26000)
+    inline delay   모델별 시드간 범위 평균 5.02552 (최대 12.99053)
+    inline loss    모델별 시드간 범위 평균 0.00082 (최대 0.00120)
+    inline hop     모델별 시드간 범위 평균 0.07700 (최대 0.22500)
+
+[7] 체크포인트 10개가 만드는 서로 다른 행동 부류의 수
+    select seed=20261114: 모델 10개 -> 서로 다른 결과 5개
+        delay= 345.2277 hop=7.635  <- fac_r01, fac_r02, fac_r03, fac_r04, win_r01, win_r02
+    select seed=20261115: 모델 10개 -> 서로 다른 결과 5개
+        delay= 348.1265 hop=7.665  <- fac_r01, fac_r02, fac_r03, fac_r04, win_r01, win_r02
+    inline seed=20261114: 모델 10개 -> 서로 다른 결과 5개
+        delay= 350.7908 hop=7.685  <- fac_r01, fac_r02, fac_r03, fac_r04, win_r01, win_r02
+    inline seed=20261115: 모델 10개 -> 서로 다른 결과 5개
+        delay= 353.7077 hop=7.710  <- fac_r01, fac_r02, fac_r03, fac_r04, win_r01, win_r02

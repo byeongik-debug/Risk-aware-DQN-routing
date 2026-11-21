@@ -1,0 +1,78 @@
+diagnostic,subject,metric,value
+congestion_stability,state_changes,mean_per_link,0.0000000000
+congestion_stability,state_changes,pct_never_changing,100.0000000000
+congestion_stability,clean_to_congested_transitions,count,0.0000000000
+variance_decomposition,risk,sd_within_link_over_time,0.0225032907
+variance_decomposition,risk,sd_across_links,0.2718275001
+variance_decomposition,risk,ratio_within_over_across,0.0827851882
+variance_decomposition,delay,sd_within_link_over_time,8.2789422262
+variance_decomposition,delay,sd_across_links,36.5548487912
+variance_decomposition,delay,ratio_within_over_across,0.2264800020
+variance_decomposition,loss,sd_within_link_over_time,0.0020878428
+variance_decomposition,loss,sd_across_links,0.1562192086
+variance_decomposition,loss,ratio_within_over_across,0.0133648278
+variance_decomposition,utilization,sd_within_link_over_time,0.0929834804
+variance_decomposition,utilization,sd_across_links,0.4525080082
+variance_decomposition,utilization,ratio_within_over_across,0.2054847179
+variance_decomposition,congested,sd_within_link_over_time,0.0000000000
+variance_decomposition,congested,sd_across_links,0.4610929803
+variance_decomposition,congested,ratio_within_over_across,0.0000000000
+detection_metric,Proposed Risk,precision,1.0000000000
+detection_metric,Proposed Risk,recall,0.6516780710
+detection_metric,Proposed Risk,f1,0.7891102782
+detection_metric,Proposed Risk,false_positives,0.0000000000
+detection_metric,Delay Only,precision,1.0000000000
+detection_metric,Delay Only,recall,0.6516780710
+detection_metric,Delay Only,f1,0.7891102782
+detection_metric,Delay Only,false_positives,0.0000000000
+detection_metric,Loss Only,precision,1.0000000000
+detection_metric,Loss Only,recall,0.6516780710
+detection_metric,Loss Only,f1,0.7891102782
+detection_metric,Loss Only,false_positives,0.0000000000
+detection_metric,Utilization Only,precision,1.0000000000
+detection_metric,Utilization Only,recall,0.6516780710
+detection_metric,Utilization Only,f1,0.7891102782
+detection_metric,Utilization Only,false_positives,0.0000000000
+detection_metric,Simple QoS Score,precision,1.0000000000
+detection_metric,Simple QoS Score,recall,0.6516780710
+detection_metric,Simple QoS Score,f1,0.7891102782
+detection_metric,Simple QoS Score,false_positives,0.0000000000
+detection_metric,Random top-k,precision,0.3071393443
+detection_metric,Random top-k,recall,0.2001559754
+detection_metric,Random top-k,f1,0.2423668134
+detection_metric,Random top-k,false_positives,84529.0000000000
+detection_metric,Congested now,precision,1.0000000000
+detection_metric,Congested now,recall,1.0000000000
+detection_metric,Congested now,f1,1.0000000000
+detection_metric,Congested now,false_positives,0.0000000000
+detection_metric,candidate_spread,f1_max_minus_min,0.0000000000
+alternative_label,future_congested | Proposed Risk,average_precision,1.0000000000
+alternative_label,future_congested | Proposed Risk,roc_auc,1.0000000000
+alternative_label,future_congested | Delay Only,average_precision,1.0000000000
+alternative_label,future_congested | Delay Only,roc_auc,1.0000000000
+alternative_label,future_congested | Loss Only,average_precision,1.0000000000
+alternative_label,future_congested | Loss Only,roc_auc,1.0000000000
+alternative_label,future_congested | Utilization Only,average_precision,1.0000000000
+alternative_label,future_congested | Utilization Only,roc_auc,1.0000000000
+alternative_label,future_congested | Simple QoS Score,average_precision,1.0000000000
+alternative_label,future_congested | Simple QoS Score,roc_auc,1.0000000000
+alternative_label,future_top10pct_delay | Proposed Risk,average_precision,0.7696653753
+alternative_label,future_top10pct_delay | Proposed Risk,roc_auc,0.8768876138
+alternative_label,future_top10pct_delay | Delay Only,average_precision,0.9938633262
+alternative_label,future_top10pct_delay | Delay Only,roc_auc,0.8851582878
+alternative_label,future_top10pct_delay | Loss Only,average_precision,0.9849820518
+alternative_label,future_top10pct_delay | Loss Only,roc_auc,0.8850783242
+alternative_label,future_top10pct_delay | Utilization Only,average_precision,0.4264659320
+alternative_label,future_top10pct_delay | Utilization Only,roc_auc,0.8890772313
+alternative_label,future_top10pct_delay | Simple QoS Score,average_precision,0.4283513495
+alternative_label,future_top10pct_delay | Simple QoS Score,roc_auc,0.8893859745
+alternative_label,future_top5pct_risk | Proposed Risk,average_precision,0.9692454984
+alternative_label,future_top5pct_risk | Proposed Risk,roc_auc,0.9154615742
+alternative_label,future_top5pct_risk | Delay Only,average_precision,0.6496282206
+alternative_label,future_top5pct_risk | Delay Only,roc_auc,0.8666553308
+alternative_label,future_top5pct_risk | Loss Only,average_precision,0.6574298311
+alternative_label,future_top5pct_risk | Loss Only,roc_auc,0.8686039414
+alternative_label,future_top5pct_risk | Utilization Only,average_precision,0.3563666161
+alternative_label,future_top5pct_risk | Utilization Only,roc_auc,0.8863533310
+alternative_label,future_top5pct_risk | Simple QoS Score,average_precision,0.3566798352
+alternative_label,future_top5pct_risk | Simple QoS Score,roc_auc,0.8855944076

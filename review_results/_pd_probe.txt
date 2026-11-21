@@ -1,0 +1,65 @@
+위상 최단경로: 6홉, 서로 다른 최단경로 4개 (0→24)
+C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\occlude_state_blocks.py:83: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state = torch.load(path, map_location=device)
+배치 상태 묶음 40개 · 에피소드 12 · 평가시드 20261114
+  intact           경로수  3.0 · 최빈점유  41.7% · 홉 8.083
+  risk_zero        경로수  1.0 · 최빈점유 100.0% · 홉 6.000
+  risk_shuffle     경로수 10.2 · 최빈점유  18.3% · 홉 9.075
+  risk_mean        경로수  1.0 · 최빈점유 100.0% · 홉 8.500
+  curr_zero        경로수  3.5 · 최빈점유  40.8% · 홉 8.833
+  visited_shuffle  경로수  9.6 · 최빈점유  22.5% · 홉 8.500
+  dest_zero        경로수  3.4 · 최빈점유  43.3% · 홉 8.117
+  dest_mean        경로수  3.0 · 최빈점유  41.7% · 홉 8.083
+  risk_frozen      경로수  3.2 · 최빈점유  40.0% · 홉 8.200
+
+==============================================================================
+[1] 조건별 경로 다양성 (모델 10개 평균, 에피소드 12)
+조건                    경로수      최빈%      엔트로피        홉     최단경로%      실패
+intact                3.0     41.7     1.555    8.083       0.0     0.0
+risk_zero             1.0    100.0     0.000    6.000     100.0     0.0
+risk_shuffle         10.2     18.3     3.266    9.075       0.0     0.0
+risk_mean             1.0    100.0     0.000    8.500       0.0     0.0
+curr_zero             3.5     40.8     1.671    8.833       0.0     0.0
+visited_shuffle       9.6     22.5     3.126    8.500       0.0     0.0
+dest_zero             3.4     43.3     1.644    8.117       0.0     0.0
+dest_mean             3.0     41.7     1.555    8.083       0.0     0.0
+risk_frozen           3.2     40.0     1.615    8.200       0.0     0.0
+
+[2] 통제 셋 — 먼저 이게 통과해야 [3] 을 읽을 수 있다
+ (1) intact 경로가 2개 이상인 모델: 10/10  OK
+ (2) **무작동 통제** dest_mean 지문이 intact 와 같은 모델: 10/10  OK (가림 경로 자체는 무해하다)
+ (3) 참고: dest_zero 는 무작동이 **아니다** — 지문이 달라진 모델 5/10.
+     상수 1.0 은 정보는 0이지만 학습된 치우침으로 작동하므로 지우면
+     결정 몇 개가 뒤집힌다(배치 행동변화율 0.50%와 같은 크기).
+ (4) 위상 최단경로는 6홉, 서로 다른 것 4개
+
+[3] 경로 1개 붕괴는 **동어반복이다** — 먼저 이걸 빼고 읽어야 한다
+  위험을 상수로 고정하면 0스텝 상태가 매 에피소드 똑같아진다
+  (dest 는 상수, curr·visited 는 경로가 결정) → 경로가 1개인 것은
+  정책의 성질이 아니라 **산수**다. risk_zero·risk_mean 의 1개는 증거가
+  아니다. 다만 이것이 말해 주는 구조는 있다: **에피소드 간 변동을 주는
+  관측 블록은 위험 50칸 하나뿐이다.**
+
+  intact          경로1개  0/10 · 경로수중위  3.0 · 홉  8.083 · 최단경로   0.0% · 공여수   0
+  risk_zero       경로1개 10/10 · 경로수중위  1.0 · 홉  6.000 · 최단경로 100.0% · 공여수   0
+  risk_mean       경로1개 10/10 · 경로수중위  1.0 · 홉  8.500 · 최단경로   0.0% · 공여수   0
+  risk_frozen     경로1개  0/10 · 경로수중위  3.0 · 홉  8.200 · 최단경로   0.0% · 공여수  12
+  risk_shuffle    경로1개  0/10 · 경로수중위 10.5 · 홉  9.075 · 최단경로   0.0% · 공여수   0
+  curr_zero       경로1개  0/10 · 경로수중위  3.0 · 홉  8.833 · 최단경로   0.0% · 공여수   0
+  visited_shuffle 경로1개  0/10 · 경로수중위 10.0 · 홉  8.500 · 최단경로   0.0% · 공여수   0
+
+[4] 그래서 정책이 위험의 **내용**을 읽는가 — risk_frozen 이 답한다
+  에피소드마다 **다른 공여의 위험 블록을 끝까지 고정**했다.
+  공여 12.0개 → 서로 다른 경로 3.2개 (모델 평균).
+  경로 1개로 붕괴한 모델 0/10.
+
+  읽는 법 — 동어반복이 제거된 유일한 칸이다:
+   · 경로수가 공여수에 가까우면 정책은 위험 **내용**을 읽는다.
+   · 경로수가 1이면 위험이 주는 것은 내용이 아니라 **크기 오프셋**
+     뿐이다(블록이 제곱노름의 57.07%, 차원별 sd 중위 0.031).
+   · 중간이면 내용 중 일부 축만 읽는다(차원별 민감도 4.7/50과 비교).
+  단, 경로가 갈려도 **그게 더 나은 경로라는 뜻은 아니다** — 품질은
+  state_occlusion_rollout.csv 의 risk_mean 지연으로 따로 판단한다.
+  intact 경로수 3.0 과 비교할 것.
+==============================================================================
+저장: C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\review_results\path_diversity.csv

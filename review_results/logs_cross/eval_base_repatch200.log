@@ -1,0 +1,18 @@
+EVAL_SEED=20261114  에피소드 200  (평가 전용 셀 2개)
+
+[risk_both] C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\models_ablation  모델 5개
+  factor_full_run01.pth  delay 354.2940  loss 0.084779  hop 7.7100  도달 100.0%  일치(5e-07)
+  factor_full_run02.pth  delay 354.2940  loss 0.084779  hop 7.7100  도달 100.0%  일치(5e-07)
+  factor_full_run03.pth  delay 354.2940  loss 0.084779  hop 7.7100  도달 100.0%  일치(5e-07)
+  factor_full_run04.pth  delay 354.2940  loss 0.084779  hop 7.7100  도달 100.0%  일치(5e-07)
+  factor_full_run05.pth  delay 387.0342  loss 0.077773  hop 8.6400  도달 100.0%  일치(2.9e-07)
+
+[qos_both] C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\SDN_DQN_new_env\models  모델 5개
+  norisk_run01.pth       delay 336.0509  loss 0.093244  hop 7.0000  도달 100.0%  
+  norisk_run02.pth       delay 336.0509  loss 0.093244  hop 7.0000  도달 100.0%  
+  norisk_run03.pth       delay 341.2500  loss 0.092719  hop 7.0000  도달 100.0%  
+  norisk_run04.pth       delay 336.0509  loss 0.093244  hop 7.0000  도달 100.0%  
+  norisk_run05.pth       delay 336.0509  loss 0.093244  hop 7.0000  도달 100.0%  
+
+저장: C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\review_results\cross_baselines.csv (10행)
+자기검증 통과(5개): CrossEnv(True,True) 가 표 10 Full 기록값을 재현한다 -> 네 칸이 같은 자리에서 측정됐다.

@@ -1,0 +1,11 @@
+a,b,threads_a,threads_b,episodes,max_abs_diff,n_tensors_diff,n_tensors,worst_tensor,identical,torch_version
+t1_a,t1_b,1,1,300,0,0,10,,1,2.5.1
+t1_a,t4_a,1,4,300,0.317483,10,10,net.3.weight,0,2.5.1
+t1_a,t12_a,1,12,300,0.424686,10,10,net.5.weight,0,2.5.1
+t1_a,t12_b,1,12,300,0.424686,10,10,net.5.weight,0,2.5.1
+t1_b,t4_a,1,4,300,0.317483,10,10,net.3.weight,0,2.5.1
+t1_b,t12_a,1,12,300,0.424686,10,10,net.5.weight,0,2.5.1
+t1_b,t12_b,1,12,300,0.424686,10,10,net.5.weight,0,2.5.1
+t4_a,t12_a,4,12,300,0.43588,10,10,net.5.weight,0,2.5.1
+t4_a,t12_b,4,12,300,0.43588,10,10,net.5.weight,0,2.5.1
+t12_a,t12_b,12,12,300,0,0,10,,1,2.5.1

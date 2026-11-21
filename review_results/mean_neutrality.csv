@@ -1,0 +1,5 @@
+quantity,mean_vector,donor_median,ratio
+within_vector_sd,0.201088,0.281278,1.399
+extreme_dims,0,0.0,
+rms_vs_true,0.199955,0.243236,1.216
+spearman_vs_true,0.4607,0.2695,

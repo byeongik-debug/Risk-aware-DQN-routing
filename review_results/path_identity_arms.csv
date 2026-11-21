@@ -1,0 +1,11 @@
+label,model,risk_window,zeroed,episodes,distinct_paths,unreached,delay,loss,hop,risky_pct,selfcheck,selfcheck_maxdiff
+Full-run01,factor_full_run01.pth,5,,200,3,0,354.294012,0.084779,7.710000,21.892857,일치(사후),0
+Full-run02,factor_full_run02.pth,5,,200,3,0,354.294012,0.084779,7.710000,21.892857,일치(사후),0
+Full-run03,factor_full_run03.pth,5,,200,3,0,354.294012,0.084779,7.710000,21.892857,일치(사후),0
+Full-run04,factor_full_run04.pth,5,,200,3,0,354.294012,0.084779,7.710000,21.892857,일치(사후),0
+Full-run05,factor_full_run05.pth,5,,200,4,0,387.034160,0.077773,8.640000,19.779221,일치(사후),0
+-Cong-run03,factor_cong_run03.pth,5,congestion,200,3,0,354.294012,0.084779,7.710000,21.892857,일치(사후),0
+K5-run01,window5_run01.pth,5,,200,3,0,354.294012,0.084779,7.710000,21.892857,일치(사후),0
+K10-run01,window10_run01.pth,10,,200,3,0,354.294012,0.084779,7.710000,21.892857,일치(사후),0
+-Util-run01*,factor_util_run01.pth,5,utilization,200,4,0,388.491049,0.073216,9.135000,18.333766,일치(사후),0
+Full-run05*,factor_full_run05.pth,5,,200,4,0,387.034160,0.077773,8.640000,19.779221,일치(사후),0

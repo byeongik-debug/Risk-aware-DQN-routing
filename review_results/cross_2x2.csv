@@ -1,0 +1,5 @@
+cell,label,n,n_distinct_delay,state,reward,state_size,delay_mean,delay_sd,loss_mean,loss_sd,hop_mean,hop_sd
+risk_both,상태=위험 / 보상=위험  (Full),5,2,risk,risk,125,360.842042,14.641839,0.083378,0.003133,7.896000,0.415909
+qos_reward,상태=위험 / 보상=QoS,5,5,risk,qos,125,337.260258,2.350475,0.093160,0.000217,7.000000,0.000000
+qos_state,상태=QoS  / 보상=위험,5,3,qos,risk,175,355.736828,5.569808,0.086179,0.001560,7.631000,0.138582
+qos_both,상태=QoS  / 보상=QoS   (NoRisk),5,2,qos,qos,175,337.090688,2.325127,0.093139,0.000235,7.000000,0.000000

@@ -1,0 +1,2 @@
+variant,run_id,seed,episodes,state_size,const_mean,const_sd,reach_rate,delay_mean,loss_mean,hop_mean,risk_mean,train_sec,threads,model
+edgemean,1,43,8000,125,0.2494206876,0.1733789891,1.000000,468.551163,0.157115,7.000000,0.369855,3570.4,1,edgemean_run01.pth

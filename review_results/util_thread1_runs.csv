@@ -1,0 +1,6 @@
+arm,key,run,model,threads,model_dir,zeroed,episodes,delay,loss,hop,risky_pct
+-Util(1thread),util,1,factor_util_run01.pth,1,C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\models_thread1,utilization,200,424.588353,0.06906131,9.915000,17.311218
+-Util(1thread),util,2,factor_util_run02.pth,1,C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\models_thread1,utilization,200,406.655663,0.07317893,9.460000,18.313131
+-Util(1thread),util,3,factor_util_run03.pth,1,C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\models_thread1,utilization,200,381.952715,0.07536013,8.770000,19.142857
+-Util(1thread),util,4,factor_util_run04.pth,1,C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\models_thread1,utilization,200,442.416865,0.06739580,10.420000,16.693040
+-Util(1thread),util,5,factor_util_run05.pth,1,C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\models_thread1,utilization,200,384.192179,0.07612740,8.870000,19.251948

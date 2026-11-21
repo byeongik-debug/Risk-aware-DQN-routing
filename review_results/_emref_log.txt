@@ -1,0 +1,93 @@
+C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\occlude_state_blocks.py:83: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state = torch.load(path, map_location=device)
+======================================================================================
+에피소드 단위 측정 — 조건 7개 × 모델 10개 × 200 에피소드
+  평가시드 20261114 · 시나리오 dynamic · window 5 · warmup 10
+======================================================================================
+
+[intact]
+  window5_run01        도달 200/200 · 홉 7.685 · 손실합 0.65401
+  window5_run02        도달 200/200 · 홉 7.685 · 손실합 0.65401
+  window5_run03        도달 200/200 · 홉 8.375 · 손실합 0.64684
+  window5_run04        도달 200/200 · 홉 8.660 · 손실합 0.64554
+  window5_run05        도달 200/200 · 홉 8.210 · 손실합 0.64775
+  factor_full_run01    도달 200/200 · 홉 7.685 · 손실합 0.65401
+  factor_full_run02    도달 200/200 · 홉 7.685 · 손실합 0.65401
+  factor_full_run03    도달 200/200 · 홉 7.685 · 손실합 0.65401
+  factor_full_run04    도달 200/200 · 홉 7.685 · 손실합 0.65401
+  factor_full_run05    도달 200/200 · 홉 8.660 · 손실합 0.64965
+
+[risk_scale184]
+  window5_run01        도달 200/200 · 홉 7.685 · 손실합 0.65778
+  window5_run02        도달 200/200 · 홉 7.685 · 손실합 0.65782
+  window5_run03        도달 200/200 · 홉 7.825 · 손실합 0.64883
+  window5_run04        도달 200/200 · 홉 7.685 · 손실합 0.65778
+  window5_run05        도달 200/200 · 홉 7.685 · 손실합 0.65585
+  factor_full_run01    도달 200/200 · 홉 7.725 · 손실합 0.66378
+  factor_full_run02    도달 200/200 · 홉 7.685 · 손실합 0.65598
+  factor_full_run03    도달 200/200 · 홉 7.685 · 손실합 0.65401
+  factor_full_run04    도달 200/200 · 홉 7.685 · 손실합 0.65508
+  factor_full_run05    도달 200/200 · 홉 7.685 · 손실합 0.65687
+
+[risk_rankpow05n]
+  window5_run01        도달 200/200 · 홉 7.790 · 손실합 1.63670
+  window5_run02        도달 200/200 · 홉 7.035 · 손실합 0.85691
+  window5_run03        도달 200/200 · 홉 6.600 · 손실합 0.87091
+  window5_run04        도달 200/200 · 홉 6.400 · 손실합 1.07933
+  window5_run05        도달 200/200 · 홉 7.000 · 손실합 0.90015
+  factor_full_run01    도달 200/200 · 홉 7.545 · 손실합 0.81865
+  factor_full_run02    도달 200/200 · 홉 6.155 · 손실합 1.31826
+  factor_full_run03    도달 200/200 · 홉 7.005 · 손실합 0.87842
+  factor_full_run04    도달 200/200 · 홉 7.380 · 손실합 1.15208
+  factor_full_run05    도달 200/200 · 홉 6.610 · 손실합 1.16165
+
+[risk_rankpow05]
+  window5_run01        도달 200/200 · 홉 8.200 · 손실합 0.81520
+  window5_run02        도달 200/200 · 홉 7.040 · 손실합 0.70574
+  window5_run03        도달 200/200 · 홉 7.385 · 손실합 0.81961
+  window5_run04        도달 200/200 · 홉 7.000 · 손실합 0.98229
+  window5_run05        도달 200/200 · 홉 7.030 · 손실합 0.84733
+  factor_full_run01    도달 200/200 · 홉 7.790 · 손실합 1.08163
+  factor_full_run02    도달 200/200 · 홉 7.000 · 손실합 0.87273
+  factor_full_run03    도달 200/200 · 홉 7.095 · 손실합 0.86667
+  factor_full_run04    도달 200/200 · 홉 7.985 · 손실합 0.69043
+  factor_full_run05    도달 200/200 · 홉 9.000 · 손실합 0.97496
+
+[risk_scale054]
+  window5_run01        도달 200/200 · 홉 7.835 · 손실합 0.66613
+  window5_run02        도달 200/200 · 홉 7.030 · 손실합 0.74570
+  window5_run03        도달 200/200 · 홉 7.685 · 손실합 0.65221
+  window5_run04        도달 200/200 · 홉 7.280 · 손실합 0.75565
+  window5_run05        도달 200/200 · 홉 7.300 · 손실합 0.64373
+  factor_full_run01    도달 200/200 · 홉 7.360 · 손실합 0.65121
+  factor_full_run02    도달 200/200 · 홉 7.000 · 손실합 0.63641
+  factor_full_run03    도달 200/200 · 홉 7.320 · 손실합 0.63272
+  factor_full_run04    도달 200/200 · 홉 7.345 · 손실합 0.74490
+  factor_full_run05    도달 200/200 · 홉 7.140 · 손실합 0.67161
+
+[risk_frozen]
+  window5_run01        도달 200/200 · 홉 7.785 · 손실합 1.08088
+  window5_run02        도달 200/200 · 홉 7.785 · 손실합 1.08088
+  window5_run03        도달 200/200 · 홉 8.735 · 손실합 1.42263
+  window5_run04        도달 200/200 · 홉 9.015 · 손실합 1.32178
+  window5_run05        도달 200/200 · 홉 8.605 · 손실합 1.32272
+  factor_full_run01    도달 200/200 · 홉 7.785 · 손실합 1.08088
+  factor_full_run02    도달 200/200 · 홉 7.785 · 손실합 1.08088
+  factor_full_run03    도달 200/200 · 홉 7.785 · 손실합 1.08747
+  factor_full_run04    도달 200/200 · 홉 7.815 · 손실합 1.11251
+  factor_full_run05    도달 200/200 · 홉 8.940 · 손실합 1.68578
+
+[risk_dimshuffle]
+  window5_run01        도달 200/200 · 홉 7.530 · 손실합 1.41681
+  window5_run02        도달 200/200 · 홉 6.920 · 손실합 1.32971
+  window5_run03        도달 200/200 · 홉 6.920 · 손실합 1.19654
+  window5_run04        도달 200/200 · 홉 6.615 · 손실합 1.20586
+  window5_run05        도달 200/200 · 홉 6.850 · 손실합 1.34502
+  factor_full_run01    도달 200/200 · 홉 7.765 · 손실합 1.25861
+  factor_full_run02    도달 200/200 · 홉 6.680 · 손실합 1.35248
+  factor_full_run03    도달 200/200 · 홉 6.890 · 손실합 1.24646
+  factor_full_run04    도달 200/200 · 홉 7.305 · 손실합 1.39234
+  factor_full_run05    도달 200/200 · 홉 6.885 · 손실합 1.25338
+
+행 14000개 저장: C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\review_results\episode_metrics_ref.csv
+======================================================================================

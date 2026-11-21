@@ -1,0 +1,7 @@
+rewire_ratio,row,method,n_topologies,delay_ms,delay_sd_across_topologies,loss_pct,loss_pct_sd,hop,hop_sd,risky_link_pct,risky_link_pct_sd,pub_delay,pub_loss_pct,pub_hop,pub_risky_link_pct,delay_claim
+0.2,OSPF,OSPF,10,335.5953,110.7574,20.0144,5.9396,4.5610,0.5302,55.9317,17.5643,blank,20.0,4.6,55.9,not resolvable at n=10
+0.2,제안,Risk-DQN[merged],10,278.4912,62.7312,7.8769,4.4206,6.4910,0.8710,20.0831,13.0030,blank,7.9,6.5,20.1,not resolvable at n=10
+0.4,OSPF,OSPF,10,303.7477,56.3012,20.5606,4.4893,4.1230,0.3095,57.5550,13.1977,blank,20.6,4.1,57.6,not resolvable at n=10
+0.4,제안,Risk-DQN[merged],10,285.9516,69.7765,7.8825,3.8415,6.8570,1.8613,20.1333,11.3227,blank,7.9,6.9,20.1,not resolvable at n=10
+0.6,OSPF,OSPF,10,340.3778,49.3908,23.2878,3.0019,4.1570,0.3045,65.6650,8.8251,blank,23.3,4.2,65.7,not resolvable at n=10
+0.6,제안,Risk-DQN[merged],10,320.3380,90.7092,9.5345,5.6553,6.6980,1.2265,24.9606,16.6178,blank,9.5,6.7,25.0,not resolvable at n=10

@@ -1,0 +1,100 @@
+===== Risk-Blind DQN  variant=edgemean  run=2  seed=44 =====
+Episodes=8000  StateSize=125  Device=cpu  Threads=1
+상수 블록: 평균 0.249421  sd 0.173379 (sd 0 이면 정보 전무)
+Ep  100 | Suc  26.0% | Rew -313.02 | Eps 0.9417 |  115.3s (1.153s/ep)
+Ep  200 | Suc  36.0% | Rew -260.51 | Eps 0.8869 |  223.4s (1.117s/ep)
+Ep  300 | Suc  55.0% | Rew -225.91 | Eps 0.8352 |  327.9s (1.093s/ep)
+Ep  400 | Suc  65.0% | Rew -176.41 | Eps 0.7866 |  425.2s (1.063s/ep)
+Ep  500 | Suc  67.0% | Rew -189.43 | Eps 0.7408 |  517.8s (1.036s/ep)
+Ep  600 | Suc  76.0% | Rew -149.99 | Eps 0.6976 |  606.5s (1.011s/ep)
+Ep  700 | Suc  85.0% | Rew -137.52 | Eps 0.6570 |  693.5s (0.991s/ep)
+Ep  800 | Suc  77.0% | Rew -158.80 | Eps 0.6187 |  779.4s (0.974s/ep)
+Ep  900 | Suc  88.0% | Rew -114.97 | Eps 0.5827 |  858.2s (0.954s/ep)
+Ep 1000 | Suc  95.0% | Rew  -92.44 | Eps 0.5487 |  929.7s (0.930s/ep)
+Ep 1100 | Suc  97.0% | Rew  -59.75 | Eps 0.5167 |  994.8s (0.904s/ep)
+Ep 1200 | Suc  96.0% | Rew  -63.36 | Eps 0.4866 | 1056.4s (0.880s/ep)
+Ep 1300 | Suc  99.0% | Rew  -43.42 | Eps 0.4583 | 1111.9s (0.855s/ep)
+Ep 1400 | Suc  99.0% | Rew  -47.15 | Eps 0.4316 | 1166.1s (0.833s/ep)
+Ep 1500 | Suc 100.0% | Rew  -44.61 | Eps 0.4065 | 1218.1s (0.812s/ep)
+Ep 1600 | Suc 100.0% | Rew  -18.98 | Eps 0.3828 | 1268.5s (0.793s/ep)
+Ep 1700 | Suc 100.0% | Rew  -31.96 | Eps 0.3605 | 1319.8s (0.776s/ep)
+Ep 1800 | Suc 100.0% | Rew  -26.34 | Eps 0.3395 | 1367.2s (0.760s/ep)
+Ep 1900 | Suc 100.0% | Rew   -6.87 | Eps 0.3197 | 1413.5s (0.744s/ep)
+Ep 2000 | Suc 100.0% | Rew  -24.80 | Eps 0.3011 | 1459.8s (0.730s/ep)
+Ep 2100 | Suc 100.0% | Rew   -6.40 | Eps 0.2835 | 1503.4s (0.716s/ep)
+Ep 2200 | Suc 100.0% | Rew  -14.47 | Eps 0.2670 | 1546.2s (0.703s/ep)
+Ep 2300 | Suc 100.0% | Rew  -10.53 | Eps 0.2515 | 1587.3s (0.690s/ep)
+Ep 2400 | Suc 100.0% | Rew  -10.64 | Eps 0.2368 | 1629.4s (0.679s/ep)
+Ep 2500 | Suc 100.0% | Rew   -7.45 | Eps 0.2230 | 1670.5s (0.668s/ep)
+Ep 2600 | Suc 100.0% | Rew   -3.29 | Eps 0.2100 | 1710.5s (0.658s/ep)
+Ep 2700 | Suc 100.0% | Rew   -4.65 | Eps 0.1978 | 1750.1s (0.648s/ep)
+Ep 2800 | Suc 100.0% | Rew   -9.60 | Eps 0.1863 | 1788.5s (0.639s/ep)
+Ep 2900 | Suc 100.0% | Rew   -3.48 | Eps 0.1754 | 1827.2s (0.630s/ep)
+Ep 3000 | Suc 100.0% | Rew    6.50 | Eps 0.1652 | 1866.7s (0.622s/ep)
+Ep 3100 | Suc 100.0% | Rew    1.65 | Eps 0.1556 | 1902.9s (0.614s/ep)
+Ep 3200 | Suc 100.0% | Rew   -2.94 | Eps 0.1465 | 1940.9s (0.607s/ep)
+Ep 3300 | Suc 100.0% | Rew   -1.68 | Eps 0.1380 | 1978.4s (0.600s/ep)
+Ep 3400 | Suc 100.0% | Rew    6.96 | Eps 0.1299 | 2013.2s (0.592s/ep)
+Ep 3500 | Suc 100.0% | Rew    3.74 | Eps 0.1224 | 2045.6s (0.584s/ep)
+Ep 3600 | Suc 100.0% | Rew   -1.17 | Eps 0.1153 | 2082.1s (0.578s/ep)
+Ep 3700 | Suc 100.0% | Rew    2.76 | Eps 0.1085 | 2119.9s (0.573s/ep)
+Ep 3800 | Suc 100.0% | Rew    7.49 | Eps 0.1022 | 2157.1s (0.568s/ep)
+Ep 3900 | Suc 100.0% | Rew    2.62 | Eps 0.0963 | 2190.4s (0.562s/ep)
+Ep 4000 | Suc 100.0% | Rew    3.00 | Eps 0.0907 | 2225.0s (0.556s/ep)
+Ep 4100 | Suc 100.0% | Rew    3.62 | Eps 0.0854 | 2258.5s (0.551s/ep)
+Ep 4200 | Suc 100.0% | Rew    5.80 | Eps 0.0804 | 2292.4s (0.546s/ep)
+Ep 4300 | Suc 100.0% | Rew   14.06 | Eps 0.0757 | 2327.4s (0.541s/ep)
+Ep 4400 | Suc 100.0% | Rew    7.30 | Eps 0.0713 | 2365.2s (0.538s/ep)
+Ep 4500 | Suc 100.0% | Rew    0.62 | Eps 0.0672 | 2405.4s (0.535s/ep)
+Ep 4600 | Suc 100.0% | Rew    8.50 | Eps 0.0632 | 2440.7s (0.531s/ep)
+Ep 4700 | Suc 100.0% | Rew   13.80 | Eps 0.0596 | 2474.6s (0.527s/ep)
+Ep 4800 | Suc 100.0% | Rew   14.86 | Eps 0.0561 | 2506.6s (0.522s/ep)
+Ep 4900 | Suc 100.0% | Rew    6.35 | Eps 0.0528 | 2544.3s (0.519s/ep)
+Ep 5000 | Suc 100.0% | Rew   11.45 | Eps 0.0500 | 2583.4s (0.517s/ep)
+Ep 5100 | Suc 100.0% | Rew   17.05 | Eps 0.0500 | 2616.6s (0.513s/ep)
+Ep 5200 | Suc 100.0% | Rew   12.50 | Eps 0.0500 | 2649.3s (0.509s/ep)
+Ep 5300 | Suc 100.0% | Rew    3.51 | Eps 0.0500 | 2682.8s (0.506s/ep)
+Ep 5400 | Suc 100.0% | Rew   14.91 | Eps 0.0500 | 2716.0s (0.503s/ep)
+Ep 5500 | Suc 100.0% | Rew   11.54 | Eps 0.0500 | 2749.1s (0.500s/ep)
+Ep 5600 | Suc 100.0% | Rew   14.08 | Eps 0.0500 | 2782.4s (0.497s/ep)
+Ep 5700 | Suc 100.0% | Rew    1.78 | Eps 0.0500 | 2817.0s (0.494s/ep)
+Ep 5800 | Suc 100.0% | Rew    7.08 | Eps 0.0500 | 2852.0s (0.492s/ep)
+Ep 5900 | Suc 100.0% | Rew   11.14 | Eps 0.0500 | 2888.3s (0.490s/ep)
+Ep 6000 | Suc 100.0% | Rew    9.80 | Eps 0.0500 | 2921.5s (0.487s/ep)
+Ep 6100 | Suc 100.0% | Rew    8.73 | Eps 0.0500 | 2954.9s (0.484s/ep)
+Ep 6200 | Suc 100.0% | Rew    2.91 | Eps 0.0500 | 2989.1s (0.482s/ep)
+Ep 6300 | Suc 100.0% | Rew    9.65 | Eps 0.0500 | 3021.3s (0.480s/ep)
+Ep 6400 | Suc 100.0% | Rew    5.26 | Eps 0.0500 | 3054.7s (0.477s/ep)
+Ep 6500 | Suc 100.0% | Rew    9.95 | Eps 0.0500 | 3088.9s (0.475s/ep)
+Ep 6600 | Suc 100.0% | Rew    8.08 | Eps 0.0500 | 3122.3s (0.473s/ep)
+Ep 6700 | Suc 100.0% | Rew   -1.26 | Eps 0.0500 | 3155.5s (0.471s/ep)
+Ep 6800 | Suc 100.0% | Rew   17.11 | Eps 0.0500 | 3188.3s (0.469s/ep)
+Ep 6900 | Suc 100.0% | Rew   12.40 | Eps 0.0500 | 3222.1s (0.467s/ep)
+Ep 7000 | Suc 100.0% | Rew   15.20 | Eps 0.0500 | 3256.5s (0.465s/ep)
+Ep 7100 | Suc 100.0% | Rew    8.55 | Eps 0.0500 | 3288.9s (0.463s/ep)
+Ep 7200 | Suc 100.0% | Rew    9.08 | Eps 0.0500 | 3321.9s (0.461s/ep)
+Ep 7300 | Suc 100.0% | Rew   15.46 | Eps 0.0500 | 3354.7s (0.460s/ep)
+Ep 7400 | Suc 100.0% | Rew   18.69 | Eps 0.0500 | 3388.6s (0.458s/ep)
+Ep 7500 | Suc 100.0% | Rew   12.13 | Eps 0.0500 | 3421.6s (0.456s/ep)
+Ep 7600 | Suc 100.0% | Rew   10.18 | Eps 0.0500 | 3454.6s (0.455s/ep)
+Ep 7700 | Suc 100.0% | Rew   -0.54 | Eps 0.0500 | 3488.6s (0.453s/ep)
+Ep 7800 | Suc 100.0% | Rew    5.66 | Eps 0.0500 | 3521.6s (0.451s/ep)
+Ep 7900 | Suc 100.0% | Rew    7.14 | Eps 0.0500 | 3553.7s (0.450s/ep)
+Ep 8000 | Suc 100.0% | Rew   12.22 | Eps 0.0500 | 3585.4s (0.448s/ep)
+모델 저장: C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\review_results\models_risk_blind\edgemean_run02.pth
+결과 저장: C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\review_results\risk_blind_edgemean_run02.csv
+  variant      edgemean
+  run_id       2
+  seed         44
+  episodes     8000
+  state_size   125
+  const_mean   0.2494206876
+  const_sd     0.1733789891
+  reach_rate   1.000000
+  delay_mean   466.653767
+  loss_mean    0.156507
+  hop_mean     7.000000
+  risk_mean    0.368791
+  train_sec    3636.3
+  threads      1
+  model        edgemean_run02.pth

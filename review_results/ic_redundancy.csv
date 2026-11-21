@@ -1,0 +1,11 @@
+name,value,note
+snapshots_total,9300,스냅숏 수(t=0 포함) = 시드 10 x 에피소드 30 x (1+30)
+cells_t_ge_1,450000,t>=1 의 (스냅숏 x 링크) 칸 수 = 분모
+congested_cells,21657,is_congested = 1 인 칸
+congested_pct,4.8127,혼잡 표시 비율 (초안: 4.81%)
+cong_label1_pct,100.0000,혼잡 칸 중 danger_label=1 비율 (초안: 100.00%)
+cong_util_saturated_pct,76.6219,혼잡 칸 중 이용률 >= 1.0 비율 (초안: 76.62%)
+cong_trisk08_pct,83.1140,혼잡 칸 중 유형 위험 0.8 비율 (초안: 83.11%)
+cong_either_pct,83.1140,혼잡 칸 중 둘 중 하나라도 해당
+cong_both_pct,76.6219,혼잡 칸 중 둘 다 해당
+noncong_util_saturated_pct,0.0000,대조: 혼잡 아닌 칸의 포화 비율

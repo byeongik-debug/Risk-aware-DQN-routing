@@ -1,0 +1,21 @@
+C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\occlude_state_blocks.py:83: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state = torch.load(path, map_location=device)
+======================================================================================
+에피소드 단위 측정 — 조건 1개 × 모델 10개 × 200 에피소드
+  평가시드 20261114 · 시나리오 dynamic · window 5 · warmup 10
+======================================================================================
+
+[risk_shuf20]
+  window5_run01        도달 200/200 · 홉 7.955 · 손실합 0.66629
+  window5_run02        도달 200/200 · 홉 7.515 · 손실합 0.67849
+  window5_run03        도달 200/200 · 홉 8.000 · 손실합 0.65814
+  window5_run04        도달 200/200 · 홉 7.675 · 손실합 0.72613
+  window5_run05        도달 200/200 · 홉 7.585 · 손실합 0.71136
+  factor_full_run01    도달 200/200 · 홉 7.910 · 손실합 0.68034
+  factor_full_run02    도달 200/200 · 홉 7.640 · 손실합 0.68621
+  factor_full_run03    도달 200/200 · 홉 7.625 · 손실합 0.68913
+  factor_full_run04    도달 200/200 · 홉 7.795 · 손실합 0.66949
+  factor_full_run05    도달 200/200 · 홉 7.845 · 손실합 0.70163
+
+행 2000개 저장: C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\review_results\episode_metrics_shuf20.csv
+======================================================================================

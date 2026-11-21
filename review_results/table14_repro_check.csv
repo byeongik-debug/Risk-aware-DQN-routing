@@ -1,0 +1,5 @@
+name,value,note
+compared_values,445,"새 런 x 커밋된 런으로 짝지은 (arm, 토폴로지, 지표) 칸 수"
+max_abs_diff,1.136868e-13,같은 칸의 최대 절대차
+max_abs_diff_e13,1.136868,위 값을 1e13으로 곱한 것 (가수 비교용)
+threshold,1.0e-06,이 값을 넘으면 궤적이 바뀐 것으로 보고 멈춘다

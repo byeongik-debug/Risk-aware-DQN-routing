@@ -1,0 +1,85 @@
+============================================================================================
+절제 7팔 모델별 재측정 - eval_ablation_risky 의 평가 함수를 그대로 쓴다
+EVAL_SEED=20261114, 에피소드/모델=200
+============================================================================================
+
+[Full] 모델 5개, zeroed=(없음), 탐침 0.868769 -> 0.868769
+   디렉터리: C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\models_ablation
+   run01  delay  354.2940  loss 0.084779  hop 7.7100  risky% 21.8929  도달 100.0%
+   run02  delay  354.2940  loss 0.084779  hop 7.7100  risky% 21.8929  도달 100.0%
+   run03  delay  354.2940  loss 0.084779  hop 7.7100  risky% 21.8929  도달 100.0%
+   run04  delay  354.2940  loss 0.084779  hop 7.7100  risky% 21.8929  도달 100.0%
+   run05  delay  387.0342  loss 0.077773  hop 8.6400  risky% 19.7792  도달 100.0%
+   -> 평균 delay 360.8420 +- 14.641839   서로 다른 지연값 2/5 가지: 354.294, 387.034
+
+[-Util] 모델 5개, zeroed=utilization, 탐침 0.868769 -> 0.623769
+   디렉터리: C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\SDN_DQN_new_env\models
+   run01  delay  388.4910  loss 0.073216  hop 9.1350  risky% 18.3338  도달 100.0%
+   run02  delay  372.5833  loss 0.079703  hop 8.4300  risky% 20.2083  도달 100.0%
+   run03  delay  440.4098  loss 0.068863  hop 10.4900  risky% 17.0379  도달 100.0%
+   run04  delay  387.2434  loss 0.077627  hop 8.7250  risky% 19.7889  도달 100.0%
+   run05  delay  437.1845  loss 0.067300  hop 10.4500  risky% 16.7141  도달 100.0%
+   -> 평균 delay 405.1824 +- 31.337730   서로 다른 지연값 5/5 가지: 372.583, 387.243, 388.491, 437.184, 440.410
+
+[-Cong] 모델 5개, zeroed=congestion, 탐침 0.868769 -> 0.568769
+   디렉터리: C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\SDN_DQN_new_env\models
+   run01  delay  355.8543  loss 0.084691  hop 7.7100  risky% 21.8929  도달 100.0%
+   run02  delay  360.5998  loss 0.082156  hop 8.0100  risky% 21.0595  도달 100.0%
+   run03  delay  354.2940  loss 0.084779  hop 7.7100  risky% 21.8929  도달 100.0%
+   run04  delay  378.9425  loss 0.078800  hop 8.3750  risky% 20.2474  도달 100.0%
+   run05  delay  354.2940  loss 0.084779  hop 7.7100  risky% 21.8929  도달 100.0%
+   -> 평균 delay 360.7969 +- 10.467872   서로 다른 지연값 4/5 가지: 354.294, 355.854, 360.600, 378.942
+
+[-dDelay] 모델 5개, zeroed=delay_inst, 탐침 0.868769 -> 0.732525
+   디렉터리: C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\SDN_DQN_new_env\models
+   run01  delay  354.2940  loss 0.084779  hop 7.7100  risky% 21.8929  도달 100.0%
+   run02  delay  388.2021  loss 0.077522  hop 8.6700  risky% 19.7110  도달 100.0%
+   run03  delay  388.2021  loss 0.077522  hop 8.6700  risky% 19.7110  도달 100.0%
+   run04  delay  354.2940  loss 0.084779  hop 7.7100  risky% 21.8929  도달 100.0%
+   run05  delay  372.0319  loss 0.080784  hop 8.1700  risky% 20.7211  도달 100.0%
+   -> 평균 delay 371.4048 +- 16.957665   서로 다른 지연값 3/5 가지: 354.294, 372.032, 388.202
+
+[-dLoss] 모델 5개, zeroed=loss_inst, 탐침 0.868769 -> 0.771244
+   디렉터리: C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\SDN_DQN_new_env\models
+   run01  delay  354.6701  loss 0.084620  hop 7.7250  risky% 21.8512  도달 100.0%
+   run02  delay  354.2940  loss 0.084779  hop 7.7100  risky% 21.8929  도달 100.0%
+   run03  delay  354.2940  loss 0.084779  hop 7.7100  risky% 21.8929  도달 100.0%
+   run04  delay  357.9947  loss 0.084005  hop 7.8150  risky% 21.6542  도달 100.0%
+   run05  delay  388.2021  loss 0.077522  hop 8.6700  risky% 19.7110  도달 100.0%
+   -> 평균 delay 361.8910 +- 14.790411   서로 다른 지연값 4/5 가지: 354.294, 354.670, 357.995, 388.202
+
+[-Type] 모델 5개, zeroed=link_type, 탐침 0.868769 -> 0.778769
+   디렉터리: C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\SDN_DQN_new_env\models
+   run01  delay  386.7040  loss 0.077501  hop 8.6050  risky% 19.8292  도달 100.0%
+   run02  delay  380.5488  loss 0.078576  hop 8.4250  risky% 20.1633  도달 100.0%
+   run03  delay  362.0835  loss 0.082393  hop 7.9500  risky% 21.2262  도달 100.0%
+   run04  delay  389.3573  loss 0.077281  hop 8.6700  risky% 19.7110  도달 100.0%
+   run05  delay  363.2515  loss 0.082809  hop 7.9650  risky% 21.2973  도달 100.0%
+   -> 평균 delay 376.3890 +- 12.933699   서로 다른 지연값 5/5 가지: 362.083, 363.252, 380.549, 386.704, 389.357
+
+[-VD,VL] 모델 5개, zeroed=delay_inst,loss_inst, 탐침 0.868769 -> 0.635000
+   디렉터리: C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\models_ablation
+   run01  delay  354.2940  loss 0.084779  hop 7.7100  risky% 21.8929  도달 100.0%
+   run02  delay  354.2940  loss 0.084779  hop 7.7100  risky% 21.8929  도달 100.0%
+   run03  delay  354.2940  loss 0.084779  hop 7.7100  risky% 21.8929  도달 100.0%
+   run04  delay  364.1099  loss 0.081864  hop 8.0300  risky% 21.0040  도달 100.0%
+   run05  delay  350.6793  loss 0.085141  hop 7.7100  risky% 21.8929  도달 100.0%
+   -> 평균 delay 355.5342 +- 5.042995   서로 다른 지연값 3/5 가지: 350.679, 354.294, 364.110
+
+============================================================================================
+기존 table10_risky.csv 와 맞춰 보기 (덮어쓰지 않았다)
+============================================================================================
+팔               지연(새)       지연(기존)           차이         홉 차이         판정
+Full         360.8420     360.8420    -0.000000    -0.000000         동일
+-Util        405.1824     405.1824     0.000000    -0.000000         동일
+-Cong        360.7969     360.7969    -0.000000    -0.000000         동일
+-dDelay      371.4048     371.4048     0.000000     0.000000         동일
+-dLoss       361.8910     361.8910     0.000000     0.000000         동일
+-Type        376.3890     376.3890    -0.000000     0.000000         동일
+-VD,VL       355.5342     355.5343    -0.000000     0.000000         동일
+
+-> 전부 재현됐다. 모델별 값은 기존 집계와 같은 측정의 것이므로
+   순열검정에 바로 쓸 수 있다.
+
+-> C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\review_results\table10_factor_runs.csv (35 행)
+-> C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\review_results\table10_factor_agg.csv (7 행)

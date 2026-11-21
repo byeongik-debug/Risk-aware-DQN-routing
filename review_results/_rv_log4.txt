@@ -1,0 +1,55 @@
+C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\occlude_state_blocks.py:83: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state = torch.load(path, map_location=device)
+모델 10 · 공여 250 · 에피소드 200 · 시드 20261114
+
+  window5_run01 | intact 350.8 | rankpow05n 632.1 | scale184 346.8 | scale054 367.6
+  window5_run02 | intact 350.8 | rankpow05n 394.4 | scale184 346.8 | scale054 367.8
+  window5_run03 | intact 373.9 | rankpow05n 396.6 | scale184 353.9 | scale054 351.2
+  window5_run04 | intact 381.8 | rankpow05n 446.8 | scale184 346.8 | scale054 374.6
+  window5_run05 | intact 369.5 | rankpow05n 413.7 | scale184 350.0 | scale054 347.8
+  factor_full_run01 | intact 350.8 | rankpow05n 398.8 | scale184 350.4 | scale054 348.9
+  factor_full_run02 | intact 350.8 | rankpow05n 506.6 | scale184 348.1 | scale054 337.1
+  factor_full_run03 | intact 350.8 | rankpow05n 408.0 | scale184 350.8 | scale054 342.7
+  factor_full_run04 | intact 350.8 | rankpow05n 489.5 | scale184 347.3 | scale054 375.5
+  factor_full_run05 | intact 381.0 | rankpow05n 471.7 | scale184 356.0 | scale054 349.1
+
+==============================================================================
+[0] 예측 (숫자 보기 전에 정해 둔 것)
+------------------------------------------------------------------------------
+  순위가 값이면   rankonly ~= intact,  dimshuffle ~= frozen
+  크기가 값이면   dimshuffle ~= intact, rankonly ~= frozen
+  값 다중집합은 rankonly=공여와 동일, dimshuffle=참과 동일이고
+  순위는 rankonly=참과 rho 1, dimshuffle=무관이다 (아래 실측 rho).
+
+[1] 조건별 (모델 10개, 200 에피소드)
+------------------------------------------------------------------------------
+조건                            지연          손실         홉      rho     ms/홉
+intact             361.10±13.73      0.08079     8.002   1.0000    45.13
+risk_rankpow05n    455.82±74.33      0.15485     6.952   1.0000    65.57
+risk_scale184      349.70±3.21       0.08419     7.703   1.0000    45.40
+risk_scale054      356.24±13.83      0.09308     7.330   1.0000    48.60
+
+[2] intact 대비 짝지은 검정 (Holm)
+------------------------------------------------------------------------------
+조건                지표              차이         t          p     p_holm
+risk_rankpow05n   delay      94.7219     3.820     0.0041     0.0245
+risk_rankpow05n   loss        0.0741     6.220     0.0002     0.0014
+risk_rankpow05n   hop        -1.0495    -3.979     0.0032     0.0225
+risk_scale184     delay     -11.4007    -2.911     0.0173     0.0692
+risk_scale184     loss        0.0034     2.563     0.0305     0.0916
+risk_scale184     hop        -0.2985    -2.246     0.0514     0.1027
+risk_scale054     delay      -4.8622    -0.808     0.4397     0.4397
+risk_scale054     loss        0.0123     3.812     0.0041     0.0245
+risk_scale054     hop        -0.6720    -4.224     0.0022     0.0178
+
+[3] 판정 — 순위 몫 대 크기 몫
+------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\measure_rank_vs_value.py", line 319, in <module>
+    main()
+  File "C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\measure_rank_vs_value.py", line 314, in main
+    report(rows)
+  File "C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\measure_rank_vs_value.py", line 251, in report
+    dr = hm[("risk_rankonly", metric)]
+         ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: ('risk_rankonly', 'delay')

@@ -1,0 +1,66 @@
+Proposed  risk_only_model_final.pth  state=125 action=25 LayerNorm=True
+NoRisk    norisk_run01.pth  state=175 action=25 LayerNorm=True
+NoRisk    norisk_run02.pth  state=175 action=25 LayerNorm=True
+NoRisk    norisk_run03.pth  state=175 action=25 LayerNorm=True
+NoRisk    norisk_run04.pth  state=175 action=25 LayerNorm=True
+NoRisk    norisk_run05.pth  state=175 action=25 LayerNorm=True
+
+  Proposed  risk_only_model_final.pth seed=0  delay= 348.4811  pub=0.083050  sum=0.644561  comp=0.531538  hop=7.6650  reach=100.0%  (0.7 min)
+  Proposed  risk_only_model_final.pth seed=1  delay= 350.0904  pub=0.084350  sum=0.656411  comp=0.538146  hop=7.6900  reach=100.0%  (1.3 min)
+  Proposed  risk_only_model_final.pth seed=2  delay= 348.8819  pub=0.083089  sum=0.644916  comp=0.531606  hop=7.6650  reach=100.0%  (2.0 min)
+  Proposed  risk_only_model_final.pth seed=3  delay= 351.4605  pub=0.083337  sum=0.648000  comp=0.533609  hop=7.6800  reach=100.0%  (2.6 min)
+  Proposed  risk_only_model_final.pth seed=4  delay= 351.7109  pub=0.083926  sum=0.652647  comp=0.536390  hop=7.6850  reach=100.0%  (3.3 min)
+  NoRisk    norisk_run01.pth       seed=0  delay= 332.7959  pub=0.091275  sum=0.638922  comp=0.529627  hop=7.0000  reach=100.0%  (4.0 min)
+  NoRisk    norisk_run01.pth       seed=1  delay= 326.7424  pub=0.088120  sum=0.616838  comp=0.516024  hop=7.0000  reach=100.0%  (4.7 min)
+  NoRisk    norisk_run01.pth       seed=2  delay= 336.2923  pub=0.092720  sum=0.649039  comp=0.535820  hop=7.0000  reach=100.0%  (5.3 min)
+  NoRisk    norisk_run01.pth       seed=3  delay= 327.3796  pub=0.089487  sum=0.626410  comp=0.522057  hop=7.0000  reach=100.0%  (6.0 min)
+  NoRisk    norisk_run01.pth       seed=4  delay= 330.9708  pub=0.090762  sum=0.635336  comp=0.527135  hop=7.0000  reach=100.0%  (6.7 min)
+  NoRisk    norisk_run02.pth       seed=0  delay= 332.7959  pub=0.091275  sum=0.638922  comp=0.529627  hop=7.0000  reach=100.0%  (7.3 min)
+  NoRisk    norisk_run02.pth       seed=1  delay= 329.9709  pub=0.089078  sum=0.625228  comp=0.521357  hop=7.0200  reach=100.0%  (8.0 min)
+  NoRisk    norisk_run02.pth       seed=2  delay= 336.2923  pub=0.092720  sum=0.649039  comp=0.535820  hop=7.0000  reach=100.0%  (8.7 min)
+  NoRisk    norisk_run02.pth       seed=3  delay= 334.1928  pub=0.092246  sum=0.647450  comp=0.534889  hop=7.0200  reach=100.0%  (9.4 min)
+  NoRisk    norisk_run02.pth       seed=4  delay= 330.9708  pub=0.090762  sum=0.635336  comp=0.527135  hop=7.0000  reach=100.0%  (10.0 min)
+  NoRisk    norisk_run03.pth       seed=0  delay= 337.2921  pub=0.090773  sum=0.635412  comp=0.528194  hop=7.0000  reach=100.0%  (10.7 min)
+  NoRisk    norisk_run03.pth       seed=1  delay= 330.0986  pub=0.087795  sum=0.614566  comp=0.515096  hop=7.0000  reach=100.0%  (11.4 min)
+  NoRisk    norisk_run03.pth       seed=2  delay= 340.0911  pub=0.092267  sum=0.645870  comp=0.534524  hop=7.0000  reach=100.0%  (12.0 min)
+  NoRisk    norisk_run03.pth       seed=3  delay= 332.3834  pub=0.088910  sum=0.622370  comp=0.520408  hop=7.0000  reach=100.0%  (12.7 min)
+  NoRisk    norisk_run03.pth       seed=4  delay= 335.5892  pub=0.090245  sum=0.631717  comp=0.525662  hop=7.0000  reach=100.0%  (13.4 min)
+  NoRisk    norisk_run04.pth       seed=0  delay= 332.7959  pub=0.091275  sum=0.638922  comp=0.529627  hop=7.0000  reach=100.0%  (14.1 min)
+  NoRisk    norisk_run04.pth       seed=1  delay= 326.7424  pub=0.088120  sum=0.616838  comp=0.516024  hop=7.0000  reach=100.0%  (14.8 min)
+  NoRisk    norisk_run04.pth       seed=2  delay= 336.2923  pub=0.092720  sum=0.649039  comp=0.535820  hop=7.0000  reach=100.0%  (15.5 min)
+  NoRisk    norisk_run04.pth       seed=3  delay= 327.3796  pub=0.089487  sum=0.626410  comp=0.522057  hop=7.0000  reach=100.0%  (16.1 min)
+  NoRisk    norisk_run04.pth       seed=4  delay= 330.9708  pub=0.090762  sum=0.635336  comp=0.527135  hop=7.0000  reach=100.0%  (16.8 min)
+  NoRisk    norisk_run05.pth       seed=0  delay= 332.7959  pub=0.091275  sum=0.638922  comp=0.529627  hop=7.0000  reach=100.0%  (17.5 min)
+  NoRisk    norisk_run05.pth       seed=1  delay= 326.7424  pub=0.088120  sum=0.616838  comp=0.516024  hop=7.0000  reach=100.0%  (18.2 min)
+  NoRisk    norisk_run05.pth       seed=2  delay= 336.2923  pub=0.092720  sum=0.649039  comp=0.535820  hop=7.0000  reach=100.0%  (18.9 min)
+  NoRisk    norisk_run05.pth       seed=3  delay= 327.3796  pub=0.089487  sum=0.626410  comp=0.522057  hop=7.0000  reach=100.0%  (19.5 min)
+  NoRisk    norisk_run05.pth       seed=4  delay= 330.9708  pub=0.090762  sum=0.635336  comp=0.527135  hop=7.0000  reach=100.0%  (20.2 min)
+
+기록: C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\review_results\norisk_conventions.csv (30행)
+
+==============================================================================
+A. 발표값 재현 점검 (7월식 대 이 하네스 — 비트 일치는 기대 안 함)
+==============================================================================
+  Proposed  delay      측정   350.124972 ± 1.461806    발표   350.124972  편차  -0.000%  (n=5, 시드 5개)
+  Proposed  published  측정     0.083550 ± 0.000568    발표     0.083550  편차  +0.001%  (n=5, 시드 5개)
+  Proposed  hop        측정     7.677000 ± 0.011511    발표     7.677000  편차  +0.000%  (n=5, 시드 5개)
+  NoRisk    delay      측정   332.088806 ± 1.890160    발표   332.855567  편차  -0.230%  (n=5, 모델 5개)
+  NoRisk    published  측정     0.090526 ± 0.000437    발표     0.090634  편차  -0.118%  (n=5, 모델 5개)
+  NoRisk    hop        측정     7.001600 ± 0.003578    발표     7.000000  편차  +0.023%  (n=5, 모델 5개)
+
+==============================================================================
+B. 규약을 바꾸면 손실 비교가 어떻게 되는가 (dynamic)
+==============================================================================
+규약                       제안         NoRisk            차       제안 우위%     p_holm
+------------------------------------------------------------------------------
+published          0.083550       0.090526    -0.006976       +7.71%     0.0000
+path_sum           0.649307       0.633822    +0.015485       -2.44%     0.0016
+compounded         0.534258       0.526588    +0.007670       -1.46%     0.0019
+------------------------------------------------------------------------------
+  지연: 제안 350.1250  NoRisk 332.0888  차 +18.0362 ms  (제안이 +5.43%)  p=0.0000
+  홉:   제안 7.6770  NoRisk 7.0016  차 +0.6754 홉
+
+  읽는 법: `published` 는 홉당 평균이라 긴 경로에 유리하다.
+  `path_sum` 은 지연과 같은 양(합)이고 `compounded` 는 확률이다.
+  셋이 같은 방향이면 교환 관계 문장이 선다. 부호가 갈리면
+  '손실 N% 를 지연 M% 로 산다' 는 문장은 **쓸 수 없다**.

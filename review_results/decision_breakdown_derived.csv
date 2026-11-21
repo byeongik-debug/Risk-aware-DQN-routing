@@ -1,0 +1,14 @@
+key,value,n,note
+n_hops,2493.000000,2493,timed hops behind every 4.7 figure
+decide_ms_mean,0.399223,2493,
+tensor_plus_mask_ms,0.068223,2493,
+tensor_plus_mask_pct_of_decide,17.088987,2493,what the draft attributed the whole non-forward half to
+non_forward_pct_of_decide,47.178574,2493,
+named_share_of_non_forward_pct,36.221924,2493,the two named costs as a share of the non-forward half
+unattributed_pct_of_decide,27.874241,2493,residual: decide() minus the four timed pieces
+parts_accounted_pct_of_decide,72.125759,2493,
+decide_ms_first_hop,0.374898,360,
+decide_ms_later_hops,0.403328,2133,
+first_hop_premium_ms,-0.028430,2493,a positive value is the only thing an intercept could be; it is negative
+get_state_plus_valid_ms_per_hop,0.062844,2493,
+uncharged_ms_per_path,0.439002,2493,mean hops 6.9856

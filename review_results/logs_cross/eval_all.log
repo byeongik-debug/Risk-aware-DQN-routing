@@ -1,0 +1,12 @@
+EVAL_SEED=20261114  에피소드 200  모델 10개
+  qos_reward_run01.pth   delay 341.2670  loss 0.092806  hop 7.0000  도달 100.0%
+  qos_reward_run02.pth   delay 337.4576  loss 0.093103  hop 7.0000  도달 100.0%
+  qos_reward_run03.pth   delay 335.9147  loss 0.093311  hop 7.0000  도달 100.0%
+  qos_reward_run04.pth   delay 335.5967  loss 0.093323  hop 7.0000  도달 100.0%
+  qos_reward_run05.pth   delay 336.0653  loss 0.093258  hop 7.0000  도달 100.0%
+  qos_state_run01.pth    delay 359.4326  loss 0.085245  hop 7.7100  도달 100.0%
+  qos_state_run02.pth    delay 353.4836  loss 0.086318  hop 7.6350  도달 100.0%
+  qos_state_run03.pth    delay 359.4326  loss 0.085245  hop 7.7100  도달 100.0%
+  qos_state_run04.pth    delay 346.9029  loss 0.088843  hop 7.3900  도달 100.0%
+  qos_state_run05.pth    delay 359.4326  loss 0.085245  hop 7.7100  도달 100.0%
+저장: C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\review_results\cross_runs.csv (10행)

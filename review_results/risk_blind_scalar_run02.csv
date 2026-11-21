@@ -1,0 +1,2 @@
+variant,run_id,seed,episodes,state_size,const_mean,const_sd,reach_rate,delay_mean,loss_mean,hop_mean,risk_mean,train_sec,threads,model
+scalar,2,44,8000,125,0.2494207025,0.0000000149,1.000000,470.233601,0.157278,7.000000,0.369752,3575.4,1,scalar_run02.pth

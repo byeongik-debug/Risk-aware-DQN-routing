@@ -1,0 +1,83 @@
+C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\occlude_state_blocks.py:83: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state = torch.load(path, map_location=device)
+모델 10 · 공여 묶음 250 · 에피소드 200 · 평가시드 20261114
+위험 블록 평균 L2 2.5268 · 공여 간 블록 L2 표준편차 0.1032
+
+  window5_run01 | intact 350.79 | risk_frozen 472.20 | risk_mean 382.48 | risk_shuffle 520.60
+  window5_run02 | intact 350.79 | risk_frozen 472.20 | risk_mean 382.48 | risk_shuffle 490.01
+  window5_run03 | intact 373.92 | risk_frozen 598.43 | risk_mean 428.25 | risk_shuffle 543.20
+  window5_run04 | intact 381.81 | risk_frozen 578.22 | risk_mean 428.25 | risk_shuffle 539.40
+  window5_run05 | intact 369.51 | risk_frozen 569.57 | risk_mean 382.48 | risk_shuffle 520.69
+  factor_full_run01 | intact 350.79 | risk_frozen 472.20 | risk_mean 422.30 | risk_shuffle 546.89
+  factor_full_run02 | intact 350.79 | risk_frozen 472.20 | risk_mean 382.48 | risk_shuffle 461.00
+  factor_full_run03 | intact 350.79 | risk_frozen 474.19 | risk_mean 428.25 | risk_shuffle 520.31
+  factor_full_run04 | intact 350.79 | risk_frozen 481.88 | risk_mean 428.25 | risk_shuffle 523.85
+  factor_full_run05 | intact 380.99 | risk_frozen 674.94 | risk_mean 456.88 | risk_shuffle 550.48
+
+==============================================================================
+[0] 읽는 규칙 — 숫자를 보기 전에 정한다
+------------------------------------------------------------------------------
+  설계 당시 예측: risk_frozen 과 risk_mean 은 둘 다 현재 위험에 대한
+  정보가 0 이고(공여는 다른 QoS 실현) 차이는 **분포 안인가**뿐이므로
+  D_mean >= D_frozen 이어야 하고, 그 차가 분포이동 덧돈이다.
+  **탐침에서 이 예측이 꺾였다 (아래 [3]).** 두 조건은 분포 말고도
+  다른 점이 있다: 평균 벡터는 **중립**(모든 엣지가 고르게 중간)이고
+  공여 벡터는 특정 엣지에 대해 **자신 있게 틀렸다**. 따라서:
+    D_frozen = '자신 있게 틀린 위험'의 비용
+    D_mean   = '중립적으로 모르는 위험'의 비용
+  D_frozen ~ 0 이면 정책은 위험 **내용**을 안 읽는 것이고(틀린 내용을
+  먹여도 안 나빠진다), 크면 내용을 읽는 것이다. 홉을 같이 볼 것 —
+  홉이 안 늘고 지연만 나빠지면 **같은 길이에서 나쁜 링크를 고른** 것이다.
+
+[1] 조건별 지표 (모델 10개, 200 에피소드)
+------------------------------------------------------------------------------
+조건                          지연           손실          홉       성공%
+intact           361.10±13.73       0.08079      8.002    100.00
+risk_frozen      526.61±73.23       0.14801      8.203    100.00
+risk_mean        412.21±27.20       0.09923      8.300    100.00
+risk_shuffle     521.64±27.76       0.12400      9.091    100.00
+  (risk_frozen 이 쓴 서로 다른 공여 수: 모델당 중위 143)
+
+[2] intact 대비 짝지은 검정 (Holm 보정)
+------------------------------------------------------------------------------
+조건              지표                차이         t          p     p_holm
+risk_frozen     delay       165.5079     8.661     0.0000     0.0001
+risk_frozen     loss          0.0672    11.955     0.0000     0.0000
+risk_frozen     hop           0.2020     4.966     0.0008     0.0023
+risk_mean       delay        51.1129     6.833     0.0001     0.0003
+risk_mean       loss          0.0184     4.845     0.0009     0.0023
+risk_mean       hop           0.2985     1.462     0.1777     0.1777
+risk_shuffle    delay       160.5453    21.918     0.0000     0.0000
+risk_shuffle    loss          0.0432    17.542     0.0000     0.0000
+risk_shuffle    hop           1.0890     8.015     0.0000     0.0001
+
+[3] 예측 대조 — 분포이동 분해가 되는가
+------------------------------------------------------------------------------
+  delay:
+    D_mean      +51.1129  (p_holm 0.0003   ) 중립·무정보 (분포 밖)
+    D_frozen   +165.5079  (p_holm 0.0001   ) 자신있게 틀림 (분포 안)
+    D_shuffle  +160.5453  (p_holm 0.0000   ) 매 스텝 틀림
+    D_mean >= D_frozen ? **예측 반대**  (frozen/mean = 3.24배)
+  loss:
+    D_mean       +0.0184  (p_holm 0.0023   ) 중립·무정보 (분포 밖)
+    D_frozen     +0.0672  (p_holm 0.0000   ) 자신있게 틀림 (분포 안)
+    D_shuffle    +0.0432  (p_holm 0.0000   ) 매 스텝 틀림
+    D_mean >= D_frozen ? **예측 반대**  (frozen/mean = 3.65배)
+  hop:
+    D_mean       +0.2985  (p_holm 0.1777   ) 중립·무정보 (분포 밖)
+    D_frozen     +0.2020  (p_holm 0.0023   ) 자신있게 틀림 (분포 안)
+    D_shuffle    +1.0890  (p_holm 0.0001   ) 매 스텝 틀림
+    D_mean >= D_frozen ? 예측대로  (frozen/mean = 0.68배)
+
+  판정 규칙: D_mean >= D_frozen 이면 그 차를 분포이동 덧돈으로 읽을
+  수 있다. **반대로 나오면 분해 자체가 불가능하다** — 두 조건이 분포
+  말고 '중립 대 자신있게 틀림'에서도 다르기 때문이다. 그 경우 쓸 수
+  있는 결론은 분해가 아니라 **순서**다: 무정보보다 오정보가 더 비싸고,
+  오정보가 비싸다는 것은 정책이 위험 **내용**을 읽는다는 뜻이다.
+
+  한계 둘: (가) 공여 위험 블록은 **주변분포**로는 분포 안이지만 그
+  에피소드의 현재·방문 블록과는 짝이 안 맞는다. (나) 중립성은
+  설계상의 성질이고 따로 재지 않았다 (평균 벡터의 차원간 분산으로
+  확인할 수 있다 — [1] 머리말의 공여 간 블록 L2 표준편차와 대조).
+==============================================================================
+저장: C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\review_results\risk_frozen_quality.csv

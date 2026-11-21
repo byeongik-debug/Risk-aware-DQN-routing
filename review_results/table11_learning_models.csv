@@ -1,0 +1,6 @@
+row,source_file,delay,delay_sd,loss_pct,loss_pct_sd,hop,hop_sd,pub_delay,pub_delay_sd,pub_loss_pct,pub_hop,variance_meaning
+Proposed,baseline_reference.csv,350.1249717730735,1.4618063478613208,8.355048805871432,0.05676492976057012,7.677,0.011510864433221343,348.7,1.5,8.4,7.7,eval seeds on 1 frozen model
+NoRisk-DQN,norisk_reference.csv,332.85556682983463,3.8940751750168716,9.063384250192017,0.21549761533751957,7.0,0.0,427.2,3.9,9.0,7.0,5 independently trained models
+QoS-Model,exp1_reference.csv [QoS-DQN],403.74256796251785,2.365155459417046,12.895820784010844,0.17723586251839266,7.178999999999999,0.03974921382870366,403.7,2.4,12.9,,eval seeds on 1 frozen model
+vs NoRisk-DQN,recomputed,5.1882578103515735,,-7.815352684683746,,0.6769999999999996,,-18.4,,-6.7,0.7,"(other - proposed) / other, hop as difference"
+vs QoS-Model,recomputed,-13.280144439568236,,-35.21119015370766,,0.4980000000000002,,-13.6,,-34.9,,"(other - proposed) / other, hop as difference"

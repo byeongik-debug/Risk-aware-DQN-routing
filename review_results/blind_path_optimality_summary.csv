@@ -1,0 +1,14 @@
+name,value
+hop_distance_src_dst,6
+observed_hop,7
+n_shortest_paths,4
+n_candidates,246
+observed_rank_train,5
+observed_rank_eval,53
+observed_return_train,14.976665
+observed_meanrisk_train,0.237439
+best_return_train,17.240207
+v1_delay,471.089876
+v1_loss,0.158481
+v1_risk,0.373444
+v2_max_abs_diff,0.000000e+00

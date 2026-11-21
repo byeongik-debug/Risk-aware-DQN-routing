@@ -1,0 +1,150 @@
+C:\Users\kye\.vscode\thesis_papers\ROUTING TEST\review_response\occlude_state_blocks.py:83: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state = torch.load(path, map_location=device)
+모델 10개 적재 (125차원 엄격 비교군)
+배치 상태 묶음 250개 (greedy, window5_run01 기준)
+  window5_run01    intact        delay=350.7908 hop=7.685 succ=100.0%
+  window5_run01    risk_zero     delay=583.7942 hop=6.000 succ=100.0%
+  window5_run01    risk_shuffle  delay=520.5996 hop=8.950 succ=100.0%
+  window5_run01    risk_mean     delay=382.4849 hop=8.000 succ=100.0%
+  window5_run01    curr_zero     delay=376.3215 hop=8.620 succ=100.0%
+  window5_run01    visited_shuffle delay=381.8457 hop=8.600 succ=100.0%
+  window5_run01    dest_zero     delay=350.7908 hop=7.685 succ=100.0%
+  window5_run02    intact        delay=350.7908 hop=7.685 succ=100.0%
+  window5_run02    risk_zero     delay=522.5574 hop=6.000 succ=100.0%
+  window5_run02    risk_shuffle  delay=490.0060 hop=8.575 succ=100.0%
+  window5_run02    risk_mean     delay=382.4849 hop=8.000 succ=100.0%
+  window5_run02    curr_zero     delay=394.8318 hop=9.255 succ=100.0%
+  window5_run02    visited_shuffle delay=374.7462 hop=8.470 succ=100.0%
+  window5_run02    dest_zero     delay=350.7753 hop=7.685 succ=100.0%
+  window5_run03    intact        delay=373.9217 hop=8.375 succ=100.0%
+  window5_run03    risk_zero     delay=522.5574 hop=6.000 succ=100.0%
+  window5_run03    risk_shuffle  delay=543.2036 hop=9.260 succ=100.0%
+  window5_run03    risk_mean     delay=428.2470 hop=8.000 succ=100.0%
+  window5_run03    curr_zero     delay=375.3316 hop=8.665 succ=100.0%
+  window5_run03    visited_shuffle delay=373.0374 hop=8.445 succ=100.0%
+  window5_run03    dest_zero     delay=380.9872 hop=8.660 succ=100.0%
+  window5_run04    intact        delay=381.8118 hop=8.660 succ=100.0%
+  window5_run04    risk_zero     delay=583.7942 hop=6.000 succ=100.0%
+  window5_run04    risk_shuffle  delay=539.4029 hop=9.295 succ=100.0%
+  window5_run04    risk_mean     delay=428.2470 hop=8.000 succ=100.0%
+  window5_run04    curr_zero     delay=376.2307 hop=8.620 succ=100.0%
+  window5_run04    visited_shuffle delay=381.4353 hop=8.390 succ=100.0%
+  window5_run04    dest_zero     delay=369.4075 hop=8.210 succ=100.0%
+  window5_run05    intact        delay=369.5101 hop=8.210 succ=100.0%
+  window5_run05    risk_zero     delay=530.0637 hop=6.000 succ=100.0%
+  window5_run05    risk_shuffle  delay=520.6869 hop=9.045 succ=100.0%
+  window5_run05    risk_mean     delay=382.4849 hop=8.000 succ=100.0%
+  window5_run05    curr_zero     delay=367.3435 hop=8.295 succ=100.0%
+  window5_run05    visited_shuffle delay=363.1144 hop=8.195 succ=100.0%
+  window5_run05    dest_zero     delay=384.2731 hop=8.670 succ=100.0%
+  factor_full_run01 intact        delay=350.7908 hop=7.685 succ=100.0%
+  factor_full_run01 risk_zero     delay=458.6721 hop=6.000 succ=100.0%
+  factor_full_run01 risk_shuffle  delay=546.8890 hop=9.395 succ=100.0%
+  factor_full_run01 risk_mean     delay=422.2950 hop=9.000 succ=100.0%
+  factor_full_run01 curr_zero     delay=383.8931 hop=8.685 succ=100.0%
+  factor_full_run01 visited_shuffle delay=370.6002 hop=8.225 succ=100.0%
+  factor_full_run01 dest_zero     delay=350.7908 hop=7.685 succ=100.0%
+  factor_full_run02 intact        delay=350.7908 hop=7.685 succ=100.0%
+  factor_full_run02 risk_zero     delay=522.5574 hop=6.000 succ=100.0%
+  factor_full_run02 risk_shuffle  delay=460.9977 hop=8.505 succ=100.0%
+  factor_full_run02 risk_mean     delay=382.4849 hop=8.000 succ=100.0%
+  factor_full_run02 curr_zero     delay=372.4662 hop=8.375 succ=100.0%
+  factor_full_run02 visited_shuffle delay=368.3636 hop=8.315 succ=100.0%
+  factor_full_run02 dest_zero     delay=360.0167 hop=8.000 succ=100.0%
+  factor_full_run03 intact        delay=350.7908 hop=7.685 succ=100.0%
+  factor_full_run03 risk_zero     delay=583.7942 hop=6.000 succ=100.0%
+  factor_full_run03 risk_shuffle  delay=520.3102 hop=9.515 succ=100.0%
+  factor_full_run03 risk_mean     delay=428.2470 hop=8.000 succ=100.0%
+  factor_full_run03 curr_zero     delay=407.4928 hop=9.395 succ=100.0%
+  factor_full_run03 visited_shuffle delay=375.5357 hop=8.160 succ=100.0%
+  factor_full_run03 dest_zero     delay=350.7908 hop=7.685 succ=100.0%
+  factor_full_run04 intact        delay=350.7908 hop=7.685 succ=100.0%
+  factor_full_run04 risk_zero     delay=583.7942 hop=6.000 succ=100.0%
+  factor_full_run04 risk_shuffle  delay=523.8532 hop=9.055 succ=100.0%
+  factor_full_run04 risk_mean     delay=428.2470 hop=8.000 succ=100.0%
+  factor_full_run04 curr_zero     delay=400.9979 hop=9.230 succ=100.0%
+  factor_full_run04 visited_shuffle delay=371.3446 hop=8.275 succ=100.0%
+  factor_full_run04 dest_zero     delay=350.7908 hop=7.685 succ=100.0%
+  factor_full_run05 intact        delay=380.9872 hop=8.660 succ=100.0%
+  factor_full_run05 risk_zero     delay=530.0637 hop=6.000 succ=100.0%
+  factor_full_run05 risk_shuffle  delay=550.4797 hop=9.310 succ=100.0%
+  factor_full_run05 risk_mean     delay=456.8816 hop=10.000 succ=100.0%
+  factor_full_run05 curr_zero     delay=369.1098 hop=8.350 succ=100.0%
+  factor_full_run05 visited_shuffle delay=372.0822 hop=8.395 succ=100.0%
+  factor_full_run05 dest_zero     delay=380.9872 hop=8.660 succ=100.0%
+
+==========================================================================
+[1] 블록 가림 — 배치 상태에서 행동이 바뀌는 비율 (모델 10개 평균)
+--------------------------------------------------------------------------
+블록        가림               평균%       표준편차       평균|dQ|
+risk      zero           49.28       7.75     33.77586
+risk      shuffle        39.24       3.76      6.75699
+risk      mean           29.52       3.29      6.20606
+curr      zero           20.72       4.82      4.53699
+curr      shuffle        24.04       4.67      5.11355
+curr      mean           19.20       6.61      3.87131
+dest      zero            0.60       1.30      1.88685
+dest      shuffle         0.00       0.00      0.00000
+dest      mean            0.00       0.00      0.00000
+visited   zero            3.44       3.14      3.58264
+visited   shuffle        15.24       1.50      4.00907
+visited   mean            7.56       4.07      3.28647
+
+음성 통제: dest 블록은 19절에서 상수로 밝혀졌다 → 0%에 가까워야 한다.
+
+[2] 위험 50칸 — 한 칸씩 0으로 (정책이 읽는 엣지 수)
+--------------------------------------------------------------------------
+모델                    살아있는칸        최대변화수         총변화수
+window5_run01             0            0            0
+window5_run02             4            9           20
+window5_run03             6           10           45
+window5_run04             2           13           23
+window5_run05            10           34          164
+factor_full_run01          4           11           29
+factor_full_run02          8           11           53
+factor_full_run03          8           21           95
+factor_full_run04          9           13           75
+factor_full_run05         12           32          143
+평균 살아있는 칸 6.3 / 50 (sd 3.8)
+
+[3] 롤아웃 — 조건별 지표 (모델 10개, 200 에피소드)
+--------------------------------------------------------------------------
+조건                           지연           손실          홉        성공%
+intact            361.10±13.73       0.08079      8.002     100.00
+risk_zero         542.16±41.30       0.24387      6.000     100.00
+risk_shuffle      521.64±27.76       0.12400      9.091     100.00
+risk_mean         412.21±27.20       0.09923      8.300     100.00
+curr_zero         382.40±13.98       0.07518      8.749     100.00
+visited_shuffle   373.21±5.65        0.07987      8.347     100.00
+dest_zero         362.96±14.51       0.08044      8.062     100.00
+
+[4] 원본 대비 짝지은 검정 (같은 모델, 같은 에피소드 열)
+--------------------------------------------------------------------------
+조건               지표                    차이         t          p     p_holm
+risk_zero        delay           181.0673    13.351     0.0000     0.0000
+risk_zero        loss              0.1631    19.107     0.0000     0.0000
+risk_zero        hop              -2.0015   -14.776     0.0000     0.0000
+risk_zero        success_rate      0.0000     0.000     1.0000     1.0000
+risk_shuffle     delay           160.5453    21.918     0.0000     0.0000
+risk_shuffle     loss              0.0432    17.542     0.0000     0.0000
+risk_shuffle     hop               1.0890     8.015     0.0000     0.0004
+risk_shuffle     success_rate      0.0000     0.000     1.0000     1.0000
+risk_mean        delay            51.1129     6.833     0.0001     0.0014
+risk_mean        loss              0.0184     4.845     0.0009     0.0156
+risk_mean        hop               0.2985     1.462     0.1777     1.0000
+risk_mean        success_rate      0.0000     0.000     1.0000     1.0000
+curr_zero        delay            21.3043     2.717     0.0237     0.3360
+curr_zero        loss             -0.0056    -2.752     0.0224     0.3360
+curr_zero        hop               0.7475     3.261     0.0098     0.1571
+curr_zero        success_rate      0.0000     0.000     1.0000     1.0000
+visited_shuffle  delay            12.1130     2.617     0.0279     0.3633
+visited_shuffle  loss             -0.0009    -0.656     0.5285     1.0000
+visited_shuffle  hop               0.3455     2.536     0.0319     0.3829
+visited_shuffle  success_rate      0.0000     0.000     1.0000     1.0000
+dest_zero        delay             1.8635     0.814     0.4369     1.0000
+dest_zero        loss             -0.0003    -0.564     0.5863     1.0000
+dest_zero        hop               0.0610     0.775     0.4581     1.0000
+dest_zero        success_rate      0.0000     0.000     1.0000     1.0000
+
+쓴 파일: review_results/state_occlusion_battery.csv,
+         review_results/state_occlusion_rollout.csv

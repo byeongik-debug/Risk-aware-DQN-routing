@@ -1,0 +1,46 @@
+scope,label,metric,unit,n,printed,draw_mean,draw_sd,diff,diff_pct,z,t,p,p_holm,min_pct,max_pct,note
+policy_identity,-Cong-r03|-dLoss-r03|Full-r01,all3,,3,,,,,,,,,,,,policy_id=[1]
+policy_identity,Full-r05,all3,,1,,,,,,,,,,,,policy_id=[21]
+policy_identity,-Util-r03,all3,,1,,,,,,,,,,,,policy_id=[13]
+label,Full-r01,delay,ms,15,354.294012,349.410077,4.914233,+4.883935,+1.3978,+0.9938,-3.8491,0.00177067,,-2.1408,+2.2749,arm=Full run=1
+label,Full-r01,hop,hops,15,7.710000,7.675000,0.041705,+0.035000,+0.4560,+0.8392,-3.2503,0.00580882,,-0.9121,+0.8469,arm=Full run=1
+label,Full-r01,loss,loss/hop,15,0.084779,0.083719,0.001498,+0.001060,+1.2665,+0.7076,-2.7406,0.01593541,,-2.9517,+2.5602,arm=Full run=1
+label,Full-r05,delay,ms,15,387.034160,385.232904,7.918052,+1.801256,+0.4676,+0.2275,-0.8811,0.39316287,0.43552268,-4.3886,+3.2131,arm=Full run=5
+label,Full-r05,hop,hops,15,8.640000,8.692000,0.133200,-0.052000,-0.5983,-0.3904,+1.5120,0.15278029,0.43552268,-3.5320,+2.4505,arm=Full run=5
+label,Full-r05,loss,loss/hop,15,0.077773,0.075921,0.001037,+0.001852,+2.4399,+1.7869,-6.9207,0.00000709,0.00006381,-2.0492,+2.2479,arm=Full run=5
+label,-Cong-r03,delay,ms,15,354.294012,349.410077,4.914233,+4.883935,+1.3978,+0.9938,-3.8491,0.00177067,0.01239469,-2.1408,+2.2749,arm=-Cong run=3
+label,-Cong-r03,hop,hops,15,7.710000,7.675000,0.041705,+0.035000,+0.4560,+0.8392,-3.2503,0.00580882,0.03485292,-0.9121,+0.8469,arm=-Cong run=3
+label,-Cong-r03,loss,loss/hop,15,0.084779,0.083719,0.001498,+0.001060,+1.2665,+0.7076,-2.7406,0.01593541,0.07967705,-2.9517,+2.5602,arm=-Cong run=3
+label,-Util-r03,delay,ms,15,440.409801,435.375839,3.399195,+5.033962,+1.1562,+1.4809,-5.7356,0.00005153,0.00041224,-1.1050,+1.7834,arm=-Util run=3
+label,-Util-r03,hop,hops,15,10.490000,10.454000,0.082119,+0.036000,+0.3444,+0.4384,-1.6979,0.11163980,0.43552268,-1.1861,+1.9227,arm=-Util run=3
+label,-Util-r03,loss,loss/hop,15,0.068863,0.068082,0.001767,+0.000781,+1.1476,+0.4421,-1.7124,0.10888067,0.43552268,-5.4682,+4.6090,arm=-Util run=3
+label,-dLoss-r03,delay,ms,15,354.294012,349.410077,4.914233,+4.883935,+1.3978,+0.9938,-3.8491,0.00177067,,-2.1408,+2.2749,arm=-dLoss run=3
+label,-dLoss-r03,hop,hops,15,7.710000,7.675000,0.041705,+0.035000,+0.4560,+0.8392,-3.2503,0.00580882,,-0.9121,+0.8469,arm=-dLoss run=3
+label,-dLoss-r03,loss,loss/hop,15,0.084779,0.083719,0.001498,+0.001060,+1.2665,+0.7076,-2.7406,0.01593541,,-2.9517,+2.5602,arm=-dLoss run=3
+arm_full,Full,delay,ms,15,360.842042,356.574643,5.450533,+4.267399,+1.1968,+0.7829,-3.0323,0.00895923,0.01791846,-2.6265,+2.3793,"4x(policy of run1-4) + 1x(run5), /5"
+arm_full,Full,hop,hops,15,7.896000,7.878400,0.058098,+0.017600,+0.2234,+0.3029,-1.1733,0.26026547,0.26026547,-1.4902,+1.1500,"4x(policy of run1-4) + 1x(run5), /5"
+arm_full,Full,loss,loss/hop,15,0.083378,0.082159,0.001384,+0.001219,+1.4834,+0.8809,-3.4116,0.00421466,0.01264398,-2.5648,+2.5025,"4x(policy of run1-4) + 1x(run5), /5"
+policy_set_mean,-Cong-r03|Full-r05|-Util-r03,delay,ms,3,,,,,+1.0072,,,,,+0.4676,+1.3978,sd=0.4827; +1.3978 / +0.4676 / +1.1562
+policy_set_mean,-Cong-r03|Full-r05|-Util-r03,hop,hops,3,,,,,+0.0674,,,,,-0.5983,+0.4560,sd=0.5792; +0.4560 / -0.5983 / +0.3444
+policy_set_mean,-Cong-r03|Full-r05|-Util-r03,loss,loss/hop,3,,,,,+1.6180,,,,,+1.1476,+2.4399,sd=0.7143; +1.2665 / +2.4399 / +1.1476
+draw_common,-Cong-r03|Full-r05|-Util-r03,delay,ms,15,,,1.312953,,,0.7591,,,,-2.1259,+2.2721,"range=4.3980; sign_agree=11/15; mean_abs_r=0.7283; r=+0.943,+0.727,+0.515"
+policy_corr,-Cong-r03~Full-r05,delay,ms,15,,,,,,+0.9432,,,,,,r across 15 draws of dev%
+policy_corr,-Cong-r03~-Util-r03,delay,ms,15,,,,,,+0.7268,,,,,,r across 15 draws of dev%
+policy_corr,Full-r05~-Util-r03,delay,ms,15,,,,,,+0.5150,,,,,,r across 15 draws of dev%
+draw_common,-Cong-r03|Full-r05|-Util-r03,hop,hops,15,,,0.514702,,,0.2437,,,,-0.8404,+0.9198,"range=1.7603; sign_agree=3/15; mean_abs_r=0.7255; r=+0.873,-0.519,-0.784"
+policy_corr,-Cong-r03~Full-r05,hop,hops,15,,,,,,+0.8734,,,,,,r across 15 draws of dev%
+policy_corr,-Cong-r03~-Util-r03,hop,hops,15,,,,,,-0.5188,,,,,,r across 15 draws of dev%
+policy_corr,Full-r05~-Util-r03,hop,hops,15,,,,,,-0.7842,,,,,,r across 15 draws of dev%
+draw_common,-Cong-r03|Full-r05|-Util-r03,loss,loss/hop,15,,,1.833793,,,0.8546,,,,-3.0927,+2.7389,"range=5.8316; sign_agree=14/15; mean_abs_r=0.8588; r=+0.874,+0.962,+0.740"
+policy_corr,-Cong-r03~Full-r05,loss,loss/hop,15,,,,,,+0.8738,,,,,,r across 15 draws of dev%
+policy_corr,-Cong-r03~-Util-r03,loss,loss/hop,15,,,,,,+0.9625,,,,,,r across 15 draws of dev%
+policy_corr,Full-r05~-Util-r03,loss,loss/hop,15,,,,,,+0.7403,,,,,,r across 15 draws of dev%
+pair_residual,-Cong-r03~Full-r05,delay,ms,15,-32.740148,-35.822826,3.666184,+3.082678,+9.4156,+0.8408,,,,,,residual of the arm-to-arm gap
+pair_residual,-Cong-r03~-Util-r03,delay,ms,15,-86.115789,-85.965762,3.379790,-0.150027,-0.1742,-0.0444,,,,,,residual of the arm-to-arm gap
+pair_residual,Full-r05~-Util-r03,delay,ms,15,-53.375641,-50.142935,6.821167,-3.232706,-6.0565,-0.4739,,,,,,residual of the arm-to-arm gap
+pair_residual,-Cong-r03~Full-r05,hop,hops,15,-0.930000,-1.017000,0.098883,+0.087000,+9.3548,+0.8798,,,,,,residual of the arm-to-arm gap
+pair_residual,-Cong-r03~-Util-r03,hop,hops,15,-2.780000,-2.779000,0.109711,-0.001000,-0.0360,-0.0091,,,,,,residual of the arm-to-arm gap
+pair_residual,Full-r05~-Util-r03,hop,hops,15,-1.850000,-1.762000,0.204064,-0.088000,-4.7568,-0.4312,,,,,,residual of the arm-to-arm gap
+pair_residual,-Cong-r03~Full-r05,loss,loss/hop,15,+0.007006,+0.007798,0.000778,-0.000792,-11.3062,-1.0181,,,,,,residual of the arm-to-arm gap
+pair_residual,-Cong-r03~-Util-r03,loss,loss/hop,15,+0.015916,+0.015637,0.000520,+0.000279,+1.7530,+0.5362,,,,,,residual of the arm-to-arm gap
+pair_residual,Full-r05~-Util-r03,loss,loss/hop,15,+0.008910,+0.007839,0.001219,+0.001071,+12.0216,+0.8789,,,,,,residual of the arm-to-arm gap

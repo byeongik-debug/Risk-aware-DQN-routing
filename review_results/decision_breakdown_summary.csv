@@ -1,0 +1,150 @@
+scope,key,value,n,note
+position,first_hop_decide_ms,0.374898,360,
+position,first_hop_decide_sd,0.089317,360,
+position,later_hop_decide_ms,0.403328,2133,
+position,later_hop_decide_sd,0.100655,2133,
+position,first_hop_premium_ms,-0.028430,,first minus later; the model cost = c + p*[hop 0] predicts intercept == this
+position,first_hop_premium_pct,-7.048914,,
+position_index,decide_ms_hop0,0.374898,360,sd 0.089317
+position_index,decide_ms_hop1,0.385670,360,sd 0.092893
+position_index,decide_ms_hop2,0.391957,360,sd 0.096247
+position_index,decide_ms_hop3,0.415458,360,sd 0.100238
+position_index,decide_ms_hop4,0.411578,360,sd 0.102563
+position_index,decide_ms_hop5,0.406589,360,sd 0.099955
+position_index,decide_ms_hop6,0.411890,270,sd 0.111753
+position_index,decide_ms_hop7,0.397437,63,sd 0.097120
+scenario,decisions_normal,6.000000,30,
+scenario,per_path_decide_ms_normal,2.360378,30,
+scenario,per_decision_ms_normal,0.393396,30,
+scenario,decisions_congestion,7.000000,30,
+scenario,per_path_decide_ms_congestion,2.858359,30,
+scenario,per_decision_ms_congestion,0.408337,30,
+scenario,decisions_unstable,7.000000,30,
+scenario,per_path_decide_ms_unstable,2.890554,30,
+scenario,per_decision_ms_unstable,0.412936,30,
+scenario,decisions_dynamic,7.700000,30,
+scenario,per_path_decide_ms_dynamic,2.949182,30,
+scenario,per_decision_ms_dynamic,0.383011,30,
+regression,intercept_ms_4means,0.247385,4,the shape 4.7 quotes; published 0.513
+regression,slope_ms_4means,0.363499,4,published 0.281
+regression,r2_4means,0.872961,4,
+regression,intercept_se_4means,0.681608,4,df 2
+regression,intercept_t_4means,0.362944,4,
+regression,intercept_p_4means,0.751416,4,H0: intercept = 0
+regression,intercept_ms_paths,0.128527,360,"path-level, not 4 means"
+regression,slope_ms_paths,0.380663,360,
+regression,r2_paths,0.336829,360,
+regression,intercept_se_paths,0.196344,360,df 358
+regression,intercept_t_paths,0.654601,360,
+regression,intercept_p_paths,0.513145,360,H0: intercept = 0
+stability,intercept_ms_4means_rep0,-0.041235,120,"slope 0.404421, R2 0.980165"
+stability,per_hop_ms_rep0,0.398412,120,
+stability,intercept_ms_4means_rep1,0.517170,120,"slope 0.342671, R2 0.426059"
+stability,per_hop_ms_rep1,0.417951,120,
+stability,intercept_ms_4means_rep2,0.163928,120,"slope 0.357768, R2 0.992658"
+stability,per_hop_ms_rep2,0.381567,120,
+stability,intercept_ms_4means_mean,0.213288,3,
+stability,intercept_ms_4means_sd,0.282456,3,
+stability,intercept_ms_4means_min,-0.041235,3,
+stability,intercept_ms_4means_max,0.517170,3,
+stability,intercept_ms_4means_range,0.558405,3,identical code and machine; this is the quantity's own noise
+stability,intercept_sign_flips_4means,1.000000,3,1 = the sign is not even stable across passes
+stability,intercept_ms_paths_min,-0.037259,3,
+stability,intercept_ms_paths_max,0.367361,3,
+stability,per_hop_ms_mean,0.399310,3,
+stability,per_hop_ms_sd,0.018209,3,
+stability,per_hop_ms_spread_pct,9.111772,3,per-hop cost moves this much between passes
+regression,intercept_boot_lo_ms,-0.170573,2000,"2000 resamples of the 360 paths, seed 20261120"
+regression,intercept_boot_hi_ms,0.427564,2000,
+regression,intercept_boot_share_le0_pct,20.450000,2000,share of resamples whose intercept is <= 0
+jackknife,intercept_ms_without_normal,2.127201,3,
+jackknife,intercept_ms_without_congestion,0.256644,3,
+jackknife,intercept_ms_without_unstable,0.261128,3,
+jackknife,intercept_ms_without_dynamic,-0.724096,3,
+jackknife,intercept_ms_min,-0.724096,4,
+jackknife,intercept_ms_max,2.127201,4,
+jackknife,intercept_ms_range,2.851297,4,how far the quoted intercept moves when one scenario leaves
+regression,intercept_minus_premium_ms,0.275816,,0 would mean the intercept is entirely the first-hop premium
+regression,premium_share_of_intercept_pct,-11.492302,,
+regression,r_perdecision_vs_decisions,-0.018560,360,negative => long paths are cheaper per decision => positive intercept
+regression,pooled_per_hop_ms,0.399223,2493,a constant-cost model gives intercept exactly 0 by construction
+decision_parts,decide_ms,0.399223,2493,sd 0.099584
+decision_parts,tensor_ms,0.016561,2493,sd 0.003588
+decision_parts,forward_ms,0.210875,2493,sd 0.054415
+decision_parts,mask_ms,0.051662,2493,sd 0.018582
+decision_parts,argmax_ms,0.008844,2493,sd 0.001967
+decision_parts,components_ms,0.287943,2493,sd 0.065181
+decision_parts,residual_ms,0.111280,2493,sd 0.096305
+decision_parts_pct,tensor_pct_of_decide,4.148362,2493,
+decision_parts_pct,forward_pct_of_decide,52.821426,2493,
+decision_parts_pct,mask_pct_of_decide,12.940625,2493,
+decision_parts_pct,argmax_pct_of_decide,2.215346,2493,
+decision_parts_pct,residual_pct_of_decide,27.874240,2493,
+uncharged,get_state_ms_per_hop,0.061505,2493,sd 0.013957
+uncharged,get_valid_ms_per_hop,0.001339,2493,sd 0.000305
+uncharged,get_state_pct_of_decide,15.406115,,
+uncharged,uncharged_pct_of_decide,15.741635,,
+multiple,ospf_per_path_ms_normal,0.321512,30,same process as the DQN rows
+multiple,qos_per_path_ms_normal,2.763996,30,"composite-QoS Dijkstra, same process"
+multiple,dqn_as_table12_ms_normal,2.360378,30,
+multiple,dqn_with_state_ms_normal,2.735470,30,decide + get_state + get_valid_actions at every hop
+multiple,state_charge_pct_normal,15.891195,30,
+multiple,multiple_table12_normal,7.341487,30,
+multiple,multiple_with_state_normal,8.508137,30,
+vs_qos,dqn_over_qos_table12_normal,0.853973,30,<1 means the draft's favourable sentence holds
+vs_qos,dqn_over_qos_with_state_normal,0.989680,30,the same comparison once the observation build is charged
+vs_qos,welch_diff_ms_table12_normal,-0.403618,30,DQN minus QoS-Dijkstra
+vs_qos,welch_p_table12_normal,0.000000,30,"t -7.7499, df 149.1, 30 paths per arm"
+vs_qos,welch_diff_ms_with_state_normal,-0.028526,30,
+vs_qos,welch_p_with_state_normal,0.593077,30,"t -0.5355, df 155.9"
+multiple,ospf_per_path_ms_congestion,0.315721,30,same process as the DQN rows
+multiple,qos_per_path_ms_congestion,2.878517,30,"composite-QoS Dijkstra, same process"
+multiple,dqn_as_table12_ms_congestion,2.858359,30,
+multiple,dqn_with_state_ms_congestion,3.303507,30,decide + get_state + get_valid_actions at every hop
+multiple,state_charge_pct_congestion,15.573545,30,
+multiple,multiple_table12_congestion,9.053430,30,
+multiple,multiple_with_state_congestion,10.463370,30,
+vs_qos,dqn_over_qos_table12_congestion,0.992997,30,<1 means the draft's favourable sentence holds
+vs_qos,dqn_over_qos_with_state_congestion,1.147642,30,the same comparison once the observation build is charged
+vs_qos,welch_diff_ms_table12_congestion,-0.020158,30,DQN minus QoS-Dijkstra
+vs_qos,welch_p_table12_congestion,0.724996,30,"t -0.3524, df 167.5, 30 paths per arm"
+vs_qos,welch_diff_ms_with_state_congestion,0.424990,30,
+vs_qos,welch_p_with_state_congestion,0.000000,30,"t 7.2065, df 172.6"
+multiple,ospf_per_path_ms_unstable,0.325933,30,same process as the DQN rows
+multiple,qos_per_path_ms_unstable,2.865966,30,"composite-QoS Dijkstra, same process"
+multiple,dqn_as_table12_ms_unstable,2.890554,30,
+multiple,dqn_with_state_ms_unstable,3.341124,30,decide + get_state + get_valid_actions at every hop
+multiple,state_charge_pct_unstable,15.587668,30,
+multiple,multiple_table12_unstable,8.868545,30,
+multiple,multiple_with_state_unstable,10.250944,30,
+vs_qos,dqn_over_qos_table12_unstable,1.008580,30,<1 means the draft's favourable sentence holds
+vs_qos,dqn_over_qos_with_state_unstable,1.165794,30,the same comparison once the observation build is charged
+vs_qos,welch_diff_ms_table12_unstable,0.024589,30,DQN minus QoS-Dijkstra
+vs_qos,welch_p_table12_unstable,0.736646,30,"t 0.3368, df 177.2, 30 paths per arm"
+vs_qos,welch_diff_ms_with_state_unstable,0.475159,30,
+vs_qos,welch_p_with_state_unstable,0.000000,30,"t 6.1612, df 177.7"
+multiple,ospf_per_path_ms_dynamic,0.306581,30,same process as the DQN rows
+multiple,qos_per_path_ms_dynamic,2.757472,30,"composite-QoS Dijkstra, same process"
+multiple,dqn_as_table12_ms_dynamic,2.949182,30,
+multiple,dqn_with_state_ms_dynamic,3.419157,30,decide + get_state + get_valid_actions at every hop
+multiple,state_charge_pct_dynamic,15.935755,30,
+multiple,multiple_table12_dynamic,9.619582,30,
+multiple,multiple_with_state_dynamic,11.152535,30,
+vs_qos,dqn_over_qos_table12_dynamic,1.069524,30,<1 means the draft's favourable sentence holds
+vs_qos,dqn_over_qos_with_state_dynamic,1.239961,30,the same comparison once the observation build is charged
+vs_qos,welch_diff_ms_table12_dynamic,0.191710,30,DQN minus QoS-Dijkstra
+vs_qos,welch_p_table12_dynamic,0.000131,30,"t 3.9102, df 177.6, 30 paths per arm"
+vs_qos,welch_diff_ms_with_state_dynamic,0.661684,30,
+vs_qos,welch_p_with_state_dynamic,0.000000,30,"t 12.6713, df 177.0"
+vs_qos,welch_pholm_with_state_normal,1.000000,8,Holm family 8
+vs_qos,welch_pholm_table12_normal,0.000000,8,Holm family 8
+vs_qos,welch_pholm_with_state_congestion,0.000000,8,Holm family 8
+vs_qos,welch_pholm_table12_congestion,1.000000,8,Holm family 8
+vs_qos,welch_pholm_with_state_unstable,0.000000,8,Holm family 8
+vs_qos,welch_pholm_table12_unstable,1.000000,8,Holm family 8
+vs_qos,welch_pholm_with_state_dynamic,0.000000,8,Holm family 8
+vs_qos,welch_pholm_table12_dynamic,0.000524,8,Holm family 8
+multiple,multiple_table12_min,7.341487,4,
+multiple,multiple_table12_max,9.619582,4,
+multiple,multiple_with_state_min,8.508137,4,
+multiple,multiple_with_state_max,11.152535,4,

@@ -1,0 +1,267 @@
+spec,counter,draft,draft_line,row,csv,column,stat,n,printed_mean,recomputed_mean,printed_sd,recomputed_sd,tol,diff_mean,diff_sd,match
+표 10 — 인자 절제 (DRAFT_4_6_2),0,DRAFT_4_6_2_table10.md,20,**Proposed (Full)**,table10_factor_runs.csv,delay,mean_sd,5,360.800000,360.842042,14.600000,14.641839,0.050005,0.042042,0.041839,1
+표 10 — 인자 절제 (DRAFT_4_6_2),0,DRAFT_4_6_2_table10.md,20,**Proposed (Full)**,table10_factor_runs.csv,loss,mean,5,8.300000,8.337780,,,0.050005,0.037780,,1
+표 10 — 인자 절제 (DRAFT_4_6_2),0,DRAFT_4_6_2_table10.md,20,**Proposed (Full)**,table10_factor_runs.csv,risky_pct,mean,5,21.500000,21.470130,,,0.050005,0.029870,,1
+표 10 — 인자 절제 (DRAFT_4_6_2),0,DRAFT_4_6_2_table10.md,20,**Proposed (Full)**,table10_factor_runs.csv,hop,mean,5,7.900000,7.896000,,,0.005000,0.004000,,1
+표 10 — 인자 절제 (DRAFT_4_6_2),0,DRAFT_4_6_2_table10.md,21,w/o VD,table10_factor_runs.csv,delay,mean_sd,5,371.400000,371.404831,17.000000,16.957665,0.050005,0.004831,0.042335,1
+표 10 — 인자 절제 (DRAFT_4_6_2),0,DRAFT_4_6_2_table10.md,21,w/o VD,table10_factor_runs.csv,loss,mean,5,8.100000,8.107720,,,0.050005,0.007720,,1
+표 10 — 인자 절제 (DRAFT_4_6_2),0,DRAFT_4_6_2_table10.md,21,w/o VD,table10_factor_runs.csv,risky_pct,mean,5,20.800000,20.785786,,,0.050005,0.014214,,1
+표 10 — 인자 절제 (DRAFT_4_6_2),0,DRAFT_4_6_2_table10.md,21,w/o VD,table10_factor_runs.csv,hop,mean,5,8.190000,8.186000,,,0.005000,0.004000,,1
+표 10 — 인자 절제 (DRAFT_4_6_2),0,DRAFT_4_6_2_table10.md,22,w/o VL,table10_factor_runs.csv,delay,mean_sd,5,361.900000,361.890975,14.800000,14.790411,0.050005,0.009025,0.009589,1
+표 10 — 인자 절제 (DRAFT_4_6_2),0,DRAFT_4_6_2_table10.md,22,w/o VL,table10_factor_runs.csv,loss,mean,5,8.300000,8.314100,,,0.050005,0.014100,,1
+표 10 — 인자 절제 (DRAFT_4_6_2),0,DRAFT_4_6_2_table10.md,22,w/o VL,table10_factor_runs.csv,risky_pct,mean,5,21.400000,21.400433,,,0.050005,0.000433,,1
+표 10 — 인자 절제 (DRAFT_4_6_2),0,DRAFT_4_6_2_table10.md,22,w/o VL,table10_factor_runs.csv,hop,mean,5,7.930000,7.926000,,,0.005000,0.004000,,1
+표 10 — 인자 절제 (DRAFT_4_6_2),0,DRAFT_4_6_2_table10.md,23,"w/o VD, VL",table10_factor_runs.csv,delay,mean_sd,5,355.500000,355.534250,5.000000,5.042995,0.050005,0.034250,0.042995,1
+표 10 — 인자 절제 (DRAFT_4_6_2),0,DRAFT_4_6_2_table10.md,23,"w/o VD, VL",table10_factor_runs.csv,loss,mean,5,8.400000,8.426840,,,0.050005,0.026840,,1
+표 10 — 인자 절제 (DRAFT_4_6_2),0,DRAFT_4_6_2_table10.md,23,"w/o VD, VL",table10_factor_runs.csv,risky_pct,mean,5,21.700000,21.715079,,,0.050005,0.015079,,1
+표 10 — 인자 절제 (DRAFT_4_6_2),0,DRAFT_4_6_2_table10.md,23,"w/o VD, VL",table10_factor_runs.csv,hop,mean,5,7.770000,7.774000,,,0.005000,0.004000,,1
+표 10 — 인자 절제 (DRAFT_4_6_2),0,DRAFT_4_6_2_table10.md,24,w/o U,table10_factor_runs.csv,delay,mean_sd,5,405.200000,405.182401,31.300000,31.337730,0.050005,0.017599,0.037730,1
+표 10 — 인자 절제 (DRAFT_4_6_2),0,DRAFT_4_6_2_table10.md,24,w/o U,table10_factor_runs.csv,loss,mean,5,7.300000,7.334180,,,0.050005,0.034180,,1
+표 10 — 인자 절제 (DRAFT_4_6_2),0,DRAFT_4_6_2_table10.md,24,w/o U,table10_factor_runs.csv,risky_pct,mean,5,18.400000,18.416602,,,0.050005,0.016602,,1
+표 10 — 인자 절제 (DRAFT_4_6_2),0,DRAFT_4_6_2_table10.md,24,w/o U,table10_factor_runs.csv,hop,mean,5,9.450000,9.446000,,,0.005000,0.004000,,1
+표 10 — 인자 절제 (DRAFT_4_6_2),0,DRAFT_4_6_2_table10.md,25,w/o IC,table10_factor_runs.csv,delay,mean_sd,5,360.800000,360.796909,10.500000,10.467873,0.050005,0.003091,0.032127,1
+표 10 — 인자 절제 (DRAFT_4_6_2),0,DRAFT_4_6_2_table10.md,25,w/o IC,table10_factor_runs.csv,loss,mean,5,8.300000,8.304100,,,0.050005,0.004100,,1
+표 10 — 인자 절제 (DRAFT_4_6_2),0,DRAFT_4_6_2_table10.md,25,w/o IC,table10_factor_runs.csv,risky_pct,mean,5,21.400000,21.397100,,,0.050005,0.002900,,1
+표 10 — 인자 절제 (DRAFT_4_6_2),0,DRAFT_4_6_2_table10.md,25,w/o IC,table10_factor_runs.csv,hop,mean,5,7.900000,7.903000,,,0.005000,0.003000,,1
+표 10 — 인자 절제 (DRAFT_4_6_2),0,DRAFT_4_6_2_table10.md,26,w/o T,table10_factor_runs.csv,delay,mean_sd,5,376.400000,376.389040,12.900000,12.933699,0.050005,0.010960,0.033699,1
+표 10 — 인자 절제 (DRAFT_4_6_2),0,DRAFT_4_6_2_table10.md,26,w/o T,table10_factor_runs.csv,loss,mean,5,8.000000,7.971200,,,0.050005,0.028800,,1
+표 10 — 인자 절제 (DRAFT_4_6_2),0,DRAFT_4_6_2_table10.md,26,w/o T,table10_factor_runs.csv,risky_pct,mean,5,20.400000,20.445422,,,0.050005,0.045422,,1
+표 10 — 인자 절제 (DRAFT_4_6_2),0,DRAFT_4_6_2_table10.md,26,w/o T,table10_factor_runs.csv,hop,mean,5,8.320000,8.323000,,,0.005000,0.003000,,1
+표 11 — 제안 행 (DRAFT_4_6_3),0,DRAFT_4_6_3_table11.md,57,제안 기법,baseline_reference.csv,delay,value_sd,1,350.100000,350.124972,1.500000,1.461806,0.050005,0.024972,0.038194,1
+표 11 — 제안 행 (DRAFT_4_6_3),0,DRAFT_4_6_3_table11.md,57,제안 기법,baseline_reference.csv,loss,value_sd,1,8.360000,8.355049,0.060000,0.056765,0.005000,0.004951,0.003235,1
+표 11 — 제안 행 (DRAFT_4_6_3),0,DRAFT_4_6_3_table11.md,57,제안 기법,baseline_reference.csv,hop,value,1,7.680000,7.677000,,,0.005000,0.003000,,1
+표 11 — NoRisk 행 (DRAFT_4_6_3),0,DRAFT_4_6_3_table11.md,58,NoRisk-DQN <sup>주3</sup>,norisk_reference.csv,delay,value_sd,1,332.900000,332.855567,3.900000,3.894075,0.050005,0.044433,0.005925,1
+표 11 — NoRisk 행 (DRAFT_4_6_3),0,DRAFT_4_6_3_table11.md,58,NoRisk-DQN <sup>주3</sup>,norisk_reference.csv,loss,value_sd,1,9.060000,9.063384,0.220000,0.215498,0.005000,0.003384,0.004502,1
+표 11 — NoRisk 행 (DRAFT_4_6_3),0,DRAFT_4_6_3_table11.md,58,NoRisk-DQN <sup>주3</sup>,norisk_reference.csv,hop,value,1,7.000000,7.000000,,,0.005000,0.000000,,1
+표 11 — QoS-Model 행 (DRAFT_4_6_3),0,DRAFT_4_6_3_table11.md,59,QoS-Model <sup>주4</sup>,qos_baseline_handicap.csv,delay,mean_sd,5,403.700000,403.742568,2.400000,2.365155,0.050005,0.042568,0.034845,1
+표 11 — QoS-Model 행 (DRAFT_4_6_3),0,DRAFT_4_6_3_table11.md,59,QoS-Model <sup>주4</sup>,qos_baseline_handicap.csv,published,mean_sd,5,12.900000,12.895821,0.180000,0.177236,0.005000,0.004179,0.002764,1
+표 11 — QoS-Model 행 (DRAFT_4_6_3),0,DRAFT_4_6_3_table11.md,59,QoS-Model <sup>주4</sup>,qos_baseline_handicap.csv,hop,mean_sd,5,7.180000,7.179000,0.040000,0.039749,0.005000,0.001000,0.000251,1
+표 11 — 위험블록 가림 배터리 (DRAFT_4_6_3),0,DRAFT_4_6_3_table11.md,339,가리지 않음 (통제),occlusion_paths_runs.csv,delay,mean_sd,5,360.840000,360.842042,14.640000,14.641839,0.005000,0.002042,0.001839,1
+표 11 — 위험블록 가림 배터리 (DRAFT_4_6_3),0,DRAFT_4_6_3_table11.md,339,가리지 않음 (통제),occlusion_paths_runs.csv,loss,mean,5,0.083400,0.083378,,,0.000050,0.000022,,1
+표 11 — 위험블록 가림 배터리 (DRAFT_4_6_3),0,DRAFT_4_6_3_table11.md,339,가리지 않음 (통제),occlusion_paths_runs.csv,hop,mean,5,7.896000,7.896000,,,0.000500,0.000000,,1
+표 11 — 위험블록 가림 배터리 (DRAFT_4_6_3),0,DRAFT_4_6_3_table11.md,339,가리지 않음 (통제),occlusion_paths_runs.csv,risky_pct,mean,5,21.470000,21.470130,,,0.005000,0.000130,,1
+표 11 — 위험블록 가림 배터리 (DRAFT_4_6_3),0,DRAFT_4_6_3_table11.md,339,가리지 않음 (통제),occlusion_paths_runs.csv,n_distinct_paths,mean,5,3.200000,3.200000,,,0.050005,0.000000,,1
+표 11 — 위험블록 가림 배터리 (DRAFT_4_6_3),0,DRAFT_4_6_3_table11.md,340,전 칸 같은 평균 (정보 0),occlusion_paths_runs.csv,delay,mean_sd,5,554.080000,554.077850,62.280000,62.276274,0.005000,0.002150,0.003726,1
+표 11 — 위험블록 가림 배터리 (DRAFT_4_6_3),0,DRAFT_4_6_3_table11.md,340,전 칸 같은 평균 (정보 0),occlusion_paths_runs.csv,loss,mean,5,0.231100,0.231146,,,0.000050,0.000046,,1
+표 11 — 위험블록 가림 배터리 (DRAFT_4_6_3),0,DRAFT_4_6_3_table11.md,340,전 칸 같은 평균 (정보 0),occlusion_paths_runs.csv,hop,mean,5,6.400000,6.400000,,,0.000500,0.000000,,1
+표 11 — 위험블록 가림 배터리 (DRAFT_4_6_3),0,DRAFT_4_6_3_table11.md,340,전 칸 같은 평균 (정보 0),occlusion_paths_runs.csv,risky_pct,mean,5,65.140000,65.141667,,,0.005000,0.001667,,1
+표 11 — 위험블록 가림 배터리 (DRAFT_4_6_3),0,DRAFT_4_6_3_table11.md,340,전 칸 같은 평균 (정보 0),occlusion_paths_runs.csv,n_distinct_paths,mean,5,1.000000,1.000000,,,0.050005,0.000000,,1
+표 11 — 위험블록 가림 배터리 (DRAFT_4_6_3),0,DRAFT_4_6_3_table11.md,341,엣지별 평균 (정적 서열 보존),occlusion_paths_runs.csv,delay,mean_sd,5,471.090000,471.089876,0.000000,0.000000,0.005000,0.000124,0.000000,1
+표 11 — 위험블록 가림 배터리 (DRAFT_4_6_3),0,DRAFT_4_6_3_table11.md,341,엣지별 평균 (정적 서열 보존),occlusion_paths_runs.csv,loss,mean,5,0.158500,0.158481,,,0.000050,0.000019,,1
+표 11 — 위험블록 가림 배터리 (DRAFT_4_6_3),0,DRAFT_4_6_3_table11.md,341,엣지별 평균 (정적 서열 보존),occlusion_paths_runs.csv,hop,mean,5,7.000000,7.000000,,,0.000500,0.000000,,1
+표 11 — 위험블록 가림 배터리 (DRAFT_4_6_3),0,DRAFT_4_6_3_table11.md,341,엣지별 평균 (정적 서열 보존),occlusion_paths_runs.csv,risky_pct,mean,5,43.860000,43.857143,,,0.005000,0.002857,,1
+표 11 — 위험블록 가림 배터리 (DRAFT_4_6_3),0,DRAFT_4_6_3_table11.md,341,엣지별 평균 (정적 서열 보존),occlusion_paths_runs.csv,n_distinct_paths,mean,5,1.000000,1.000000,,,0.050005,0.000000,,1
+표 14 — OSPF 행 (DRAFT_4_9),0,DRAFT_4_9_table14.md,32,0.2/OSPF,table14_final_runs.csv,success_rate,mean,10,100.000000,100.000000,,,0.050005,0.000000,,1
+표 14 — OSPF 행 (DRAFT_4_9),0,DRAFT_4_9_table14.md,32,0.2/OSPF,table14_final_runs.csv,delay,mean_sd,10,335.600000,335.595273,110.800000,110.757449,0.050005,0.004727,0.042551,1
+표 14 — OSPF 행 (DRAFT_4_9),0,DRAFT_4_9_table14.md,32,0.2/OSPF,table14_final_runs.csv,hop,mean_sd,10,4.560000,4.561000,0.530000,0.530230,0.005000,0.001000,0.000230,1
+표 14 — OSPF 행 (DRAFT_4_9),0,DRAFT_4_9_table14.md,32,0.2/OSPF,table14_final_runs.csv,loss_published,mean_sd,10,20.010000,20.014375,5.940000,5.939628,0.005000,0.004375,0.000372,1
+표 14 — OSPF 행 (DRAFT_4_9),0,DRAFT_4_9_table14.md,32,0.2/OSPF,table14_final_runs.csv,risky_link_usage,mean_sd,10,55.930000,55.931667,17.560000,17.564294,0.005000,0.001667,0.004294,1
+표 14 — OSPF 행 (DRAFT_4_9),0,DRAFT_4_9_table14.md,32,0.2/OSPF,table14_final_runs.csv,risky_count,mean,10,2.620000,2.620000,,,0.000500,0.000000,,1
+표 14 — OSPF 행 (DRAFT_4_9),0,DRAFT_4_9_table14.md,34,0.4/OSPF,table14_final_runs.csv,success_rate,mean,10,100.000000,100.000000,,,0.050005,0.000000,,1
+표 14 — OSPF 행 (DRAFT_4_9),0,DRAFT_4_9_table14.md,34,0.4/OSPF,table14_final_runs.csv,delay,mean_sd,10,303.700000,303.747700,56.300000,56.301164,0.050005,0.047700,0.001164,1
+표 14 — OSPF 행 (DRAFT_4_9),0,DRAFT_4_9_table14.md,34,0.4/OSPF,table14_final_runs.csv,hop,mean_sd,10,4.120000,4.123000,0.310000,0.309482,0.005000,0.003000,0.000518,1
+표 14 — OSPF 행 (DRAFT_4_9),0,DRAFT_4_9_table14.md,34,0.4/OSPF,table14_final_runs.csv,loss_published,mean_sd,10,20.560000,20.560592,4.490000,4.489338,0.005000,0.000592,0.000662,1
+표 14 — OSPF 행 (DRAFT_4_9),0,DRAFT_4_9_table14.md,34,0.4/OSPF,table14_final_runs.csv,risky_link_usage,mean_sd,10,57.560000,57.555000,13.200000,13.197716,0.005000,0.005000,0.002284,1
+표 14 — OSPF 행 (DRAFT_4_9),0,DRAFT_4_9_table14.md,34,0.4/OSPF,table14_final_runs.csv,risky_count,mean,10,2.380000,2.380000,,,0.000500,0.000000,,1
+표 14 — OSPF 행 (DRAFT_4_9),0,DRAFT_4_9_table14.md,36,0.6/OSPF,table14_final_runs.csv,success_rate,mean,10,100.000000,100.000000,,,0.050005,0.000000,,1
+표 14 — OSPF 행 (DRAFT_4_9),0,DRAFT_4_9_table14.md,36,0.6/OSPF,table14_final_runs.csv,delay,mean_sd,10,340.400000,340.377816,49.400000,49.390794,0.050005,0.022184,0.009206,1
+표 14 — OSPF 행 (DRAFT_4_9),0,DRAFT_4_9_table14.md,36,0.6/OSPF,table14_final_runs.csv,hop,mean_sd,10,4.160000,4.157000,0.300000,0.304523,0.005000,0.003000,0.004523,1
+표 14 — OSPF 행 (DRAFT_4_9),0,DRAFT_4_9_table14.md,36,0.6/OSPF,table14_final_runs.csv,loss_published,mean_sd,10,23.290000,23.287761,3.000000,3.001865,0.005000,0.002239,0.001865,1
+표 14 — OSPF 행 (DRAFT_4_9),0,DRAFT_4_9_table14.md,36,0.6/OSPF,table14_final_runs.csv,risky_link_usage,mean_sd,10,65.670000,65.665000,8.830000,8.825124,0.005000,0.005000,0.004876,1
+표 14 — OSPF 행 (DRAFT_4_9),0,DRAFT_4_9_table14.md,36,0.6/OSPF,table14_final_runs.csv,risky_count,mean,10,2.753000,2.753000,,,0.000500,0.000000,,1
+표 14 — 제안 행 = frozen/no_revisit (20e74c39),0,DRAFT_4_9_table14.md,33,0.2/**제안**,table14_final_runs.csv,success_rate,mean,10,100.000000,100.000000,,,0.050005,0.000000,,1
+표 14 — 제안 행 = frozen/no_revisit (20e74c39),0,DRAFT_4_9_table14.md,33,0.2/**제안**,table14_final_runs.csv,delay,mean_sd,10,293.700000,293.697765,49.100000,49.089244,0.050005,0.002235,0.010756,1
+표 14 — 제안 행 = frozen/no_revisit (20e74c39),0,DRAFT_4_9_table14.md,33,0.2/**제안**,table14_final_runs.csv,hop,mean_sd,10,7.730000,7.729000,0.950000,0.947411,0.005000,0.001000,0.002589,1
+표 14 — 제안 행 = frozen/no_revisit (20e74c39),0,DRAFT_4_9_table14.md,33,0.2/**제안**,table14_final_runs.csv,loss_published,mean_sd,10,5.740000,5.739884,3.010000,3.012040,0.005000,0.000116,0.002040,1
+표 14 — 제안 행 = frozen/no_revisit (20e74c39),0,DRAFT_4_9_table14.md,33,0.2/**제안**,table14_final_runs.csv,risky_link_usage,mean_sd,10,13.830000,13.827183,8.870000,8.868443,0.005000,0.002817,0.001557,1
+표 14 — 제안 행 = frozen/no_revisit (20e74c39),0,DRAFT_4_9_table14.md,33,0.2/**제안**,table14_final_runs.csv,risky_count,mean,10,0.983000,0.983000,,,0.000500,0.000000,,1
+표 14 — 제안 행 = frozen/no_revisit (20e74c39),0,DRAFT_4_9_table14.md,35,0.4/**제안**,table14_final_runs.csv,success_rate,mean,10,100.000000,100.000000,,,0.050005,0.000000,,1
+표 14 — 제안 행 = frozen/no_revisit (20e74c39),0,DRAFT_4_9_table14.md,35,0.4/**제안**,table14_final_runs.csv,delay,mean_sd,10,320.600000,320.579372,99.000000,98.958121,0.050005,0.020628,0.041879,1
+표 14 — 제안 행 = frozen/no_revisit (20e74c39),0,DRAFT_4_9_table14.md,35,0.4/**제안**,table14_final_runs.csv,hop,mean_sd,10,7.610000,7.610000,2.460000,2.456194,0.005000,0.000000,0.003806,1
+표 14 — 제안 행 = frozen/no_revisit (20e74c39),0,DRAFT_4_9_table14.md,35,0.4/**제안**,table14_final_runs.csv,loss_published,mean_sd,10,7.900000,7.895886,5.860000,5.856343,0.005000,0.004114,0.003657,1
+표 14 — 제안 행 = frozen/no_revisit (20e74c39),0,DRAFT_4_9_table14.md,35,0.4/**제안**,table14_final_runs.csv,risky_link_usage,mean_sd,10,20.200000,20.195348,17.210000,17.209058,0.005000,0.004652,0.000942,1
+표 14 — 제안 행 = frozen/no_revisit (20e74c39),0,DRAFT_4_9_table14.md,35,0.4/**제안**,table14_final_runs.csv,risky_count,mean,10,1.265000,1.265000,,,0.000500,0.000000,,1
+표 14 — 제안 행 = frozen/no_revisit (20e74c39),0,DRAFT_4_9_table14.md,37,0.6/**제안**,table14_final_runs.csv,success_rate,mean,10,100.000000,100.000000,,,0.050005,0.000000,,1
+표 14 — 제안 행 = frozen/no_revisit (20e74c39),0,DRAFT_4_9_table14.md,37,0.6/**제안**,table14_final_runs.csv,delay,mean_sd,10,317.600000,317.593941,71.700000,71.692618,0.050005,0.006059,0.007382,1
+표 14 — 제안 행 = frozen/no_revisit (20e74c39),0,DRAFT_4_9_table14.md,37,0.6/**제안**,table14_final_runs.csv,hop,mean_sd,10,7.570000,7.568000,2.380000,2.375256,0.005000,0.002000,0.004744,1
+표 14 — 제안 행 = frozen/no_revisit (20e74c39),0,DRAFT_4_9_table14.md,37,0.6/**제안**,table14_final_runs.csv,loss_published,mean_sd,10,8.100000,8.096248,5.440000,5.443854,0.005000,0.003752,0.003854,1
+표 14 — 제안 행 = frozen/no_revisit (20e74c39),0,DRAFT_4_9_table14.md,37,0.6/**제안**,table14_final_runs.csv,risky_link_usage,mean_sd,10,20.810000,20.805330,16.100000,16.098806,0.005000,0.004670,0.001194,1
+표 14 — 제안 행 = frozen/no_revisit (20e74c39),0,DRAFT_4_9_table14.md,37,0.6/**제안**,table14_final_runs.csv,risky_count,mean,10,1.268000,1.268000,,,0.000500,0.000000,,1
+[대립 가설] 표 14 제안 행이 merged/no_revisit 라면,1,DRAFT_4_9_table14.md,33,0.2/**제안**,table14_final_runs.csv,success_rate,mean,10,100.000000,100.000000,,,0.050005,0.000000,,1
+[대립 가설] 표 14 제안 행이 merged/no_revisit 라면,1,DRAFT_4_9_table14.md,33,0.2/**제안**,table14_final_runs.csv,delay,mean_sd,10,293.700000,278.491169,49.100000,62.731173,0.050005,15.208831,13.631173,0
+[대립 가설] 표 14 제안 행이 merged/no_revisit 라면,1,DRAFT_4_9_table14.md,33,0.2/**제안**,table14_final_runs.csv,hop,mean_sd,10,7.730000,6.491000,0.950000,0.871033,0.005000,1.239000,0.078967,0
+[대립 가설] 표 14 제안 행이 merged/no_revisit 라면,1,DRAFT_4_9_table14.md,33,0.2/**제안**,table14_final_runs.csv,loss_published,mean_sd,10,5.740000,7.876937,3.010000,4.420614,0.005000,2.136937,1.410614,0
+[대립 가설] 표 14 제안 행이 merged/no_revisit 라면,1,DRAFT_4_9_table14.md,33,0.2/**제안**,table14_final_runs.csv,risky_link_usage,mean_sd,10,13.830000,20.083099,8.870000,13.002988,0.005000,6.253099,4.132988,0
+[대립 가설] 표 14 제안 행이 merged/no_revisit 라면,1,DRAFT_4_9_table14.md,33,0.2/**제안**,table14_final_runs.csv,risky_count,mean,10,0.983000,1.243000,,,0.000500,0.260000,,0
+[대립 가설] 표 14 제안 행이 merged/no_revisit 라면,1,DRAFT_4_9_table14.md,35,0.4/**제안**,table14_final_runs.csv,success_rate,mean,10,100.000000,100.000000,,,0.050005,0.000000,,1
+[대립 가설] 표 14 제안 행이 merged/no_revisit 라면,1,DRAFT_4_9_table14.md,35,0.4/**제안**,table14_final_runs.csv,delay,mean_sd,10,320.600000,287.440387,99.000000,71.388530,0.050005,33.159613,27.611470,0
+[대립 가설] 표 14 제안 행이 merged/no_revisit 라면,1,DRAFT_4_9_table14.md,35,0.4/**제안**,table14_final_runs.csv,hop,mean_sd,10,7.610000,6.905000,2.460000,1.933139,0.005000,0.705000,0.526861,0
+[대립 가설] 표 14 제안 행이 merged/no_revisit 라면,1,DRAFT_4_9_table14.md,35,0.4/**제안**,table14_final_runs.csv,loss_published,mean_sd,10,7.900000,7.870091,5.860000,3.850287,0.005000,0.029909,2.009713,0
+[대립 가설] 표 14 제안 행이 merged/no_revisit 라면,1,DRAFT_4_9_table14.md,35,0.4/**제안**,table14_final_runs.csv,risky_link_usage,mean_sd,10,20.200000,20.094978,17.210000,11.350562,0.005000,0.105022,5.859438,0
+[대립 가설] 표 14 제안 행이 merged/no_revisit 라면,1,DRAFT_4_9_table14.md,35,0.4/**제안**,table14_final_runs.csv,risky_count,mean,10,1.265000,1.180000,,,0.000500,0.085000,,0
+[대립 가설] 표 14 제안 행이 merged/no_revisit 라면,1,DRAFT_4_9_table14.md,37,0.6/**제안**,table14_final_runs.csv,success_rate,mean,10,100.000000,100.000000,,,0.050005,0.000000,,1
+[대립 가설] 표 14 제안 행이 merged/no_revisit 라면,1,DRAFT_4_9_table14.md,37,0.6/**제안**,table14_final_runs.csv,delay,mean_sd,10,317.600000,339.576501,71.700000,126.239292,0.050005,21.976501,54.539292,0
+[대립 가설] 표 14 제안 행이 merged/no_revisit 라면,1,DRAFT_4_9_table14.md,37,0.6/**제안**,table14_final_runs.csv,hop,mean_sd,10,7.570000,7.327000,2.380000,2.076616,0.005000,0.243000,0.303384,0
+[대립 가설] 표 14 제안 행이 merged/no_revisit 라면,1,DRAFT_4_9_table14.md,37,0.6/**제안**,table14_final_runs.csv,loss_published,mean_sd,10,8.100000,8.884790,5.440000,4.977670,0.005000,0.784790,0.462330,0
+[대립 가설] 표 14 제안 행이 merged/no_revisit 라면,1,DRAFT_4_9_table14.md,37,0.6/**제안**,table14_final_runs.csv,risky_link_usage,mean_sd,10,20.810000,23.030412,16.100000,14.644538,0.005000,2.220412,1.455462,0
+[대립 가설] 표 14 제안 행이 merged/no_revisit 라면,1,DRAFT_4_9_table14.md,37,0.6/**제안**,table14_final_runs.csv,risky_count,mean,10,1.268000,1.555000,,,0.000500,0.287000,,0
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,66,20,rwp_churn.csv,kept_of_50,range,5,47.700000,47.653000,48.100000,48.058500,0.050005,0.047000,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,66,20,rwp_churn.csv,kept_pct,paren_mean,5,95.800000,95.770600,,,0.050005,0.029400,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,66,20,rwp_churn.csv,novel_edges,range,5,5.800000,5.821500,6.200000,6.210000,0.050005,0.021500,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,66,20,rwp_churn.csv,unseen_pct,range,5,10.800000,10.805769,11.500000,11.522298,0.050005,0.022298,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,66,20,rwp_churn.csv,deg0_nodes,range,5,0.000000,0.000000,0.000000,0.003500,0.005000,0.003500,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,66,20,rwp_churn.csv,sd_connected_pct,range,5,100.000000,100.000000,100.000000,100.000000,0.050005,0.000000,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,67,40,rwp_churn.csv,kept_of_50,range,5,45.900000,45.852000,46.800000,46.831500,0.050005,0.048000,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,67,40,rwp_churn.csv,kept_pct,paren_mean,5,92.700000,92.723800,,,0.050005,0.023800,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,67,40,rwp_churn.csv,novel_edges,range,5,9.000000,8.992500,9.700000,9.737500,0.050005,0.037500,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,67,40,rwp_churn.csv,unseen_pct,range,5,16.200000,16.154473,17.500000,17.478752,0.050005,0.045527,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,67,40,rwp_churn.csv,deg0_nodes,range,5,0.000000,0.000000,0.020000,0.019000,0.005000,0.001000,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,67,40,rwp_churn.csv,sd_connected_pct,range,5,99.400000,99.400000,99.900000,99.900000,0.050005,0.000000,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,68,60,rwp_churn.csv,kept_of_50,range,5,43.800000,43.789000,44.900000,44.930000,0.050005,0.030000,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,68,60,rwp_churn.csv,kept_pct,paren_mean,5,88.800000,88.764600,,,0.050005,0.035400,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,68,60,rwp_churn.csv,novel_edges,range,5,12.500000,12.520000,13.600000,13.573000,0.050005,0.027000,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,68,60,rwp_churn.csv,unseen_pct,range,5,21.800000,21.830482,23.700000,23.662006,0.050005,0.037994,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,68,60,rwp_churn.csv,deg0_nodes,range,5,0.010000,0.009000,0.040000,0.041500,0.005000,0.001500,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,68,60,rwp_churn.csv,sd_connected_pct,range,5,98.800000,98.750000,99.600000,99.600000,0.050005,0.050000,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,69,80,rwp_churn.csv,kept_of_50,range,5,41.700000,41.703000,43.400000,43.413000,0.050005,0.013000,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,69,80,rwp_churn.csv,kept_pct,paren_mean,5,85.200000,85.176600,,,0.050005,0.023400,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,69,80,rwp_churn.csv,novel_edges,range,5,16.400000,16.423500,17.800000,17.810500,0.050005,0.023500,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,69,80,rwp_churn.csv,unseen_pct,range,5,27.600000,27.558982,29.800000,29.840081,0.050005,0.041018,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,69,80,rwp_churn.csv,deg0_nodes,range,5,0.030000,0.029000,0.080000,0.084500,0.005000,0.004500,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,69,80,rwp_churn.csv,sd_connected_pct,range,5,96.900000,96.900000,99.000000,99.000000,0.050005,0.000000,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,70,100,rwp_churn.csv,kept_of_50,range,5,39.400000,39.421500,41.300000,41.348500,0.050005,0.048500,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,70,100,rwp_churn.csv,kept_pct,paren_mean,5,81.000000,80.983400,,,0.050005,0.016600,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,70,100,rwp_churn.csv,novel_edges,range,5,20.500000,20.461000,21.700000,21.724500,0.050005,0.039000,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,70,100,rwp_churn.csv,unseen_pct,range,5,33.100000,33.103326,35.500000,35.483528,0.050005,0.016472,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,70,100,rwp_churn.csv,deg0_nodes,range,5,0.060000,0.058000,0.130000,0.129500,0.005000,0.002000,,1
+표 13 — 이동성 관측 한계 (DRAFT_4_8),0,DRAFT_4_8_mobility.md,70,100,rwp_churn.csv,sd_connected_pct,range,5,94.500000,94.450000,97.200000,97.150000,0.050005,0.050000,,1
+"표 12 — 경로 설정 시간, 안 B (DRAFT_4_7)",0,DRAFT_4_7_table12.md,60,Normal,path_setup_time_threads1.csv,per_path_ms_mean,value_sd,1,0.326000,0.325987,0.068000,0.068358,0.000500,0.000013,0.000358,1
+"표 12 — 경로 설정 시간, 안 B (DRAFT_4_7)",0,DRAFT_4_7_table12.md,61,Congestion,path_setup_time_threads1.csv,per_path_ms_mean,value_sd,1,0.302000,0.302140,0.016000,0.016153,0.000500,0.000140,0.000153,1
+"표 12 — 경로 설정 시간, 안 B (DRAFT_4_7)",0,DRAFT_4_7_table12.md,62,Unstable,path_setup_time_threads1.csv,per_path_ms_mean,value_sd,1,0.297000,0.296507,0.023000,0.022870,0.000500,0.000493,0.000130,1
+"표 12 — 경로 설정 시간, 안 B (DRAFT_4_7)",0,DRAFT_4_7_table12.md,63,Dynamic,path_setup_time_threads1.csv,per_path_ms_mean,value_sd,1,0.296000,0.296487,0.017000,0.016573,0.000500,0.000487,0.000427,1
+"표 12 — 제안 열, 안 B (DRAFT_4_7)",0,DRAFT_4_7_table12.md,71,Normal,path_setup_time_threads1.csv,per_path_ms_mean,value_sd,1,2.189000,2.189487,0.227000,0.226527,0.000500,0.000487,0.000473,1
+"표 12 — 제안 열, 안 B (DRAFT_4_7)",0,DRAFT_4_7_table12.md,71,Normal,path_setup_time_threads1.csv,decisions_mean,value,1,6.000000,6.000000,,,0.050005,0.000000,,1
+"표 12 — 제안 열, 안 B (DRAFT_4_7)",0,DRAFT_4_7_table12.md,72,Congestion,path_setup_time_threads1.csv,per_path_ms_mean,value_sd,1,2.501000,2.500687,0.202000,0.202018,0.000500,0.000313,0.000018,1
+"표 12 — 제안 열, 안 B (DRAFT_4_7)",0,DRAFT_4_7_table12.md,72,Congestion,path_setup_time_threads1.csv,decisions_mean,value,1,7.000000,7.000000,,,0.050005,0.000000,,1
+"표 12 — 제안 열, 안 B (DRAFT_4_7)",0,DRAFT_4_7_table12.md,73,Unstable,path_setup_time_threads1.csv,per_path_ms_mean,value_sd,1,2.466000,2.466140,0.174000,0.174157,0.000500,0.000140,0.000157,1
+"표 12 — 제안 열, 안 B (DRAFT_4_7)",0,DRAFT_4_7_table12.md,73,Unstable,path_setup_time_threads1.csv,decisions_mean,value,1,7.000000,7.000000,,,0.050005,0.000000,,1
+"표 12 — 제안 열, 안 B (DRAFT_4_7)",0,DRAFT_4_7_table12.md,74,Dynamic,path_setup_time_threads1.csv,per_path_ms_mean,value_sd,1,2.664000,2.663743,0.292000,0.292116,0.000500,0.000257,0.000116,1
+"표 12 — 제안 열, 안 B (DRAFT_4_7)",0,DRAFT_4_7_table12.md,74,Dynamic,path_setup_time_threads1.csv,decisions_mean,value,1,7.600000,7.600000,,,0.050005,0.000000,,1
+"표 12 — QoS 열, 안 B (DRAFT_4_7)",0,DRAFT_4_7_table12.md,71,Normal,path_setup_time_threads1.csv,per_path_ms_mean,value_sd,1,2.622000,2.622297,0.159000,0.158749,0.000500,0.000297,0.000251,1
+"표 12 — QoS 열, 안 B (DRAFT_4_7)",0,DRAFT_4_7_table12.md,72,Congestion,path_setup_time_threads1.csv,per_path_ms_mean,value_sd,1,2.662000,2.662497,0.192000,0.191554,0.000500,0.000497,0.000446,1
+"표 12 — QoS 열, 안 B (DRAFT_4_7)",0,DRAFT_4_7_table12.md,73,Unstable,path_setup_time_threads1.csv,per_path_ms_mean,value_sd,1,2.666000,2.665703,0.159000,0.159430,0.000500,0.000297,0.000430,1
+"표 12 — QoS 열, 안 B (DRAFT_4_7)",0,DRAFT_4_7_table12.md,74,Dynamic,path_setup_time_threads1.csv,per_path_ms_mean,value_sd,1,2.735000,2.735147,0.326000,0.326224,0.000500,0.000147,0.000224,1
+표 12 — OSPF 대비 배수(계산값) (DRAFT_4_7),0,DRAFT_4_7_table12.md,71,Normal,table12_path_setup.csv,ratio_vs_ospf_t1,value,1,6.700000,6.716486,,,0.050005,0.016486,,1
+표 12 — OSPF 대비 배수(계산값) (DRAFT_4_7),0,DRAFT_4_7_table12.md,72,Congestion,table12_path_setup.csv,ratio_vs_ospf_t1,value,1,8.300000,8.276584,,,0.050005,0.023416,,1
+표 12 — OSPF 대비 배수(계산값) (DRAFT_4_7),0,DRAFT_4_7_table12.md,73,Unstable,table12_path_setup.csv,ratio_vs_ospf_t1,value,1,8.300000,8.317308,,,0.050005,0.017308,,1
+표 12 — OSPF 대비 배수(계산값) (DRAFT_4_7),0,DRAFT_4_7_table12.md,74,Dynamic,table12_path_setup.csv,ratio_vs_ospf_t1,value,1,9.000000,8.984350,,,0.050005,0.015650,,1
+표 11 — vs NoRisk 행 (유도),0,DRAFT_4_6_3_table11.md,60,(prop_delay-nr_delay)/nr_delay*100,(유도),-,formula,0,5.200000,5.188258,,,0.050005,0.011742,,1
+표 11 — vs NoRisk 행 (유도),0,DRAFT_4_6_3_table11.md,60,(prop_loss-nr_loss)/nr_loss*100,(유도),-,formula,0,-7.800000,-7.815353,,,0.050005,0.015353,,1
+표 11 — vs NoRisk 행 (유도),0,DRAFT_4_6_3_table11.md,60,prop_hop-nr_hop,(유도),-,formula,0,0.680000,0.677000,,,0.005000,0.003000,,1
+표 11 — vs QoS-Model 행 (유도),0,DRAFT_4_6_3_table11.md,61,(prop_delay-qos_delay)/qos_delay*100,(유도),-,formula,0,-13.300000,-13.280144,,,0.050005,0.019856,,1
+표 11 — vs QoS-Model 행 (유도),0,DRAFT_4_6_3_table11.md,61,(prop_loss-qos_loss)/qos_loss*100,(유도),-,formula,0,-35.200000,-35.211190,,,0.050005,0.011190,,1
+표 11 — vs QoS-Model 행 (유도),0,DRAFT_4_6_3_table11.md,61,prop_hop-qos_hop,(유도),-,formula,0,0.500000,0.498000,,,0.005000,0.002000,,1
+경로 일치율 표 — 조건내 (seq),0,DRAFT_4_6_3_table11.md,405,ag_in_risk_both,(유도),-,formula,0,87.600000,87.600000,,,0.050005,0.000000,,1
+경로 일치율 표 — 조건내 (seq),0,DRAFT_4_6_3_table11.md,405,ag_in_qos_both,(유도),-,formula,0,84.400000,84.400000,,,0.050005,0.000000,,1
+경로 일치율 표 — 조건내 (seq),0,DRAFT_4_6_3_table11.md,405,ag_in_qos_reward,(유도),-,formula,0,64.700000,64.700000,,,0.050005,0.000000,,1
+경로 일치율 표 — 조건내 (seq),0,DRAFT_4_6_3_table11.md,405,ag_in_qos_state,(유도),-,formula,0,59.900000,59.900000,,,0.050005,0.000000,,1
+경로 일치율 표 — 둘 다 교체 (seq),0,DRAFT_4_6_3_table11.md,406,ag_qos_both__risk_both,(유도),-,formula,0,0.000000,0.000000,,,0.050005,0.000000,,1
+경로 일치율 표 — 둘 다 교체 (seq),0,DRAFT_4_6_3_table11.md,406,ag_in_qos_both,(유도),-,formula,0,84.400000,84.400000,,,0.050005,0.000000,,1
+경로 일치율 표 — 둘 다 교체 (seq),0,DRAFT_4_6_3_table11.md,406,ag_in_risk_both,(유도),-,formula,0,87.600000,87.600000,,,0.050005,0.000000,,1
+경로 일치율 표 — 보상만 교체 (seq),0,DRAFT_4_6_3_table11.md,407,ag_qos_both__qos_state,(유도),-,formula,0,0.000000,0.000000,,,0.050005,0.000000,,1
+경로 일치율 표 — 보상만 교체 (seq),0,DRAFT_4_6_3_table11.md,407,ag_qos_reward__risk_both,(유도),-,formula,0,15.400000,15.400000,,,0.050005,0.000000,,1
+경로 일치율 표 — 보상만 교체 (seq),0,DRAFT_4_6_3_table11.md,407,ag_in_qos_both,(유도),-,formula,0,84.400000,84.400000,,,0.050005,0.000000,,1
+경로 일치율 표 — 보상만 교체 (seq),0,DRAFT_4_6_3_table11.md,407,ag_in_qos_state,(유도),-,formula,0,59.900000,59.900000,,,0.050005,0.000000,,1
+경로 일치율 표 — 보상만 교체 (seq),0,DRAFT_4_6_3_table11.md,407,ag_in_qos_reward,(유도),-,formula,0,64.700000,64.700000,,,0.050005,0.000000,,1
+경로 일치율 표 — 보상만 교체 (seq),0,DRAFT_4_6_3_table11.md,407,ag_in_risk_both,(유도),-,formula,0,87.600000,87.600000,,,0.050005,0.000000,,1
+경로 일치율 표 — 상태만 교체 (seq),0,DRAFT_4_6_3_table11.md,408,ag_qos_both__qos_reward,(유도),-,formula,0,38.300000,38.260000,,,0.050005,0.040000,,1
+경로 일치율 표 — 상태만 교체 (seq),0,DRAFT_4_6_3_table11.md,408,ag_qos_state__risk_both,(유도),-,formula,0,53.400000,53.400000,,,0.050005,0.000000,,1
+경로 일치율 표 — 상태만 교체 (seq),0,DRAFT_4_6_3_table11.md,408,ag_in_qos_both,(유도),-,formula,0,84.400000,84.400000,,,0.050005,0.000000,,1
+경로 일치율 표 — 상태만 교체 (seq),0,DRAFT_4_6_3_table11.md,408,ag_in_qos_reward,(유도),-,formula,0,64.700000,64.700000,,,0.050005,0.000000,,1
+경로 일치율 표 — 상태만 교체 (seq),0,DRAFT_4_6_3_table11.md,408,ag_in_qos_state,(유도),-,formula,0,59.900000,59.900000,,,0.050005,0.000000,,1
+경로 일치율 표 — 상태만 교체 (seq),0,DRAFT_4_6_3_table11.md,408,ag_in_risk_both,(유도),-,formula,0,87.600000,87.600000,,,0.050005,0.000000,,1
+DRAFT_5 판정표 ⑦ (유도),0,DRAFT_5_summary_abstract.md,26,(ospf_lc02-prop_lc02)/ospf_lc02*100,(유도),-,formula,0,44.200000,44.165946,,,0.050005,0.034054,,1
+DRAFT_5 판정표 ⑦ (유도),0,DRAFT_5_summary_abstract.md,26,(ospf_lc04-prop_lc04)/ospf_lc04*100,(유도),-,formula,0,33.800000,33.780430,,,0.050005,0.019570,,1
+DRAFT_5 판정표 ⑦ (유도),0,DRAFT_5_summary_abstract.md,26,(ospf_lc06-prop_lc06)/ospf_lc06*100,(유도),-,formula,0,36.900000,36.948265,,,0.050005,0.048265,,1
+DRAFT_5 국문초록 (유도),0,DRAFT_5_summary_abstract.md,50,(ospf_lc02-prop_lc02)/ospf_lc02*100,(유도),-,formula,0,44.200000,44.165946,,,0.050005,0.034054,,1
+DRAFT_5 국문초록 (유도),0,DRAFT_5_summary_abstract.md,50,(ospf_lc04-prop_lc04)/ospf_lc04*100,(유도),-,formula,0,33.800000,33.780430,,,0.050005,0.019570,,1
+DRAFT_5 국문초록 (유도),0,DRAFT_5_summary_abstract.md,50,(ospf_lc06-prop_lc06)/ospf_lc06*100,(유도),-,formula,0,36.900000,36.948265,,,0.050005,0.048265,,1
+DRAFT_5 영문초록 (유도),0,DRAFT_5_summary_abstract.md,83,(ospf_lc02-prop_lc02)/ospf_lc02*100,(유도),-,formula,0,44.200000,44.165946,,,0.050005,0.034054,,1
+DRAFT_5 영문초록 (유도),0,DRAFT_5_summary_abstract.md,83,(ospf_lc04-prop_lc04)/ospf_lc04*100,(유도),-,formula,0,33.800000,33.780430,,,0.050005,0.019570,,1
+DRAFT_5 영문초록 (유도),0,DRAFT_5_summary_abstract.md,83,(ospf_lc06-prop_lc06)/ospf_lc06*100,(유도),-,formula,0,36.900000,36.948265,,,0.050005,0.048265,,1
+DRAFT_5 요약 (유도),0,DRAFT_5_summary_abstract.md,108,(ospf_lc02-prop_lc02)/ospf_lc02*100,(유도),-,formula,0,44.200000,44.165946,,,0.050005,0.034054,,1
+DRAFT_5 요약 (유도),0,DRAFT_5_summary_abstract.md,108,(ospf_lc04-prop_lc04)/ospf_lc04*100,(유도),-,formula,0,33.800000,33.780430,,,0.050005,0.019570,,1
+DRAFT_5 요약 (유도),0,DRAFT_5_summary_abstract.md,108,(ospf_lc06-prop_lc06)/ospf_lc06*100,(유도),-,formula,0,36.900000,36.948265,,,0.050005,0.048265,,1
+4.6.1 위험 측정자 폭,0,DRAFT_4_6_1_temporal.md,29,w_own_range,(유도),-,formula,0,0.033610,0.033606,,,0.000005,0.000004,,1
+4.6.1 위험 측정자 폭,0,DRAFT_4_6_1_temporal.md,29,w_ref_range,(유도),-,formula,0,0.001860,0.001862,,,0.000005,0.000002,,1
+4.6.1 차원 섞기 홉,0,DRAFT_4_6_1_temporal.md,35,rv_risk_dimshuffle_hop,(유도),-,formula,0,7.036000,7.036000,,,0.000500,0.000000,,1
+4.6.2 1스레드 재학습 대 Full,0,DRAFT_4_6_2_table10.md,69,u1_delay-full_delay,(유도),-,formula,0,47.120000,47.119113,,,0.005000,0.000887,,1
+4.6.2 런별 최대 이동,0,DRAFT_4_6_2_table10.md,77,u12_r03-u1_r03,(유도),-,formula,0,58.460000,58.457086,,,0.005000,0.002914,,1
+4.6.2 run03 팔 최악,0,DRAFT_4_6_2_table10.md,77,u12_r03,(유도),-,formula,0,440.410000,440.409801,,,0.005000,0.000199,,1
+4.6.2 공통난수 잡음항,0,DRAFT_4_6_2_table10.md,91,nov_pair_sd,(유도),-,formula,0,3.380000,3.379790,,,0.005000,0.000210,,1
+4.6.2 기준 행 교체 (유도),0,DRAFT_4_6_2_table10.md,311,full_delay,(유도),-,formula,0,360.840000,360.842042,,,0.005000,0.002042,,1
+4.6.2 기준 행 교체 (유도),0,DRAFT_4_6_2_table10.md,311,(4*fso_p1+fso_p5)/5,(유도),-,formula,0,356.570000,356.574643,,,0.005000,0.004643,,1
+4.6.2 기준 행 교체 (유도),0,DRAFT_4_6_2_table10.md,311,full_delay-(4*fso_p1+fso_p5)/5,(유도),-,formula,0,4.270000,4.267399,,,0.005000,0.002601,,1
+4.6.2 기준 행 교체 (유도),0,DRAFT_4_6_2_table10.md,311,(full_delay-(4*fso_p1+fso_p5)/5)/((4*fso_p1+fso_p5)/5)*100,(유도),-,formula,0,1.200000,1.196776,,,0.005000,0.003224,,1
+4.6.2 정책 셋의 치우침,0,DRAFT_4_6_2_table10.md,313,eso_cong,(유도),-,formula,0,1.398000,1.397800,,,0.000500,0.000200,,1
+4.6.2 정책 셋의 치우침,0,DRAFT_4_6_2_table10.md,313,eso_util,(유도),-,formula,0,1.156000,1.156200,,,0.000500,0.000200,,1
+4.6.2 정책 셋의 치우침,0,DRAFT_4_6_2_table10.md,313,(full_r05-fso_p5)/fso_p5*100,(유도),-,formula,0,0.468000,0.467576,,,0.000500,0.000424,,1
+4.6.2 정책 셋의 치우침,0,DRAFT_4_6_2_table10.md,313,(eso_cong+eso_util+(full_r05-fso_p5)/fso_p5*100)/3,(유도),-,formula,0,1.007000,1.007192,,,0.000500,0.000192,,1
+4.6.2 옳은 값 둘,0,DRAFT_4_6_2_table10.md,335,(eso_cong+eso_util+(full_r05-fso_p5)/fso_p5*100)/3,(유도),-,formula,0,1.007000,1.007192,,,0.000500,0.000192,,1
+4.6.2 옳은 값 둘,0,DRAFT_4_6_2_table10.md,335,(eso_cong+eso_util)/2,(유도),-,formula,0,1.277000,1.277000,,,0.000500,0.000000,,1
+4.6.2 워밍업 후 QoS,0,DRAFT_4_6_2_table10.md,371,qd_dyna_qos_post_warmup,(유도),-,formula,0,337.560000,337.556639,,,0.005000,0.003361,,1
+4.6.2 워밍업 후 QoS,0,DRAFT_4_6_2_table10.md,371,(qd_dyna_risk_dqn-qd_dyna_qos_post_warmup)/qd_dyna_qos_post_warmup*100,(유도),-,formula,0,3.700000,3.723326,,,0.050005,0.023326,,1
+4.6.2 워밍업 후 QoS,0,DRAFT_4_6_2_table10.md,371,qd_dyna_risk_dqn-qd_dyna_qos_post_warmup,(유도),-,formula,0,12.600000,12.568333,,,0.050005,0.031667,,1
+4.6.3 발표본 지연 산수,0,DRAFT_4_6_3_table11.md,35,(pdf_t5_prop_delay-pdf_t5_norisk_delay)/pdf_t5_norisk_delay*100,(유도),-,formula,0,-19.170000,-19.171348,,,0.005000,0.001348,,1
+4.6.3 발표본 지연 산수,0,DRAFT_4_6_3_table11.md,35,(pdf_t5_prop_delay-pdf_t5_norisk_delay)/pdf_t5_prop_delay*100,(유도),-,formula,0,-23.720000,-23.718506,,,0.005000,0.001494,,1
+4.6.3 발표본 손실 산수,0,DRAFT_4_6_3_table11.md,36,(pdf_t5_prop_loss-pdf_t5_norisk_loss)/pdf_t5_norisk_loss*100,(유도),-,formula,0,-40.270000,-40.269136,,,0.005000,0.000864,,1
+4.6.3 발표본 손실 산수,0,DRAFT_4_6_3_table11.md,36,(pdf_t5_prop_loss-pdf_t5_norisk_loss)/pdf_t5_prop_loss*100,(유도),-,formula,0,-67.420000,-67.417636,,,0.005000,0.002364,,1
+4.6.3 47.4% 가 되려면,0,DRAFT_4_6_3_table11.md,40,pdf_t5_prop_loss/(1-pdf_body_t5_loss_pct/100),(유도),-,formula,0,0.156960,0.156958,,,0.000005,0.000002,,1
+4.6.3 47.4% 가 되려면,0,DRAFT_4_6_3_table11.md,40,pdf_t5_norisk_loss*(1-pdf_body_t5_loss_pct/100),(유도),-,formula,0,0.072700,0.072704,,,0.000005,0.000004,,1
+4.6.3 NoRisk 5런 범위,0,DRAFT_4_6_3_table11.md,13,nr_s0,(유도),-,formula,0,326.600000,326.610837,,,0.050005,0.010837,,1
+4.6.3 NoRisk 5런 범위,0,DRAFT_4_6_3_table11.md,13,nr_s4,(유도),-,formula,0,336.600000,336.624544,,,0.050005,0.024544,,1
+4.6.3 NoRisk 5런 전체,0,DRAFT_4_6_3_table11.md,199,nr_s0,(유도),-,formula,0,326.611000,326.610837,,,0.000500,0.000163,,1
+4.6.3 NoRisk 5런 전체,0,DRAFT_4_6_3_table11.md,199,nr_s1,(유도),-,formula,0,332.029000,332.028884,,,0.000500,0.000116,,1
+4.6.3 NoRisk 5런 전체,0,DRAFT_4_6_3_table11.md,199,nr_s2,(유도),-,formula,0,333.695000,333.695303,,,0.000500,0.000303,,1
+4.6.3 NoRisk 5런 전체,0,DRAFT_4_6_3_table11.md,199,nr_s3,(유도),-,formula,0,335.318000,335.318266,,,0.000500,0.000266,,1
+4.6.3 NoRisk 5런 전체,0,DRAFT_4_6_3_table11.md,199,nr_s4,(유도),-,formula,0,336.625000,336.624544,,,0.000500,0.000456,,1
+4.6.3 워밍업 후 (주4 요약),0,DRAFT_4_6_3_table11.md,46,qd_dyna_qos_post_warmup,(유도),-,formula,0,337.560000,337.556639,,,0.005000,0.003361,,1
+4.6.3 워밍업 후 (주4 요약),0,DRAFT_4_6_3_table11.md,46,(qd_dyna_risk_dqn-qd_dyna_qos_post_warmup)/qd_dyna_qos_post_warmup*100,(유도),-,formula,0,3.700000,3.723326,,,0.050005,0.023326,,1
+4.6.3 워밍업 후 (본문),0,DRAFT_4_6_3_table11.md,87,qd_dyna_qos_post_warmup,(유도),-,formula,0,337.560000,337.556639,,,0.005000,0.003361,,1
+4.6.3 워밍업 후 (본문),0,DRAFT_4_6_3_table11.md,87,qd_dyna_risk_dqn,(유도),-,formula,0,350.120000,350.124972,,,0.005000,0.004972,,1
+4.6.3 워밍업 후 (본문),0,DRAFT_4_6_3_table11.md,87,(qd_dyna_risk_dqn-qd_dyna_qos_post_warmup)/qd_dyna_qos_post_warmup*100,(유도),-,formula,0,3.700000,3.723326,,,0.050005,0.023326,,1
+4.6.3 매 홉 재계획,0,DRAFT_4_6_3_table11.md,89,qd_dyna_qos_replan,(유도),-,formula,0,333.510000,333.505157,,,0.005000,0.004843,,1
+4.6.3 홉당 손실 비유의,0,DRAFT_4_6_3_table11.md,90,qholm_pw_pub,(유도),-,formula,0,0.570300,0.570343,,,0.000050,0.000043,,1
+4.6.3 부호 역전 (네 값),0,DRAFT_4_6_3_table11.md,93,(qp_cong_qos_t0_stale-qp_cong_risk_dqn)/qp_cong_qos_t0_stale*100,(유도),-,formula,0,54.400000,54.352683,,,0.050005,0.047317,,1
+4.6.3 부호 역전 (네 값),0,DRAFT_4_6_3_table11.md,93,(qp_cong_qos_post_warmup-qp_cong_risk_dqn)/qp_cong_qos_post_warmup*100,(유도),-,formula,0,-11.400000,-11.420371,,,0.050005,0.020371,,1
+4.6.3 부호 역전 (네 값),0,DRAFT_4_6_3_table11.md,93,(qp_unst_qos_t0_stale-qp_unst_risk_dqn)/qp_unst_qos_t0_stale*100,(유도),-,formula,0,70.100000,70.149253,,,0.050005,0.049253,,1
+4.6.3 부호 역전 (네 값),0,DRAFT_4_6_3_table11.md,93,(qp_unst_qos_post_warmup-qp_unst_risk_dqn)/qp_unst_qos_post_warmup*100,(유도),-,formula,0,-7.200000,-7.185820,,,0.050005,0.014180,,1
+4.6.3 부호 역전 (네 값),0,DRAFT_4_6_3_table11.md,93,(qp_cong_qos_replan-qp_cong_risk_dqn)/qp_cong_qos_replan*100,(유도),-,formula,0,-11.300000,-11.322126,,,0.050005,0.022126,,1
+4.6.3 부호 역전 (네 값),0,DRAFT_4_6_3_table11.md,93,(qp_unst_qos_replan-qp_unst_risk_dqn)/qp_unst_qos_replan*100,(유도),-,formula,0,-9.100000,-9.065014,,,0.050005,0.034986,,1
+4.6.3 학습된 QoS 모델,0,DRAFT_4_6_3_table11.md,213,qd_dyna_qos_dqn,(유도),-,formula,0,342.420000,342.417085,,,0.005000,0.002915,,1
+4.6.3 학습된 QoS 모델,0,DRAFT_4_6_3_table11.md,213,qd_dyna_risk_dqn,(유도),-,formula,0,350.120000,350.124972,,,0.005000,0.004972,,1
+4.6.3 가림 5런 차,0,DRAFT_4_6_3_table11.md,351,occ_scalar-occ_edgemean,(유도),-,formula,0,82.990000,82.987974,,,0.005000,0.002026,,1
+4.6.3 가림 산포,0,DRAFT_4_6_3_table11.md,354,occ_scalar_sd,(유도),-,formula,0,62.280000,62.276274,,,0.005000,0.003726,,1
+4.6.3 2x2 손실·홉 몫,0,DRAFT_4_6_3_table11.md,384,abs(x_qos_state_loss-x_risk_both_loss)/(abs(x_qos_state_loss-x_risk_both_loss)+abs(x_qos_reward_loss-x_risk_both_loss))*100,(유도),-,formula,0,22.300000,22.260192,,,0.050005,0.039808,,1
+4.6.3 2x2 손실·홉 몫,0,DRAFT_4_6_3_table11.md,384,abs(x_qos_reward_loss-x_risk_both_loss)/(abs(x_qos_state_loss-x_risk_both_loss)+abs(x_qos_reward_loss-x_risk_both_loss))*100,(유도),-,formula,0,77.700000,77.739808,,,0.050005,0.039808,,1
+4.6.3 2x2 손실·홉 몫,0,DRAFT_4_6_3_table11.md,384,abs(x_qos_state_hop-x_risk_both_hop)/(abs(x_qos_state_hop-x_risk_both_hop)+abs(x_qos_reward_hop-x_risk_both_hop))*100,(유도),-,formula,0,22.800000,22.825151,,,0.050005,0.025151,,1
+4.6.3 교차 일치율 (산문1),0,DRAFT_4_6_3_table11.md,158,ag_qos_both__qos_reward,(유도),-,formula,0,38.300000,38.260000,,,0.050005,0.040000,,1
+4.6.3 교차 일치율 (산문1),0,DRAFT_4_6_3_table11.md,158,ag_qos_state__risk_both,(유도),-,formula,0,53.400000,53.400000,,,0.050005,0.000000,,1
+4.6.3 교차 일치율 (산문2),0,DRAFT_4_6_3_table11.md,417,ag_qos_both__qos_reward,(유도),-,formula,0,38.300000,38.260000,,,0.050005,0.040000,,1
+4.6.3 교차 일치율 (산문2),0,DRAFT_4_6_3_table11.md,417,ag_qos_state__risk_both,(유도),-,formula,0,53.400000,53.400000,,,0.050005,0.000000,,1
+4.9 MDE (20.6절 인용),0,DRAFT_4_9_table14.md,19,mde02,(유도),-,formula,0,74.700000,74.705851,,,0.050005,0.005851,,1
+4.9 MDE (20.6절 인용),0,DRAFT_4_9_table14.md,19,mde04,(유도),-,formula,0,89.800000,89.819102,,,0.050005,0.019102,,1
+4.9 MDE (20.6절 인용),0,DRAFT_4_9_table14.md,19,mde06,(유도),-,formula,0,54.700000,54.718666,,,0.050005,0.018666,,1
+4.9 손실 %p (세 비율),0,DRAFT_4_9_table14.md,65,plp04-olp04,(유도),-,formula,0,-12.660000,-12.664706,,,0.005000,0.004706,,1
+4.9 손실 %p (세 비율),0,DRAFT_4_9_table14.md,65,plp06-olp06,(유도),-,formula,0,-15.190000,-15.191513,,,0.005000,0.001513,,1
+4.9 위험 링크 %p,0,DRAFT_4_9_table14.md,65,prk02-ork02,(유도),-,formula,0,-42.100000,-42.104484,,,0.050005,0.004484,,1
+4.9 위험 링크 %p,0,DRAFT_4_9_table14.md,65,prk04-ork04,(유도),-,formula,0,-37.400000,-37.359652,,,0.050005,0.040348,,1
+4.9 위험 링크 감소율,0,DRAFT_4_9_table14.md,70,-(prk04-ork04)/ork04*100,(유도),-,formula,0,64.900000,64.911219,,,0.050005,0.011219,,1
+4.9 위험 링크 감소율,0,DRAFT_4_9_table14.md,70,-(prk02-ork02)/ork02*100,(유도),-,formula,0,75.300000,75.278436,,,0.050005,0.021564,,1
+4.9 MDE (본문),0,DRAFT_4_9_table14.md,79,mde02,(유도),-,formula,0,74.700000,74.705851,,,0.050005,0.005851,,1
+4.9 MDE (본문),0,DRAFT_4_9_table14.md,79,mde04,(유도),-,formula,0,89.800000,89.819102,,,0.050005,0.019102,,1
+4.9 MDE (본문),0,DRAFT_4_9_table14.md,79,mde06,(유도),-,formula,0,54.700000,54.718666,,,0.050005,0.018666,,1
+DRAFT_5 공정 비교군,0,DRAFT_5_summary_abstract.md,209,qd_dyna_qos_post_warmup,(유도),-,formula,0,337.560000,337.556639,,,0.005000,0.003361,,1
+DRAFT_5 공정 비교군,0,DRAFT_5_summary_abstract.md,209,qd_dyna_qos_replan,(유도),-,formula,0,333.510000,333.505157,,,0.005000,0.004843,,1
+DRAFT_5 기준 행 교체,0,DRAFT_5_summary_abstract.md,213,full_delay-(4*fso_p1+fso_p5)/5,(유도),-,formula,0,4.267400,4.267399,,,0.000050,0.000001,,1
+DRAFT_5 기준 행 교체,0,DRAFT_5_summary_abstract.md,213,(full_delay-(4*fso_p1+fso_p5)/5)/((4*fso_p1+fso_p5)/5)*100,(유도),-,formula,0,1.197000,1.196776,,,0.000500,0.000224,,1

@@ -1,0 +1,81 @@
+metric,value,unit,n_hops,note
+seg_floattensor_ms,0.0213535114126077,ms,826,in-call segment mean
+seg_floattensor_pct,5.794475294455363,%,826,share of instrumented call total
+seg_unsqueeze_ms,0.0071987875040449185,ms,826,in-call segment mean
+seg_unsqueeze_pct,1.9534584048595232,%,826,share of instrumented call total
+seg_to_device_ms,0.003702787470442331,ms,826,in-call segment mean
+seg_to_device_pct,1.0047860561906885,%,826,share of instrumented call total
+seg_nograd_enter_ms,0.009196122643734006,ms,826,in-call segment mean
+seg_nograd_enter_pct,2.495453999778055,%,826,share of instrumented call total
+seg_forward_ms,0.22869128576022082,ms,826,in-call segment mean
+seg_forward_pct,62.05752205290359,%,826,share of instrumented call total
+seg_index0_ms,0.009671187075644226,ms,826,in-call segment mean
+seg_index0_pct,2.624367182288775,%,826,share of instrumented call total
+seg_nograd_exit_ms,0.004127602764917199,ms,826,in-call segment mean
+seg_nograd_exit_pct,1.1200636646821904,%,826,share of instrumented call total
+seg_full_like_ms,0.013376633494587268,ms,826,in-call segment mean
+seg_full_like_pct,3.6298747690558115,%,826,share of instrumented call total
+seg_mask_loop_ms,0.052874576081645835,ms,826,in-call segment mean
+seg_mask_loop_pct,14.348011382755615,%,826,share of instrumented call total
+seg_argmax_ms,0.014334624338913122,ms,826,in-call segment mean
+seg_argmax_pct,3.889834556113743,%,826,share of instrumented call total
+seg_item_int_ms,0.003987894935835577,ms,826,in-call segment mean
+seg_item_int_pct,1.082152636916636,%,826,share of instrumented call total
+seg_sum_ms,0.368515013482593,ms,826,sum of the eleven segments
+segmented_total_ms,0.368515013482593,ms,826,instrumented call wall time
+unattributed_ms,0.0,ms,826,total minus the sum of segments
+unattributed_pct,0.0,%,826,residual of the segmented decomposition
+stamp_ns,164.22999964561313,ns,826,perf_counter cost per call
+stamp_ms_per_decision,0.0019707599957473577,ms,826,12 stamps
+group_tensor_ms,0.03225508638709495,ms,826,in-call group total
+group_tensor_pct,8.752719755505574,%,826,in-call share
+group_forward_ms,0.22869128576022082,ms,826,in-call group total
+group_forward_pct,62.05752205290359,%,826,in-call share
+group_mask_ms,0.06625120957623311,ms,826,in-call group total
+group_mask_pct,17.97788615181143,%,826,in-call share
+group_argmax_ms,0.0183225192747487,ms,826,in-call group total
+group_argmax_pct,4.971987193030379,%,826,in-call share
+group_unnamed_ms,0.022994912484295433,ms,826,nograd enter/exit + [0] indexing: never timed before
+group_unnamed_pct,6.23988484674902,%,826,in-call share
+plain_decide_ms,0.3845110184966291,ms,826,"uninstrumented composite, same hops"
+observer_effect_pct,-4.160090152052773,%,826,instrumented total vs plain decide
+iso_tensor_ms,0.01608244649114281,ms,826,same work timed as its own batch
+isolation_gain_tensor_ms,0.016172639895952138,ms,826,in-call minus isolated
+iso_forward_ms,0.20347905574145458,ms,826,same work timed as its own batch
+isolation_gain_forward_ms,0.02521223001876624,ms,826,in-call minus isolated
+iso_mask_ms,0.050613324870479454,ms,826,same work timed as its own batch
+isolation_gain_mask_ms,0.015637884705753655,ms,826,in-call minus isolated
+iso_argmax_ms,0.008635355957916804,ms,826,same work timed as its own batch
+isolation_gain_argmax_ms,0.009687163316831894,ms,826,in-call minus isolated
+iso_sum_ms,0.27881018306099364,ms,826,"the four isolated parts, summed"
+isolation_gain_total_ms,0.06670991793730391,ms,826,in-call total of the four minus their isolated total
+resid_unnamed_ms_proportional,0.023993044777251487,ms,826,unnamed three under proportional
+resid_gain_ms_proportional,0.08170779065838396,ms,826,isolation gain under proportional
+resid_unnamed_pct_proportional,22.69901148686909,%,826,share of the old residual
+resid_gain_pct_proportional,77.3009885131309,%,826,share of the old residual
+resid_unnamed_ms_all_to_unnamed,0.038990917498331515,ms,826,unnamed three under all_to_unnamed
+resid_gain_ms_all_to_unnamed,0.06670991793730391,ms,826,isolation gain under all_to_unnamed
+resid_unnamed_pct_all_to_unnamed,36.887993682958445,%,826,share of the old residual
+resid_gain_pct_all_to_unnamed,63.11200631704151,%,826,share of the old residual
+resid_unnamed_ms_all_to_named,0.022994912484295433,ms,826,unnamed three under all_to_named
+resid_gain_ms_all_to_named,0.08270592295134,ms,826,isolation gain under all_to_named
+resid_unnamed_pct_all_to_named,21.754712145390517,%,826,share of the old residual
+resid_gain_pct_all_to_named,78.24528785460944,%,826,share of the old residual
+old_residual_ms,0.10570083543563547,ms,826,plain decide minus the four isolated parts: the 27.9% of 4.7 (3)
+old_residual_pct,27.48967658947909,%,826,of plain decide
+resid_gain_pct_min,63.11200631704151,%,826,"isolation gain's share of the old residual, worst allocation"
+resid_gain_pct_max,78.24528785460944,%,826,"isolation gain's share of the old residual, best allocation"
+observer_effect_ms,-0.015996005014036085,ms,826,instrumented total minus plain
+stamp_share_of_observer_pct,-12.320326194059493,%,826,the twelve stamps' own cost as a share of the observer effect
+seg_floattensor_sd,0.00675648568635212,ms,826,sd across hops
+seg_unsqueeze_sd,0.0024950318007261408,ms,826,sd across hops
+seg_to_device_sd,0.0018358533448032727,ms,826,sd across hops
+seg_nograd_enter_sd,0.0026058644716066667,ms,826,sd across hops
+seg_forward_sd,0.047079452498710116,ms,826,sd across hops
+seg_index0_sd,0.004644261346062864,ms,826,sd across hops
+seg_nograd_exit_sd,0.0017548054631801428,ms,826,sd across hops
+seg_full_like_sd,0.004320904346223051,ms,826,sd across hops
+seg_mask_loop_sd,0.01922248601171153,ms,826,sd across hops
+seg_argmax_sd,0.004265082828602434,ms,826,sd across hops
+seg_item_int_sd,0.001581031486073209,ms,826,sd across hops
+paths_reached,120,paths,826,of 120 walked
